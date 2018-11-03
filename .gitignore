@@ -18,7 +18,6 @@ privatecode/**/*
 rawdict/**/*
 reader/**/*
 treetagger/**/*
-TOPIC
 
 # ignore so it does not get committed by mistake on windows
 BINARIES/MacChatScript
