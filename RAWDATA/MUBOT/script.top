@@ -1,4 +1,4 @@
-TOPIC: ~introduction repeat keep []
+TOPIC: ~introduction repeat keep priority []
 
 t: [Hello][Hi][Hey], I will help you to find good song.
 	a: ( !no [ thank thanks ] ) You're welcome. ^reuse(GENRE)
