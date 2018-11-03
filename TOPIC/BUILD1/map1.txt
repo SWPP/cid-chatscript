@@ -252,29 +252,38 @@ file: 0  /home/sungjae/cid-chatscript/RAWDATA/MUBOT/script.top
         rule: 57  ~talk.0.0- t: 
           line: 57 0  # Ok, then how have you been the
           Complexity of rule ~talk.0.0- t: 1
-        rule: 59  ~talk.1.0 u: 
-          line: 60 0  # $genre0 = null 
-          line: 61 15  # ^respond ( ~introduction ) 
-          Complexity of rule ~talk.1.0- u: 1
-        rule: 63  ~talk.2.0 u: 
-          line: 64 0  # $mood0 = null 
-          line: 65 14  # ^respond ( ~introduction ) 
+        rule: 58  ~talk.0.1 a: 
+          line: 59 0  # Oh, do you have a good thing? 
+          Complexity of rule ~talk.0.1- a: 1
+        rule: 60  ~talk.0.2 a: 
+          line: 61 0  # Why? Do you have a bad thing? 
+          Complexity of rule ~talk.0.2- a: 1
+        rule: 63  ~talk.1.0- t: 
+          line: 63 0  # Hum.. do you have a hobby? 
+          Complexity of rule ~talk.1.0- t: 1
+        rule: 65  ~talk.2.0 u: 
+          line: 66 0  # $genre0 = null 
+          line: 67 15  # ^respond ( ~introduction ) 
           Complexity of rule ~talk.2.0- u: 1
-        rule: 67  ~talk.3.0 u: 
-          line: 68 0  # You want $genre0 and $genre1 g
-          line: 69 36  # If you want to modify, type "m
+        rule: 69  ~talk.3.0 u: 
+          line: 70 0  # $mood0 = null 
+          line: 71 14  # ^respond ( ~introduction ) 
           Complexity of rule ~talk.3.0- u: 1
-        rule: 71  ~talk.4.0 u: 
-          line: 72 0  # You want $genre0 genre. 
-          line: 73 24  # If you want to modify, type "m
+        rule: 73  ~talk.4.0 u: 
+          line: 74 0  # You want $genre0 and $genre1 g
+          line: 75 36  # If you want to modify, type "m
           Complexity of rule ~talk.4.0- u: 1
-        rule: 75  ~talk.5.0 u: 
-          line: 76 0  # You want $mood1 song. 
-          line: 77 22  # If you want to modify, type "m
+        rule: 77  ~talk.5.0 u: 
+          line: 78 0  # You want $genre0 genre. 
+          line: 79 24  # If you want to modify, type "m
           Complexity of rule ~talk.5.0- u: 1
-        rule: 79  ~talk.6.0 u: 
-          line: 80 0  # You want $mood0 song. 
-          line: 81 22  # If you want to modify, type "m
+        rule: 81  ~talk.6.0 u: 
+          line: 82 0  # You want $mood0 and $mood1 son
+          line: 83 33  # If you want to modify, type "m
           Complexity of rule ~talk.6.0- u: 1
-    concept: 85  ~genre
-    concept: 109  ~mood
+        rule: 85  ~talk.7.0 u: 
+          line: 86 0  # You want $mood0 song. 
+          line: 87 22  # If you want to modify, type "m
+          Complexity of rule ~talk.7.0- u: 1
+    concept: 91  ~genre
+    concept: 115  ~mood
