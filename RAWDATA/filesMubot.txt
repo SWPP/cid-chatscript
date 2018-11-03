@@ -1,0 +1,3 @@
+RAWDATA/HARRY/simplecontrol.top # default bot control
+RAWDATA/MUBOT/script.top # Mubot data
+

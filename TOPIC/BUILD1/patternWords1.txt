@@ -1,0 +1,15 @@
+﻿loopback
+direct_v
+chatoutput
+latin
+c-pop
+j-pop
+k-pop
+child-like
+druggy
+fantasy-like
+hymn-like
+improvisatory
+motoric
+thuggish
+trippy

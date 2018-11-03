@@ -1,0 +1,363 @@
+topic: ~introductions repeat keep []
+
+t: [Hello][Hi][Hey], I will help you to find good song.
+	a: (~yes) ^reuse(GENRE)
+	a: (!no thank) You're welcome. ^reuse(GENRE)
+	a: (~no) Oh.. please let me help you.
+		b: (~yes) Thank you so much! ^reuse(GENRE)
+		b: (~no) Haha I will help you regardless of your will.
+
+u: GENRE (!$genre0)
+	Which genre of song do you want?
+	a: (_~genre * _~genre)
+		Oh, you want genre \" '_0 \" and \" '_1 \"!
+		$genre0 = '_0
+		$genre1 = '_1
+	a: (_~genre)
+		Oh, you want genre \" '_0 \"!
+		$genre0 = '_0
+		$genre1 = null
+	a: ()
+		Oh, please tell me genre in general.
+		^reuse(GENRE)
+
+u: MOOD (!$mood0)
+	Which mood of song do you like?
+	a: (_~mood * _~mood)
+		OK. You like mood \" '_0 \" and \" '_1 \".
+		$mood0 = '_0
+		$mood1 = '_1
+	a: (_~mood)
+		OK. You like mood \" '_0 \".
+		$mood0 = '_0
+		$mood1 = null
+	a: ()
+		Oh, please tell me mood you like.
+		^reuse(MOOD)
+
+u: (modify genre)
+	^reuse(GENRE)
+
+u: (modify mood)
+	^reuse(MOOD)
+
+u: ($genre1 $mood1)
+	You want $genre0 and $genre1 genre and $mood0 and $mood1 song.
+	If you want to modify one of these, type "modify genre/mood"
+
+u: ($genre0 $mood1)
+	You want $genre0 genre and $mood0 and $mood1 song.
+	If you want to modify one of these, type "modify genre/mood"
+
+u: ($genre1 $mood0)
+	You want $genre0 and $genre1 genre and $mood0 song.
+	If you want to modify one of these, type "modify genre/mood"
+
+u: ($genre0 $mood0)
+	You want $genre0 genre and $mood0 song.
+	If you want to modify one of these, type "modify genre/mood"
+
+concept: ~genre [metal rock "R&B" soul pop latin jazz "hip hop" folk electronic country comedy blues pop rap c-pop j-pop k-pop ballad]
+concept: ~mood [
+    acerbic
+    aggressive
+    agreeable
+    airy
+    ambitious
+    amiable
+    good-Natured
+    angry
+    angst-Ridden
+    anguished
+    distraught
+    angular
+    animated
+    apocalyptic
+    arid
+    athletic
+    atmospheric
+    austere
+    autumnal
+    belligerent
+    benevolent
+    bitter
+    bittersweet
+    bleak
+    boisterous
+    bombastic
+    brash
+    brassy
+    bravado
+    bright
+    brittle
+    brooding
+    calm
+    peaceful
+    campy
+    capricious
+    carefree
+    cartoonish
+    cathartic
+    celebratory
+    cerebral
+    cheerful
+    child-like
+    circular
+    clinical
+    cold
+    comic
+    complex
+    concise
+    confident
+    confrontational
+    cosmopolitan
+    crunchy
+    cynical
+    sarcastic
+    dark
+    declamatory
+    defiant
+    delicate
+    demonic
+    desperate
+    detached
+    devotional
+    difficult
+    dignified
+    noble
+    dramatic
+    dreamy
+    driving
+    druggy
+    earnest
+    earthy
+    ebullient
+    eccentric
+    ecstatic
+    eerie
+    effervescent
+    elaborate
+    elegant
+    elegiac
+    energetic
+    enigmatic
+    epic
+    erotic
+    ethereal
+    euphoric
+    exciting
+    exotic
+    explosive
+    extroverted
+    exuberant
+    fantastic
+    fantasy-like
+    feral
+    feverish
+    fierce
+    fiery
+    flashy
+    flowing
+    fractured
+    freewheeling
+    fun
+    funereal
+    gentle
+    giddy
+    gleeful
+    gloomy
+    graceful
+    greasy
+    grim
+    gritty
+    gutsy
+    happy
+    harsh
+    hedonistic
+    heroic
+    hostile
+    humorous
+    hungry
+    hymn-like
+    hyper
+    hypnotic
+    improvisatory
+    indulgent
+    innocent
+    insular
+    intense
+    intimate
+    introspective
+    ironic
+    irreverent
+    jovial
+    joyous
+    kinetic
+    knotty
+    laid-Back
+    mellow
+    languid
+    lazy
+    light
+    literate
+    lively
+    lonely
+    lush
+    lyrical
+    macabre
+    magical
+    majestic
+    malevolent
+    manic
+    marching
+    martial
+    meandering
+    mechanical
+    meditative
+    melancholy
+    menacing
+    messy
+    mighty
+    monastic
+    monumental
+    motoric
+    mysterious
+    mystical
+    naive
+    narcotic
+    narrative
+    negative
+    nervous
+    jittery
+    nihilistic
+    nocturnal
+    nostalgic
+    ominous
+    optimistic
+    opulent
+    organic
+    ornate
+    outraged
+    outrageous
+    paranoid
+    passionate
+    pastoral
+    patriotic
+    perky
+    philosophical
+    plain
+    plaintive
+    playful
+    poignant
+    positive
+    powerful
+    precious
+    provocative
+    pulsing
+    pure
+    quirky
+    rambunctious
+    ramshackle
+    raucous
+    reassuring
+    consoling
+    rebellious
+    reckless
+    refined
+    reflective
+    regretful
+    relaxed
+    reserved
+    resolute
+    restrained
+    reverent
+    rhapsodic
+    rollicking
+    romantic
+    rousing
+    rowdy
+    rustic
+    sacred
+    sad
+    sarcastic
+    sardonic
+    satirical
+    savage
+    scary
+    scattered
+    searching
+    self-Conscious
+    sensual
+    sentimental
+    serious
+    severe
+    sexual
+    sexy
+    shimmering
+    silly
+    sleazy
+    slick
+    smooth
+    snide
+    soft
+    quiet
+    somber
+    soothing
+    sophisticated
+    spacey
+    sparkling
+    sparse
+    spicy
+    spiritual
+    spontaneous
+    spooky
+    sprawling
+    sprightly
+    springlike
+    stately
+    street-Smart
+    striding
+    strong
+    stylish
+    suffocating
+    sugary
+    summery
+    suspenseful
+    swaggering
+    sweet
+    swinging
+    technical
+    tender
+    tense
+    anxious
+    theatrical
+    thoughtful
+    threatening
+    thrilling
+    thuggish
+    tragic
+    transparent
+    translucent
+    trashy
+    trippy
+    triumphant
+    tuneful
+    turbulent
+    uncompromising
+    understated
+    unsettling
+    uplifting
+    urgent
+    virile
+    visceral
+    volatile
+    vulgar
+    warm
+    weary
+    whimsical
+    wintry
+    wistful
+    witty
+    wry
+    yearning
+]
