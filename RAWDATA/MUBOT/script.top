@@ -62,7 +62,9 @@ t: Ok, then how have you been these days?
 
 t: Hum.. do you have a hobby?
 
-t: Finished.
+t: Finished
+
+t: Bye
 
 u: ( modify genre )
 	$genre0 = null
