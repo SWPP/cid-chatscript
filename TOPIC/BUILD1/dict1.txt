@@ -1,5 +1,8 @@
 ﻿+ mubot 
 + defaultbot 
++ c_pop 
++ j_pop 
++ k_pop 
 + fractured VERB_PAST VERB_PAST_PARTICIPLE VERB ADJECTIVE_PARTICIPLE NOUN_ADJECTIVE GRADE5_6 
 + striding VERB_PRESENT_PARTICIPLE VERB 
 + unsettling VERB_PRESENT_PARTICIPLE VERB 

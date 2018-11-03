@@ -1,63 +1,111 @@
-topic: ~introductions repeat keep []
+TOPIC: ~introduction repeat keep []
 
 t: [Hello][Hi][Hey], I will help you to find good song.
-	a: (~yes) ^reuse(GENRE)
-	a: (!no thank) You're welcome. ^reuse(GENRE)
-	a: (~no) Oh.. please let me help you.
-		b: (~yes) Thank you so much! ^reuse(GENRE)
-		b: (~no) Haha I will help you regardless of your will.
+	a: ( !no [ thank thanks ] ) You're welcome. ^reuse(GENRE)
+	a: ( ~no ) Oh.. please let me help you.
+		b: ( ~yes ) Thank you so much! ^reuse(GENRE)
+		b: ( ~no ) Haha I will help you regardless of your will.
 
-u: GENRE (!$genre0)
+u: GENRE ( !$genre0 )
 	Which genre of song do you want?
-	a: (_~genre * _~genre)
-		Oh, you want genre \" '_0 \" and \" '_1 \"!
+	a: ( _~genre * _~genre )
+		Do you want genre \" '_0 \" and \" '_1 \"?
 		$genre0 = '_0
 		$genre1 = '_1
-	a: (_~genre)
-		Oh, you want genre \" '_0 \"!
+		b: ( ~no )
+			$genre0 = null
+			$genre1 = null
+			OK, then ^reuse(GENRE)
+	a: ( _~genre )
+		Do you want genre \" '_0 \"?
 		$genre0 = '_0
 		$genre1 = null
-	a: ()
+		b: ( ~no )
+			$genre0 = null
+			OK, then ^reuse(GENRE)
+	a: ( )
 		Oh, please tell me genre in general.
 		^reuse(GENRE)
 
-u: MOOD (!$mood0)
+u: MOOD ( !$mood0 )
 	Which mood of song do you like?
-	a: (_~mood * _~mood)
-		OK. You like mood \" '_0 \" and \" '_1 \".
+	a: ( _~mood * _~mood )
+		Do you like mood \" '_0 \" and \" '_1 \"?
 		$mood0 = '_0
 		$mood1 = '_1
-	a: (_~mood)
-		OK. You like mood \" '_0 \".
+		b: ( ~no )
+			$mood0 = null
+			$mood1 = null
+			OK, then ^reuse(MOOD)
+	a: ( _~mood )
+		Do you like mood \" '_0 \"?
 		$mood0 = '_0
 		$mood1 = null
-	a: ()
+		b: ( ~no )
+			$mood0 = null
+			OK, then ^reuse(MOOD)
+	a: ( )
 		Oh, please tell me mood you like.
 		^reuse(MOOD)
 
-u: (modify genre)
-	^reuse(GENRE)
+u: ( $genre0 $mood0 )
+	^respond(~talk)
 
-u: (modify mood)
-	^reuse(MOOD)
 
-u: ($genre1 $mood1)
-	You want $genre0 and $genre1 genre and $mood0 and $mood1 song.
-	If you want to modify one of these, type "modify genre/mood"
+TOPIC: ~talk repeat keep []
 
-u: ($genre0 $mood1)
-	You want $genre0 genre and $mood0 and $mood1 song.
-	If you want to modify one of these, type "modify genre/mood"
+t: Ok, then how have you been these days?
 
-u: ($genre1 $mood0)
-	You want $genre0 and $genre1 genre and $mood0 song.
-	If you want to modify one of these, type "modify genre/mood"
+u: ( modify genre )
+	$genre0 = null
+	^respond(~introduction)
 
-u: ($genre0 $mood0)
-	You want $genre0 genre and $mood0 song.
-	If you want to modify one of these, type "modify genre/mood"
+u: ( modify mood )
+	$mood0 = null
+	^respond(~introduction)
 
-concept: ~genre [metal rock "R&B" soul pop latin jazz "hip hop" folk electronic country comedy blues pop rap c-pop j-pop k-pop ballad]
+u: ( genre $genre1 )
+	You want $genre0 and $genre1 genre.
+	If you want to modify, type "modify genre"
+
+u: ( genre $genre0 )
+	You want $genre0 genre.
+	If you want to modify, type "modify genre"
+
+u: ( mood $mood1 )
+	You want $mood1 song.
+	If you want to modify, type "modify mood"
+
+u: ( mood $mood0 )
+	You want $mood0 song.
+	If you want to modify, type "modify mood"
+
+
+
+concept: ~genre [
+	metal 
+	rock 
+	"R&B" 
+	soul 
+	pop 
+	latin 
+	jazz 
+	"hip hop" 
+	folk 
+	electronic 
+	country 
+	comedy 
+	blues 
+	pop 
+	rap 
+	c-pop 
+	j-pop 
+	k-pop 
+	ballad
+	"c pop"
+	"j pop"
+	"k pop"
+]
 concept: ~mood [
     acerbic
     aggressive
