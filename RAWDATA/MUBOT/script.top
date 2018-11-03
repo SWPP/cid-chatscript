@@ -55,6 +55,12 @@ u: ( $genre0 $mood0 )
 TOPIC: ~talk repeat keep []
 
 t: Ok, then how have you been these days?
+	a: ( !not [ good nice awesome fine ] )
+		Oh, do you have a good thing?
+	a: ( [ bad terrible ] )
+		Why? Do you have a bad thing?
+
+t: Hum.. do you have a hobby?
 
 u: ( modify genre )
 	$genre0 = null
@@ -73,7 +79,7 @@ u: ( genre $genre0 )
 	If you want to modify, type "modify genre"
 
 u: ( mood $mood1 )
-	You want $mood1 song.
+	You want $mood0 and $mood1 song.
 	If you want to modify, type "modify mood"
 
 u: ( mood $mood0 )
