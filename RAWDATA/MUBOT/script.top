@@ -1,4 +1,4 @@
-TOPIC: ~introduction repeat keep priority []
+TOPIC: ~introduction repeat keep []
 
 t: [Hello][Hi][Hey], I will help you to find good song.
 	a: ( !no [ thank thanks ] ) You're welcome. ^reuse(GENRE)
@@ -53,6 +53,9 @@ u: ( $genre0 $mood0 )
 
 
 TOPIC: ~talk repeat keep []
+
+u: ( [!$genre0 !$mood0] )
+	^respond(~introduction)
 
 t: Ok, then how have you been these days?
 	a: ( !not [ good nice awesome fine ] )
