@@ -68,6 +68,12 @@ t: Finished
 
 t: Bye
 
+t: You can check genre or mood you like.
+
+t: Type "genre" or "mood"
+
+t: Really bye
+
 u: ( modify genre )
 	$genre0 = null
 	^respond(~introduction)
