@@ -249,53 +249,50 @@ file: 0  /home/sungjae/cid-chatscript/RAWDATA/MUBOT/script.top
           line: 52 0  # ^respond ( ~talk ) 
           Complexity of rule ~introduction.3.0- u: 1
     topic: 55  ~talk
-        rule: 57  ~talk.0.0 u: 
+        rule: 57  ~talk.0.0 t: 
           line: 57 0  # ^respond ( ~introduction ) 
-          Complexity of rule ~talk.0.0- u: 1
-        rule: 58  ~talk.1.0 u: 
-          line: 58 0  # ^respond ( ~introduction ) 
-          Complexity of rule ~talk.1.0- u: 1
-        rule: 60  ~talk.2.0- t: 
-          line: 60 0  # Ok, then how have you been the
+          Complexity of rule ~talk.0.0- t: 1
+        rule: 59  ~talk.1.0- t: 
+          line: 59 0  # Ok, then how have you been the
+          Complexity of rule ~talk.1.0- t: 1
+        rule: 60  ~talk.1.1 a: 
+          line: 61 0  # Oh, do you have a good thing? 
+          Complexity of rule ~talk.1.1- a: 1
+        rule: 62  ~talk.1.2 a: 
+          line: 63 0  # Why? Do you have a bad thing? 
+          Complexity of rule ~talk.1.2- a: 1
+        rule: 65  ~talk.2.0- t: 
+          line: 65 0  # Hum.. do you have a hobby? 
           Complexity of rule ~talk.2.0- t: 1
-        rule: 61  ~talk.2.1 a: 
-          line: 62 0  # Oh, do you have a good thing? 
-          Complexity of rule ~talk.2.1- a: 1
-        rule: 63  ~talk.2.2 a: 
-          line: 64 0  # Why? Do you have a bad thing? 
-          Complexity of rule ~talk.2.2- a: 1
-        rule: 66  ~talk.3.0- t: 
-          line: 66 0  # Hum.. do you have a hobby? 
+        rule: 67  ~talk.3.0- t: 
+          line: 67 0  # Finished 
           Complexity of rule ~talk.3.0- t: 1
-        rule: 68  ~talk.4.0- t: 
-          line: 68 0  # Finished 
+        rule: 69  ~talk.4.0- t: 
+          line: 69 0  # Bye 
           Complexity of rule ~talk.4.0- t: 1
-        rule: 70  ~talk.5.0- t: 
-          line: 70 0  # Bye 
-          Complexity of rule ~talk.5.0- t: 1
-        rule: 72  ~talk.6.0 u: 
-          line: 73 0  # $genre0 = null 
-          line: 74 15  # ^respond ( ~introduction ) 
+        rule: 71  ~talk.5.0 u: 
+          line: 72 0  # $genre0 = null 
+          line: 73 15  # ^respond ( ~introduction ) 
+          Complexity of rule ~talk.5.0- u: 1
+        rule: 75  ~talk.6.0 u: 
+          line: 76 0  # $mood0 = null 
+          line: 77 14  # ^respond ( ~introduction ) 
           Complexity of rule ~talk.6.0- u: 1
-        rule: 76  ~talk.7.0 u: 
-          line: 77 0  # $mood0 = null 
-          line: 78 14  # ^respond ( ~introduction ) 
+        rule: 79  ~talk.7.0 u: 
+          line: 80 0  # You want $genre0 and $genre1 g
+          line: 81 36  # If you want to modify, type "m
           Complexity of rule ~talk.7.0- u: 1
-        rule: 80  ~talk.8.0 u: 
-          line: 81 0  # You want $genre0 and $genre1 g
-          line: 82 36  # If you want to modify, type "m
+        rule: 83  ~talk.8.0 u: 
+          line: 84 0  # You want $genre0 genre. 
+          line: 85 24  # If you want to modify, type "m
           Complexity of rule ~talk.8.0- u: 1
-        rule: 84  ~talk.9.0 u: 
-          line: 85 0  # You want $genre0 genre. 
-          line: 86 24  # If you want to modify, type "m
+        rule: 87  ~talk.9.0 u: 
+          line: 88 0  # You want $mood0 and $mood1 son
+          line: 89 33  # If you want to modify, type "m
           Complexity of rule ~talk.9.0- u: 1
-        rule: 88  ~talk.10.0 u: 
-          line: 89 0  # You want $mood0 and $mood1 son
-          line: 90 33  # If you want to modify, type "m
+        rule: 91  ~talk.10.0 u: 
+          line: 92 0  # You want $mood0 song. 
+          line: 93 22  # If you want to modify, type "m
           Complexity of rule ~talk.10.0- u: 1
-        rule: 92  ~talk.11.0 u: 
-          line: 93 0  # You want $mood0 song. 
-          line: 94 22  # If you want to modify, type "m
-          Complexity of rule ~talk.11.0- u: 1
-    concept: 98  ~genre
-    concept: 122  ~mood
+    concept: 97  ~genre
+    concept: 121  ~mood

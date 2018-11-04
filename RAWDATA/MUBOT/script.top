@@ -54,8 +54,7 @@ u: ( $genre0 $mood0 )
 
 TOPIC: ~talk repeat keep []
 
-u: ( !$genre0 ) ^respond(~introduction)
-u: ( !$mood0 ) ^respond(~introduction)
+t: ( [ !$genre0 !$mood0 ] ) ^respond(~introduction)
 
 t: Ok, then how have you been these days?
 	a: ( !not [ good nice awesome fine ] )
