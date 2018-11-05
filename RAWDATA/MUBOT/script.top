@@ -1,10 +1,12 @@
 TOPIC: ~introduction repeat keep []
 
 t: [Hello][Hi][Hey], I will help you to find good song.
-	a: ( !no [ thank thanks ] ) You're welcome. ^reuse(GENRE)
-	a: ( ~no ) Oh.. please let me help you.
+	a: ( ) ^reuse(ASK)
+
+t: ASK ( ) So I will ask you some questions. Is it OK?
+	a: ( ~no ) Oh.. please let me ask you.
 		b: ( ~yes ) Thank you so much! ^reuse(GENRE)
-		b: ( ~no ) Haha I will help you regardless of your will.
+		b: ( ~no ) Haha I will ask you regardless of your will.
 
 u: GENRE ( !$genre0 )
 	Which genre of song do you want?
@@ -24,7 +26,7 @@ u: GENRE ( !$genre0 )
 			$genre0 = null
 			OK, then ^reuse(GENRE)
 	a: ( )
-		Oh, please tell me genre in general.
+		Please tell me genre like ["jazz"]["pop"]["ballad"]["k-pop"]["blues"].
 		^reuse(GENRE)
 
 u: MOOD ( !$mood0 )
@@ -45,7 +47,7 @@ u: MOOD ( !$mood0 )
 			$mood0 = null
 			OK, then ^reuse(MOOD)
 	a: ( )
-		Oh, please tell me mood you like.
+		Please tell me mood like ["fun"]["calm"]["elegant"]["lazy"]["sad"]["happy"] song.
 		^reuse(MOOD)
 
 u: ( $genre0 $mood0 )
@@ -59,8 +61,20 @@ t: ( [ !$genre0 !$mood0 ] ) ^respond(~introduction)
 t: Ok, then how have you been these days?
 	a: ( !not [ good nice awesome fine ] )
 		Oh, do you have a good thing?
+		b: ( ~yes )
+			What is it?
+			c: ( )
+				Wow! Congratulation!!
+		b: ( )
+			Haha, there will be better things!!
 	a: ( [ bad terrible ] )
 		Why? Do you have a bad thing?
+		b: ( ~yes )
+			What is it?
+			c: ( )
+				Oh.. I'm so sorry about it
+		b: ( )
+			Cheer up!! There will be a good thing
 
 t: Hum.. do you have a hobby?
 
