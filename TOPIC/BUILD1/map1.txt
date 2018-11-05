@@ -246,7 +246,7 @@ file: 0  /home/sungjae/cid-chatscript/RAWDATA/MUBOT/script.top
           Complexity of rule ~introduction.3.4- b: 1
         rule: 49  ~introduction.3.5 a: 
           line: 50 0  # Please tell me mood like [ "fu
-          line: 51 99  # ^reuse ( MOOD ) 
+          line: 51 95  # ^reuse ( MOOD ) 
           Complexity of rule ~introduction.3.5- a: 1
         rule: 53  ~introduction.4.0 u: 
           line: 54 0  # ^respond ( ~talk ) 
@@ -256,7 +256,7 @@ file: 0  /home/sungjae/cid-chatscript/RAWDATA/MUBOT/script.top
           line: 59 0  # ^respond ( ~introduction ) 
           Complexity of rule ~talk.0.0- t: 1
         rule: 61  ~talk.1.0- t: 
-          line: 61 0  # You can check genre or mood yo
+          line: 61 0  # From now on, you can check gen
           Complexity of rule ~talk.1.0- t: 1
         rule: 63  ~talk.2.0- t: 
           line: 63 0  # Type "genre" or "mood" . 
@@ -329,76 +329,85 @@ file: 0  /home/sungjae/cid-chatscript/RAWDATA/MUBOT/script.top
           line: 116 0  # Cheer up!! There will be a goo
           Complexity of rule ~talk.9.13- b: 1
         rule: 118  ~talk.10.0- t: 
-          line: 118 0  # I'm so bored. Let's talk anoth
+          line: 118 0  # I see. Let's talk about anothe
           Complexity of rule ~talk.10.0- t: 1
         rule: 120  ~talk.11.0- t: 
-          line: 120 0  # Did you run away from home whe
+          line: 120 0  # Let's talk about our childhood
           Complexity of rule ~talk.11.0- t: 1
-        rule: 121  ~talk.11.1 a: 
-          line: 122 0  # Was it fun? 
-          Complexity of rule ~talk.11.1- a: 1
-        rule: 123  ~talk.11.2 a: 
-          line: 124 0  # You should try it some time. T
-          Complexity of rule ~talk.11.2- a: 1
-        rule: 126  ~talk.12.0-RUNAWAY t: 
-          line: 127 0  # I ran away once, but my parent
-          Complexity of rule ~talk.12.0-RUNAWAY t: 1
-        rule: 129  ~talk.13.0- t: 
-          line: 129 0  # What scared you as a kid? 
+        rule: 122  ~talk.12.0- t: 
+          line: 122 0  # Did you run away from home whe
+          Complexity of rule ~talk.12.0- t: 1
+        rule: 123  ~talk.12.1 a: 
+          line: 124 0  # Was it fun? 
+          Complexity of rule ~talk.12.1- a: 1
+        rule: 125  ~talk.12.2 a: 
+          line: 126 0  # You should try it some time. T
+          Complexity of rule ~talk.12.2- a: 1
+        rule: 128  ~talk.13.0- t: 
+          line: 128 0  # I ran away once, but my parent
           Complexity of rule ~talk.13.0- t: 1
-        rule: 130  ~talk.13.1 a: 
-          line: 131 0  # Did you use a nightlite? 
-          Complexity of rule ~talk.13.1- a: 1
-        rule: 132  ~talk.13.2 b: 
-          line: 133 0  # Hum.. You were scared of darkn
-          Complexity of rule ~talk.13.2- b: 1
-        rule: 134  ~talk.13.3 b: 
-          line: 135 0  # If you used it, maybe you were
-          Complexity of rule ~talk.13.3- b: 1
-        rule: 136  ~talk.13.4 a: 
-          line: 137 0  # Food? How weird. 
-          Complexity of rule ~talk.13.4- a: 1
-        rule: 138  ~talk.13.5 a: 
-          line: 139 0  # There are no non-human monster
-          Complexity of rule ~talk.13.5- a: 1
-        rule: 140  ~talk.13.6 a: 
-          line: 141 0  # I guess your parents didn't te
-          Complexity of rule ~talk.13.6- a: 1
-        rule: 142  ~talk.13.7 a: 
-          line: 143 0  # Are you afraid of all insects?
-          Complexity of rule ~talk.13.7- a: 1
-        rule: 144  ~talk.13.8 b: 
-          line: 145 0  # Haha insects are not threateni
-          Complexity of rule ~talk.13.8- b: 1
-        rule: 146  ~talk.13.9 a: 
-          line: 147 0  # You and Indiana Jones. Snakes 
-          Complexity of rule ~talk.13.9- a: 1
-        rule: 148  ~talk.13.10 a: 
-          line: 149 0  # Big animals are scary. Tiny on
-          Complexity of rule ~talk.13.10- a: 1
-        rule: 150  ~talk.13.11 a: 
-          line: 151 0  # Do you still have bad dreams n
-          Complexity of rule ~talk.13.11- a: 1
-        rule: 152  ~talk.13.12 b: 
-          line: 152 0  # That's too bad. Maybe you shou
-          Complexity of rule ~talk.13.12- b: 1
-        rule: 153  ~talk.13.13 b: 
-          line: 153 0  # I guess you no longer go to ho
-          Complexity of rule ~talk.13.13- b: 1
-        rule: 154  ~talk.13.14 a: 
-          line: 155 0  # Haha all fathers are strict to
-          Complexity of rule ~talk.13.14- a: 1
-        rule: 156  ~talk.13.15 a: 
-          line: 157 0  # Haha your mother were strict t
-          Complexity of rule ~talk.13.15- a: 1
-        rule: 158  ~talk.13.16 a: 
-          line: 159 0  # Wow you were so brave! 
-          Complexity of rule ~talk.13.16- a: 1
-        rule: 161  ~talk.14.0-SCARE t: 
-          line: 161 0  # I was scared of machines. I ha
-          Complexity of rule ~talk.14.0-SCARE t: 1
-        rule: 163  ~talk.15.0- t: 
-          line: 163 0  # Good Bye 
+        rule: 130  ~talk.14.0- t: 
+          line: 130 0  # Was there anything which scare
+          Complexity of rule ~talk.14.0- t: 1
+        rule: 131  ~talk.14.1 a: 
+          line: 132 0  # What scared you? 
+          Complexity of rule ~talk.14.1- a: 1
+        rule: 133  ~talk.14.2 b: 
+          line: 134 0  # Did you use a nightlite? 
+          Complexity of rule ~talk.14.2- b: 1
+        rule: 135  ~talk.14.3 c: 
+          line: 136 0  # Hum.. You were scared of darkn
+          Complexity of rule ~talk.14.3- c: 1
+        rule: 137  ~talk.14.4 c: 
+          line: 138 0  # If you used it, maybe you were
+          Complexity of rule ~talk.14.4- c: 1
+        rule: 139  ~talk.14.5 b: 
+          line: 140 0  # Food? How weird. 
+          Complexity of rule ~talk.14.5- b: 1
+        rule: 141  ~talk.14.6 b: 
+          line: 142 0  # There are no non-human monster
+          Complexity of rule ~talk.14.6- b: 1
+        rule: 143  ~talk.14.7 b: 
+          line: 144 0  # I guess your parents didn't te
+          Complexity of rule ~talk.14.7- b: 1
+        rule: 145  ~talk.14.8 b: 
+          line: 146 0  # Are you afraid of all insects?
+          Complexity of rule ~talk.14.8- b: 1
+        rule: 147  ~talk.14.9 c: 
+          line: 148 0  # Haha insects are not threateni
+          Complexity of rule ~talk.14.9- c: 1
+        rule: 149  ~talk.14.10 b: 
+          line: 150 0  # You and Indiana Jones. Snakes 
+          Complexity of rule ~talk.14.10- b: 1
+        rule: 151  ~talk.14.11 b: 
+          line: 152 0  # Big animals are scary. Tiny on
+          Complexity of rule ~talk.14.11- b: 1
+        rule: 153  ~talk.14.12 b: 
+          line: 154 0  # Do you still have bad dreams n
+          Complexity of rule ~talk.14.12- b: 1
+        rule: 155  ~talk.14.13 c: 
+          line: 155 0  # That's too bad. Maybe you shou
+          Complexity of rule ~talk.14.13- c: 1
+        rule: 156  ~talk.14.14 c: 
+          line: 156 0  # I guess you no longer go to ho
+          Complexity of rule ~talk.14.14- c: 1
+        rule: 157  ~talk.14.15 b: 
+          line: 158 0  # Haha all fathers are strict to
+          Complexity of rule ~talk.14.15- b: 1
+        rule: 159  ~talk.14.16 b: 
+          line: 160 0  # Haha your mother were strict t
+          Complexity of rule ~talk.14.16- b: 1
+        rule: 161  ~talk.14.17 a: 
+          line: 162 0  # Wow you were so brave! 
+          Complexity of rule ~talk.14.17- a: 1
+        rule: 164  ~talk.15.0- t: 
+          line: 164 0  # I was scared of machines. I ha
           Complexity of rule ~talk.15.0- t: 1
-    concept: 166  ~genre
-    concept: 190  ~mood
+        rule: 166  ~talk.16.0- t: 
+          line: 166 0  # Thank you for talking with me.
+          Complexity of rule ~talk.16.0- t: 1
+        rule: 168  ~talk.17.0- t: 
+          line: 168 0  # Good Bye! 
+          Complexity of rule ~talk.17.0- t: 1
+    concept: 171  ~genre
+    concept: 195  ~mood
