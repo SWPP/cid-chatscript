@@ -148,7 +148,13 @@ t: What scared you as a kid?
 	a: ( [ dream nightmare ] ) 
 		Do you still have bad dreams now? 
 		b: ( ~yes ) That's too bad. Maybe you should give up sleeping. 
-		b: ( ~no ) I guess you no longer go to horror movies. 
+		b: ( ~no ) I guess you no longer go to horror movies.
+	a: ( father )
+		Haha all fathers are strict to children.
+	a: ( mother )
+		Haha your mother were strict to you.
+	a: ( [ nothing not brave ] )
+		Wow you were so brave!
 
 t: SCARE ( ) I was  scared of machines. I had vivid dreams of the Terminator robots. 
 

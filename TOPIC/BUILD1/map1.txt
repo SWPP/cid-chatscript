@@ -382,11 +382,20 @@ file: 0  /home/sungjae/cid-chatscript/RAWDATA/MUBOT/script.top
         rule: 151  ~talk.12.13 b: 
           line: 151 0  # I guess you no longer go to ho
           Complexity of rule ~talk.12.13- b: 1
-        rule: 153  ~talk.13.0-SCARE t: 
-          line: 153 0  # I was scared of machines. I ha
+        rule: 152  ~talk.12.14 a: 
+          line: 153 0  # Haha all fathers are strict to
+          Complexity of rule ~talk.12.14- a: 1
+        rule: 154  ~talk.12.15 a: 
+          line: 155 0  # Haha your mother were strict t
+          Complexity of rule ~talk.12.15- a: 1
+        rule: 156  ~talk.12.16 a: 
+          line: 157 0  # Wow you were so brave! 
+          Complexity of rule ~talk.12.16- a: 1
+        rule: 159  ~talk.13.0-SCARE t: 
+          line: 159 0  # I was scared of machines. I ha
           Complexity of rule ~talk.13.0-SCARE t: 1
-        rule: 155  ~talk.14.0- t: 
-          line: 155 0  # Good Bye 
+        rule: 161  ~talk.14.0- t: 
+          line: 161 0  # Good Bye 
           Complexity of rule ~talk.14.0- t: 1
-    concept: 158  ~genre
-    concept: 182  ~mood
+    concept: 164  ~genre
+    concept: 188  ~mood
