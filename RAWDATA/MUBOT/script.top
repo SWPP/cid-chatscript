@@ -58,35 +58,9 @@ TOPIC: ~talk repeat keep []
 
 t: ( [ !$genre0 !$mood0 ] ) ^respond(~introduction)
 
-t: Ok, then how have you been these days?
-	a: ( !not [ good nice awesome fine ] )
-		Oh, do you have a good thing?
-		b: ( ~yes )
-			What is it?
-			c: ( )
-				Wow! Congratulation!!
-		b: ( )
-			Haha, there will be better things!!
-	a: ( [ bad terrible ] )
-		Why? Do you have a bad thing?
-		b: ( ~yes )
-			What is it?
-			c: ( )
-				Oh.. I'm so sorry about it
-		b: ( )
-			Cheer up!! There will be a good thing
-
-t: Hum.. do you have a hobby?
-
-t: Finished
-
-t: Bye
-
 t: You can check genre or mood you like.
 
-t: Type "genre" or "mood"
-
-t: Really bye
+t: Type "genre" or "mood".
 
 u: ( modify genre )
 	$genre0 = null
@@ -112,6 +86,73 @@ u: ( mood $mood0 )
 	You want $mood0 song.
 	If you want to modify, type "modify mood"
 
+t: Ok, then how have you been these days?
+	a: ( !not [ good nice awesome fine ] )
+		Oh, do you have a good thing?
+		b: ( ~yes )
+			What is it?
+			c: SECRET ( [ secret "not say" ] )
+				OK I'll not ask :(
+				d: ( [ joke say ] )
+					Haha, so what is it?
+					e: ( [ secret "not say" ] )
+						I'm sulky.
+						^reuse(SECRET)
+					e: ( )
+						Oh, that's very good!! Congratulation ~~
+			c: ( )
+				Wow! Congratulation!!
+		b: ( )
+			Haha, there will be better things!!
+	a: ( [ bad terrible ] )
+		Why? Do you have a bad thing?
+		b: ( ~yes )
+			What is it?
+			c: ( [ secret "not say" ] )
+				I understand how you feel. It's ok.
+			c: ( )
+				Oh.. I'm so sorry about it.
+		b: ( )
+			Cheer up!! There will be a good thing.
+
+t: Did you run away from home when you were little? 
+	a: ( ~yes ) 
+		Was it fun?
+	a: ( ~no ) 
+		You should try it some time. Travel broadens the mind. 
+
+t: RUNAWAY ( )
+	I ran away once, but my parents found me and dragged me back. 
+
+t: What scared you as a kid? 
+    a: ( [ dark darkness ] ) 
+		Did you use a nightlite? 
+		b: ( ~yes )
+			Hum.. You were scared of darkness very much!
+		b: ( ~no )
+			If you used it, maybe you were not scared of darkness.
+	a: ( ~food ) 
+		Food? How weird. 
+	a: ( [ monster "boogie man"] ) 
+		There are no non-human monsters out there. 
+	a: ( ~mythical_creatures ) 
+		I guess your parents didn't tell you such creatures didn't exist. 
+	a: ( ~insects ) 
+		Are you afraid of all insects?
+		b: ( ~yes )
+			Haha insects are not threatening. They are just ugly.
+	a: ( snake ) 
+		You and Indiana Jones. Snakes would rather slither off than attack you. Just don't surprise them. 
+	a: ( ~animals ) 
+		Big animals are scary. Tiny ones are not, except to some timid humans.
+	a: ( [ dream nightmare ] ) 
+		Do you still have bad dreams now? 
+		b: ( ~yes ) That's too bad. Maybe you should give up sleeping. 
+		b: ( ~no ) I guess you no longer go to horror movies. 
+
+t: SCARE ( ) I was  scared of machines. I had vivid dreams of the Terminator robots. 
+
+t: Good Bye
 
 
 concept: ~genre [

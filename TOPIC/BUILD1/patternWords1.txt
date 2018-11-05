@@ -1,6 +1,8 @@
 ﻿loopback
 direct_v
 chatoutput
+not_say
+boogie_man
 latin
 c-pop
 j-pop
