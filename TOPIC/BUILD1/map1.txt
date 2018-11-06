@@ -409,5 +409,8 @@ file: 0  /home/sungjae/cid-chatscript/RAWDATA/MUBOT/script.top
         rule: 168  ~talk.17.0- t: 
           line: 168 0  # Good Bye! 
           Complexity of rule ~talk.17.0- t: 1
-    concept: 171  ~genre
-    concept: 195  ~mood
+        rule: 170  ~talk.18.0 ?: 
+          line: 171 0  # I am Mubot. Very handsome guy.
+          Complexity of rule ~talk.18.0- ?: 1
+    concept: 174  ~genre
+    concept: 198  ~mood

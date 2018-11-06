@@ -167,6 +167,9 @@ t: Thank you for talking with me.
 
 t: Good Bye!
 
+?: ( << are you >> )
+	I am Mubot. Very handsome guy.
+
 
 concept: ~genre [
 	metal 
