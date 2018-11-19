@@ -1,93 +1,15 @@
-TOPIC: ~introduction repeat keep []
-
-t: [Hello][Hi][Hey], I will help you to find good song.
-	a: ( ) ^reuse(ASK)
-
-t: ASK ( ) So I will ask you some questions. Is it OK?
-	a: ( ~no ) Oh.. please let me ask you.
-		b: ( ~yes ) Thank you so much! ^reuse(GENRE)
-		b: ( ~no ) Haha I will ask you regardless of your will.
-
-u: GENRE ( !$genre0 )
-	Which genre of song do you want?
-	a: ( _~genre * _~genre )
-		Do you want genre \" '_0 \" and \" '_1 \"?
-		$genre0 = '_0
-		$genre1 = '_1
-		b: ( ~no )
-			$genre0 = null
-			$genre1 = null
-			OK, then ^reuse(GENRE)
-	a: ( _~genre )
-		Do you want genre \" '_0 \"?
-		$genre0 = '_0
-		$genre1 = null
-		b: ( ~no )
-			$genre0 = null
-			OK, then ^reuse(GENRE)
-	a: ( )
-		Please tell me genre like ["jazz"]["pop"]["ballad"]["k-pop"]["blues"].
-		^reuse(GENRE)
-
-u: MOOD ( !$mood0 )
-	Which mood of song do you like?
-	a: ( _~mood * _~mood )
-		Do you like mood \" '_0 \" and \" '_1 \"?
-		$mood0 = '_0
-		$mood1 = '_1
-		b: ( ~no )
-			$mood0 = null
-			$mood1 = null
-			OK, then ^reuse(MOOD)
-	a: ( _~mood )
-		Do you like mood \" '_0 \"?
-		$mood0 = '_0
-		$mood1 = null
-		b: ( ~no )
-			$mood0 = null
-			OK, then ^reuse(MOOD)
-	a: ( )
-		Please tell me mood like ["fun"]["calm"]["elegant"]["lazy"]["sad"]["happy"].
-		^reuse(MOOD)
-
-u: ( $genre0 $mood0 )
-	^respond(~talk)
-
-
 TOPIC: ~talk repeat keep []
 
-t: ( [ !$genre0 !$mood0 ] ) ^respond(~introduction)
+t: Welecome to be here!
 
-t: From now on, you can check genre or mood you like.
+t: Have you been here before?
+	a: ( ~yes )
+		Welcome back!
+	a: ( ~no )
+		Then welcome to your first time.
 
-t: Type "genre" or "mood".
-
-u: ( modify genre )
-	$genre0 = null
-	^respond(~introduction)
-
-u: ( modify mood )
-	$mood0 = null
-	^respond(~introduction)
-
-u: ( genre $genre1 )
-	You want $genre0 and $genre1 genre.
-	If you want to modify, type "modify genre"
-
-u: ( genre $genre0 )
-	You want $genre0 genre.
-	If you want to modify, type "modify genre"
-
-u: ( mood $mood1 )
-	You want $mood0 and $mood1 song.
-	If you want to modify, type "modify mood"
-
-u: ( mood $mood0 )
-	You want $mood0 song.
-	If you want to modify, type "modify mood"
-
-t: Ok, then how have you been these days?
-	a: ( !not [ nice good awesome fine ] )
+t: How have you been these days?
+	a: ( [ nice good awesome fine ] )
 		Oh, do you have a good thing?
 		b: ( ~yes )
 			What is it?
@@ -99,11 +21,13 @@ t: Ok, then how have you been these days?
 						I'm sulky.
 						^reuse(SECRET)
 					e: ( )
-						Oh, that's very good!! Congratulation ~~
+						Oh, that's very good!! Congratulation!!
 			c: ( )
 				Wow! Congratulation!!
+		b: ( ~no )
+			Haha, there will be good things!!
 		b: ( )
-			Haha, there will be better things!!
+			Oh! Maybe you felt fine. Congratulation!
 	a: ( [ bad terrible ] )
 		Why? Do you have a bad thing?
 		b: ( ~yes )
@@ -112,12 +36,33 @@ t: Ok, then how have you been these days?
 				I understand how you feel. It's ok.
 			c: ( )
 				Oh.. I'm so sorry about it.
+		b: ( ~no )
+			Then why you feel bad?
+			c: ( )
+				I believe you'll have wonderful experience soon. Cheer up!
 		b: ( )
 			Cheer up!! There will be a good thing.
+	a: ( )
+		Haha you have nothing special in your life.
 
-t: I see. Let's talk about another topic.
+t: Do you have any topic to talk with me?
+	a: ( ~yes )
+		What is it?
+		b: ( )
+			Sorry I don't have any knowledge about it..	
+	a: ( ~no )
+		Then what about talking about our childhood?
+		b: ( !not [ ~yes good agree nice fine ] )
+			$child = true
+			^respond(~childhood)
+		b: ( )
+			Hum.. then what will we do?
 
-t: Let's talk about our childhood.
+
+TOPIC: ~childhood repeat keep []
+
+t: ( !$child )
+	^respond(~talk)
 
 t: Did you run away from home when you were little? 
 	a: ( ~yes ) 
@@ -163,13 +108,6 @@ t: Was there anything which scared you as a kid?
 
 t: I was  scared of machines. I had vivid dreams of the Terminator robots. 
 
-t: Thank you for talking with me.
-
-t: Good Bye!
-
-?: ( << are you >> )
-	I am Mubot. Very handsome guy.
-
 
 concept: ~genre [
 	metal 
@@ -195,306 +133,4 @@ concept: ~genre [
 	"j pop"
 	"k pop"
 ]
-concept: ~mood [
-    acerbic
-    aggressive
-    agreeable
-    airy
-    ambitious
-    amiable
-    good-Natured
-    angry
-    angst-Ridden
-    anguished
-    distraught
-    angular
-    animated
-    apocalyptic
-    arid
-    athletic
-    atmospheric
-    austere
-    autumnal
-    belligerent
-    benevolent
-    bitter
-    bittersweet
-    bleak
-    boisterous
-    bombastic
-    brash
-    brassy
-    bravado
-    bright
-    brittle
-    brooding
-    calm
-    peaceful
-    campy
-    capricious
-    carefree
-    cartoonish
-    cathartic
-    celebratory
-    cerebral
-    cheerful
-    child-like
-    circular
-    clinical
-    cold
-    comic
-    complex
-    concise
-    confident
-    confrontational
-    cosmopolitan
-    crunchy
-    cynical
-    sarcastic
-    dark
-    declamatory
-    defiant
-    delicate
-    demonic
-    desperate
-    detached
-    devotional
-    difficult
-    dignified
-    noble
-    dramatic
-    dreamy
-    driving
-    druggy
-    earnest
-    earthy
-    ebullient
-    eccentric
-    ecstatic
-    eerie
-    effervescent
-    elaborate
-    elegant
-    elegiac
-    energetic
-    enigmatic
-    epic
-    erotic
-    ethereal
-    euphoric
-    exciting
-    exotic
-    explosive
-    extroverted
-    exuberant
-    fantastic
-    fantasy-like
-    feral
-    feverish
-    fierce
-    fiery
-    flashy
-    flowing
-    fractured
-    freewheeling
-    fun
-    funereal
-    gentle
-    giddy
-    gleeful
-    gloomy
-    graceful
-    greasy
-    grim
-    gritty
-    gutsy
-    happy
-    harsh
-    hedonistic
-    heroic
-    hostile
-    humorous
-    hungry
-    hymn-like
-    hyper
-    hypnotic
-    improvisatory
-    indulgent
-    innocent
-    insular
-    intense
-    intimate
-    introspective
-    ironic
-    irreverent
-    jovial
-    joyous
-    kinetic
-    knotty
-    laid-Back
-    mellow
-    languid
-    lazy
-    light
-    literate
-    lively
-    lonely
-    lush
-    lyrical
-    macabre
-    magical
-    majestic
-    malevolent
-    manic
-    marching
-    martial
-    meandering
-    mechanical
-    meditative
-    melancholy
-    menacing
-    messy
-    mighty
-    monastic
-    monumental
-    motoric
-    mysterious
-    mystical
-    naive
-    narcotic
-    narrative
-    negative
-    nervous
-    jittery
-    nihilistic
-    nocturnal
-    nostalgic
-    ominous
-    optimistic
-    opulent
-    organic
-    ornate
-    outraged
-    outrageous
-    paranoid
-    passionate
-    pastoral
-    patriotic
-    perky
-    philosophical
-    plain
-    plaintive
-    playful
-    poignant
-    positive
-    powerful
-    precious
-    provocative
-    pulsing
-    pure
-    quirky
-    rambunctious
-    ramshackle
-    raucous
-    reassuring
-    consoling
-    rebellious
-    reckless
-    refined
-    reflective
-    regretful
-    relaxed
-    reserved
-    resolute
-    restrained
-    reverent
-    rhapsodic
-    rollicking
-    romantic
-    rousing
-    rowdy
-    rustic
-    sacred
-    sad
-    sarcastic
-    sardonic
-    satirical
-    savage
-    scary
-    scattered
-    searching
-    self-Conscious
-    sensual
-    sentimental
-    serious
-    severe
-    sexual
-    sexy
-    shimmering
-    silly
-    sleazy
-    slick
-    smooth
-    snide
-    soft
-    quiet
-    somber
-    soothing
-    sophisticated
-    spacey
-    sparkling
-    sparse
-    spicy
-    spiritual
-    spontaneous
-    spooky
-    sprawling
-    sprightly
-    springlike
-    stately
-    street-Smart
-    striding
-    strong
-    stylish
-    suffocating
-    sugary
-    summery
-    suspenseful
-    swaggering
-    sweet
-    swinging
-    technical
-    tender
-    tense
-    anxious
-    theatrical
-    thoughtful
-    threatening
-    thrilling
-    thuggish
-    tragic
-    transparent
-    translucent
-    trashy
-    trippy
-    triumphant
-    tuneful
-    turbulent
-    uncompromising
-    understated
-    unsettling
-    uplifting
-    urgent
-    virile
-    visceral
-    volatile
-    vulgar
-    warm
-    weary
-    whimsical
-    wintry
-    wistful
-    witty
-    wry
-    yearning
-]
+

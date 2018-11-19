@@ -177,240 +177,164 @@ file: 0  /home/sungjae/cid-chatscript/RAWDATA/HARRY/simplecontrol.top
           loopend 162 269  
           Complexity of rule ~xpostprocess.0.0- t: 3
 file: 0  /home/sungjae/cid-chatscript/RAWDATA/MUBOT/script.top
-    topic: 1  ~introduction
-        rule: 3  ~introduction.0.0- t: 
-          line: 3 0  # [ Hello ] [ Hi ] [ Hey ] , I w
-          Complexity of rule ~introduction.0.0- t: 1
-        rule: 4  ~introduction.0.1 a: 
-          line: 4 0  # ^reuse ( ASK ) 
-          Complexity of rule ~introduction.0.1- a: 1
-        rule: 6  ~introduction.1.0-ASK t: 
-          line: 6 0  # So I will ask you some questio
-          Complexity of rule ~introduction.1.0-ASK t: 1
-        rule: 7  ~introduction.1.1 a: 
-          line: 7 0  # Oh.. please let me ask you. 
-          Complexity of rule ~introduction.1.1- a: 1
-        rule: 8  ~introduction.1.2 b: 
-          line: 8 0  # Thank you so much! ^reuse ( GE
-          Complexity of rule ~introduction.1.2- b: 1
-        rule: 9  ~introduction.1.3 b: 
-          line: 9 0  # Haha I will ask you regardless
-          Complexity of rule ~introduction.1.3- b: 1
-        rule: 11  ~introduction.2.0-GENRE u: 
-          line: 12 0  # Which genre of song do you wan
-          Complexity of rule ~introduction.2.0-GENRE u: 1
-        rule: 13  ~introduction.2.1 a: 
-          line: 14 0  # Do you want genre \" '_0 \" an
-          line: 15 43  # $genre0 = '_0 
-          line: 16 57  # $genre1 = '_1 
-          Complexity of rule ~introduction.2.1- a: 1
-        rule: 17  ~introduction.2.2 b: 
-          line: 18 0  # $genre0 = null 
-          line: 19 15  # $genre1 = null 
-          line: 20 30  # OK, then ^reuse ( GENRE ) 
-          Complexity of rule ~introduction.2.2- b: 1
-        rule: 21  ~introduction.2.3 a: 
-          line: 22 0  # Do you want genre \" '_0 \"? 
-          line: 23 29  # $genre0 = '_0 
-          line: 24 43  # $genre1 = null 
-          Complexity of rule ~introduction.2.3- a: 1
-        rule: 25  ~introduction.2.4 b: 
-          line: 26 0  # $genre0 = null 
-          line: 27 15  # OK, then ^reuse ( GENRE ) 
-          Complexity of rule ~introduction.2.4- b: 1
-        rule: 28  ~introduction.2.5 a: 
-          line: 29 0  # Please tell me genre like [ "j
-          line: 30 86  # ^reuse ( GENRE ) 
-          Complexity of rule ~introduction.2.5- a: 1
-        rule: 32  ~introduction.3.0-MOOD u: 
-          line: 33 0  # Which mood of song do you like
-          Complexity of rule ~introduction.3.0-MOOD u: 1
-        rule: 34  ~introduction.3.1 a: 
-          line: 35 0  # Do you like mood \" '_0 \" and
-          line: 36 42  # $mood0 = '_0 
-          line: 37 55  # $mood1 = '_1 
-          Complexity of rule ~introduction.3.1- a: 1
-        rule: 38  ~introduction.3.2 b: 
-          line: 39 0  # $mood0 = null 
-          line: 40 14  # $mood1 = null 
-          line: 41 28  # OK, then ^reuse ( MOOD ) 
-          Complexity of rule ~introduction.3.2- b: 1
-        rule: 42  ~introduction.3.3 a: 
-          line: 43 0  # Do you like mood \" '_0 \"? 
-          line: 44 28  # $mood0 = '_0 
-          line: 45 41  # $mood1 = null 
-          Complexity of rule ~introduction.3.3- a: 1
-        rule: 46  ~introduction.3.4 b: 
-          line: 47 0  # $mood0 = null 
-          line: 48 14  # OK, then ^reuse ( MOOD ) 
-          Complexity of rule ~introduction.3.4- b: 1
-        rule: 49  ~introduction.3.5 a: 
-          line: 50 0  # Please tell me mood like [ "fu
-          line: 51 95  # ^reuse ( MOOD ) 
-          Complexity of rule ~introduction.3.5- a: 1
-        rule: 53  ~introduction.4.0 u: 
-          line: 54 0  # ^respond ( ~talk ) 
-          Complexity of rule ~introduction.4.0- u: 1
-    topic: 57  ~talk
-        rule: 59  ~talk.0.0 t: 
-          line: 59 0  # ^respond ( ~introduction ) 
+    topic: 1  ~talk
+        rule: 3  ~talk.0.0- t: 
+          line: 3 0  # Welecome to be here! 
           Complexity of rule ~talk.0.0- t: 1
-        rule: 61  ~talk.1.0- t: 
-          line: 61 0  # From now on, you can check gen
+        rule: 5  ~talk.1.0- t: 
+          line: 5 0  # Have you been here before? 
           Complexity of rule ~talk.1.0- t: 1
-        rule: 63  ~talk.2.0- t: 
-          line: 63 0  # Type "genre" or "mood" . 
+        rule: 6  ~talk.1.1 a: 
+          line: 7 0  # Welcome back! 
+          Complexity of rule ~talk.1.1- a: 1
+        rule: 8  ~talk.1.2 a: 
+          line: 9 0  # Then welcome to your first tim
+          Complexity of rule ~talk.1.2- a: 1
+        rule: 11  ~talk.2.0- t: 
+          line: 11 0  # How have you been these days? 
           Complexity of rule ~talk.2.0- t: 1
-        rule: 65  ~talk.3.0 u: 
-          line: 66 0  # $genre0 = null 
-          line: 67 15  # ^respond ( ~introduction ) 
-          Complexity of rule ~talk.3.0- u: 1
-        rule: 69  ~talk.4.0 u: 
-          line: 70 0  # $mood0 = null 
-          line: 71 14  # ^respond ( ~introduction ) 
-          Complexity of rule ~talk.4.0- u: 1
-        rule: 73  ~talk.5.0 u: 
-          line: 74 0  # You want $genre0 and $genre1 g
-          line: 75 36  # If you want to modify, type "m
-          Complexity of rule ~talk.5.0- u: 1
-        rule: 77  ~talk.6.0 u: 
-          line: 78 0  # You want $genre0 genre. 
-          line: 79 24  # If you want to modify, type "m
-          Complexity of rule ~talk.6.0- u: 1
-        rule: 81  ~talk.7.0 u: 
-          line: 82 0  # You want $mood0 and $mood1 son
-          line: 83 33  # If you want to modify, type "m
-          Complexity of rule ~talk.7.0- u: 1
-        rule: 85  ~talk.8.0 u: 
-          line: 86 0  # You want $mood0 song. 
-          line: 87 22  # If you want to modify, type "m
-          Complexity of rule ~talk.8.0- u: 1
-        rule: 89  ~talk.9.0- t: 
-          line: 89 0  # Ok, then how have you been the
-          Complexity of rule ~talk.9.0- t: 1
-        rule: 90  ~talk.9.1 a: 
-          line: 91 0  # Oh, do you have a good thing? 
-          Complexity of rule ~talk.9.1- a: 1
-        rule: 92  ~talk.9.2 b: 
-          line: 93 0  # What is it? 
-          Complexity of rule ~talk.9.2- b: 1
-        rule: 94  ~talk.9.3-SECRET c: 
-          line: 95 0  # OK I'll not ask : ( 
-          Complexity of rule ~talk.9.3-SECRET c: 1
-        rule: 96  ~talk.9.4 d: 
-          line: 97 0  # Haha, so what is it? 
-          Complexity of rule ~talk.9.4- d: 1
-        rule: 98  ~talk.9.5 e: 
-          line: 99 0  # I'm sulky. 
-          line: 100 11  # ^reuse ( SECRET ) 
-          Complexity of rule ~talk.9.5- e: 1
-        rule: 101  ~talk.9.6 e: 
-          line: 102 0  # Oh, that's very good!! Congrat
-          Complexity of rule ~talk.9.6- e: 1
-        rule: 103  ~talk.9.7 c: 
-          line: 104 0  # Wow! Congratulation!! 
-          Complexity of rule ~talk.9.7- c: 1
-        rule: 105  ~talk.9.8 b: 
-          line: 106 0  # Haha, there will be better thi
-          Complexity of rule ~talk.9.8- b: 1
-        rule: 107  ~talk.9.9 a: 
-          line: 108 0  # Why? Do you have a bad thing? 
-          Complexity of rule ~talk.9.9- a: 1
-        rule: 109  ~talk.9.10 b: 
-          line: 110 0  # What is it? 
-          Complexity of rule ~talk.9.10- b: 1
-        rule: 111  ~talk.9.11 c: 
-          line: 112 0  # I understand how you feel. It'
-          Complexity of rule ~talk.9.11- c: 1
-        rule: 113  ~talk.9.12 c: 
-          line: 114 0  # Oh.. I'm so sorry about it. 
-          Complexity of rule ~talk.9.12- c: 1
-        rule: 115  ~talk.9.13 b: 
-          line: 116 0  # Cheer up!! There will be a goo
-          Complexity of rule ~talk.9.13- b: 1
-        rule: 118  ~talk.10.0- t: 
-          line: 118 0  # I see. Let's talk about anothe
-          Complexity of rule ~talk.10.0- t: 1
-        rule: 120  ~talk.11.0- t: 
-          line: 120 0  # Let's talk about our childhood
-          Complexity of rule ~talk.11.0- t: 1
-        rule: 122  ~talk.12.0- t: 
-          line: 122 0  # Did you run away from home whe
-          Complexity of rule ~talk.12.0- t: 1
-        rule: 123  ~talk.12.1 a: 
-          line: 124 0  # Was it fun? 
-          Complexity of rule ~talk.12.1- a: 1
-        rule: 125  ~talk.12.2 a: 
-          line: 126 0  # You should try it some time. T
-          Complexity of rule ~talk.12.2- a: 1
-        rule: 128  ~talk.13.0- t: 
-          line: 128 0  # I ran away once, but my parent
-          Complexity of rule ~talk.13.0- t: 1
-        rule: 130  ~talk.14.0- t: 
-          line: 130 0  # Was there anything which scare
-          Complexity of rule ~talk.14.0- t: 1
-        rule: 131  ~talk.14.1 a: 
-          line: 132 0  # What scared you? 
-          Complexity of rule ~talk.14.1- a: 1
-        rule: 133  ~talk.14.2 b: 
-          line: 134 0  # Did you use a nightlite? 
-          Complexity of rule ~talk.14.2- b: 1
-        rule: 135  ~talk.14.3 c: 
-          line: 136 0  # Hum.. You were scared of darkn
-          Complexity of rule ~talk.14.3- c: 1
-        rule: 137  ~talk.14.4 c: 
-          line: 138 0  # If you used it, maybe you were
-          Complexity of rule ~talk.14.4- c: 1
-        rule: 139  ~talk.14.5 b: 
-          line: 140 0  # Food? How weird. 
-          Complexity of rule ~talk.14.5- b: 1
-        rule: 141  ~talk.14.6 b: 
-          line: 142 0  # There are no non-human monster
-          Complexity of rule ~talk.14.6- b: 1
-        rule: 143  ~talk.14.7 b: 
-          line: 144 0  # I guess your parents didn't te
-          Complexity of rule ~talk.14.7- b: 1
-        rule: 145  ~talk.14.8 b: 
-          line: 146 0  # Are you afraid of all insects?
-          Complexity of rule ~talk.14.8- b: 1
-        rule: 147  ~talk.14.9 c: 
-          line: 148 0  # Haha insects are not threateni
-          Complexity of rule ~talk.14.9- c: 1
-        rule: 149  ~talk.14.10 b: 
-          line: 150 0  # You and Indiana Jones. Snakes 
-          Complexity of rule ~talk.14.10- b: 1
-        rule: 151  ~talk.14.11 b: 
-          line: 152 0  # Big animals are scary. Tiny on
-          Complexity of rule ~talk.14.11- b: 1
-        rule: 153  ~talk.14.12 b: 
-          line: 154 0  # Do you still have bad dreams n
-          Complexity of rule ~talk.14.12- b: 1
-        rule: 155  ~talk.14.13 c: 
-          line: 155 0  # That's too bad. Maybe you shou
-          Complexity of rule ~talk.14.13- c: 1
-        rule: 156  ~talk.14.14 c: 
-          line: 156 0  # I guess you no longer go to ho
-          Complexity of rule ~talk.14.14- c: 1
-        rule: 157  ~talk.14.15 b: 
-          line: 158 0  # Haha all fathers are strict to
-          Complexity of rule ~talk.14.15- b: 1
-        rule: 159  ~talk.14.16 b: 
-          line: 160 0  # Haha your mother were strict t
-          Complexity of rule ~talk.14.16- b: 1
-        rule: 161  ~talk.14.17 a: 
-          line: 162 0  # Wow you were so brave! 
-          Complexity of rule ~talk.14.17- a: 1
-        rule: 164  ~talk.15.0- t: 
-          line: 164 0  # I was scared of machines. I ha
-          Complexity of rule ~talk.15.0- t: 1
-        rule: 166  ~talk.16.0- t: 
-          line: 166 0  # Thank you for talking with me.
-          Complexity of rule ~talk.16.0- t: 1
-        rule: 168  ~talk.17.0- t: 
-          line: 168 0  # Good Bye! 
-          Complexity of rule ~talk.17.0- t: 1
-        rule: 170  ~talk.18.0 ?: 
-          line: 171 0  # I am Mubot. Very handsome guy.
-          Complexity of rule ~talk.18.0- ?: 1
-    concept: 174  ~genre
-    concept: 198  ~mood
+        rule: 12  ~talk.2.1 a: 
+          line: 13 0  # Oh, do you have a good thing? 
+          Complexity of rule ~talk.2.1- a: 1
+        rule: 14  ~talk.2.2 b: 
+          line: 15 0  # What is it? 
+          Complexity of rule ~talk.2.2- b: 1
+        rule: 16  ~talk.2.3-SECRET c: 
+          line: 17 0  # OK I'll not ask : ( 
+          Complexity of rule ~talk.2.3-SECRET c: 1
+        rule: 18  ~talk.2.4 d: 
+          line: 19 0  # Haha, so what is it? 
+          Complexity of rule ~talk.2.4- d: 1
+        rule: 20  ~talk.2.5 e: 
+          line: 21 0  # I'm sulky. 
+          line: 22 11  # ^reuse ( SECRET ) 
+          Complexity of rule ~talk.2.5- e: 1
+        rule: 23  ~talk.2.6 e: 
+          line: 24 0  # Oh, that's very good!! Congrat
+          Complexity of rule ~talk.2.6- e: 1
+        rule: 25  ~talk.2.7 c: 
+          line: 26 0  # Wow! Congratulation!! 
+          Complexity of rule ~talk.2.7- c: 1
+        rule: 27  ~talk.2.8 b: 
+          line: 28 0  # Haha, there will be good thing
+          Complexity of rule ~talk.2.8- b: 1
+        rule: 29  ~talk.2.9 b: 
+          line: 30 0  # Oh! Maybe you felt fine. Congr
+          Complexity of rule ~talk.2.9- b: 1
+        rule: 31  ~talk.2.10 a: 
+          line: 32 0  # Why? Do you have a bad thing? 
+          Complexity of rule ~talk.2.10- a: 1
+        rule: 33  ~talk.2.11 b: 
+          line: 34 0  # What is it? 
+          Complexity of rule ~talk.2.11- b: 1
+        rule: 35  ~talk.2.12 c: 
+          line: 36 0  # I understand how you feel. It'
+          Complexity of rule ~talk.2.12- c: 1
+        rule: 37  ~talk.2.13 c: 
+          line: 38 0  # Oh.. I'm so sorry about it. 
+          Complexity of rule ~talk.2.13- c: 1
+        rule: 39  ~talk.2.14 b: 
+          line: 40 0  # Then why you feel bad? 
+          Complexity of rule ~talk.2.14- b: 1
+        rule: 41  ~talk.2.15 c: 
+          line: 42 0  # I believe you'll have wonderfu
+          Complexity of rule ~talk.2.15- c: 1
+        rule: 43  ~talk.2.16 b: 
+          line: 44 0  # Cheer up!! There will be a goo
+          Complexity of rule ~talk.2.16- b: 1
+        rule: 45  ~talk.2.17 a: 
+          line: 46 0  # Haha you have nothing special 
+          Complexity of rule ~talk.2.17- a: 1
+        rule: 48  ~talk.3.0- t: 
+          line: 48 0  # Do you have any topic to talk 
+          Complexity of rule ~talk.3.0- t: 1
+        rule: 49  ~talk.3.1 a: 
+          line: 50 0  # What is it? 
+          Complexity of rule ~talk.3.1- a: 1
+        rule: 51  ~talk.3.2 b: 
+          line: 52 0  # Sorry I don't have any knowled
+          Complexity of rule ~talk.3.2- b: 1
+        rule: 53  ~talk.3.3 a: 
+          line: 54 0  # Then what about talking about 
+          Complexity of rule ~talk.3.3- a: 1
+        rule: 55  ~talk.3.4 b: 
+          line: 56 0  # $child = true 
+          line: 57 14  # ^respond ( ~childhood ) 
+          Complexity of rule ~talk.3.4- b: 1
+        rule: 58  ~talk.3.5 b: 
+          line: 59 0  # Hum.. then what will we do? 
+          Complexity of rule ~talk.3.5- b: 1
+    topic: 62  ~childhood
+        rule: 64  ~childhood.0.0 t: 
+          line: 65 0  # ^respond ( ~talk ) 
+          Complexity of rule ~childhood.0.0- t: 1
+        rule: 67  ~childhood.1.0- t: 
+          line: 67 0  # Did you run away from home whe
+          Complexity of rule ~childhood.1.0- t: 1
+        rule: 68  ~childhood.1.1 a: 
+          line: 69 0  # Was it fun? 
+          Complexity of rule ~childhood.1.1- a: 1
+        rule: 70  ~childhood.1.2 a: 
+          line: 71 0  # You should try it some time. T
+          Complexity of rule ~childhood.1.2- a: 1
+        rule: 73  ~childhood.2.0- t: 
+          line: 73 0  # I ran away once, but my parent
+          Complexity of rule ~childhood.2.0- t: 1
+        rule: 75  ~childhood.3.0- t: 
+          line: 75 0  # Was there anything which scare
+          Complexity of rule ~childhood.3.0- t: 1
+        rule: 76  ~childhood.3.1 a: 
+          line: 77 0  # What scared you? 
+          Complexity of rule ~childhood.3.1- a: 1
+        rule: 78  ~childhood.3.2 b: 
+          line: 79 0  # Did you use a nightlite? 
+          Complexity of rule ~childhood.3.2- b: 1
+        rule: 80  ~childhood.3.3 c: 
+          line: 81 0  # Hum.. You were scared of darkn
+          Complexity of rule ~childhood.3.3- c: 1
+        rule: 82  ~childhood.3.4 c: 
+          line: 83 0  # If you used it, maybe you were
+          Complexity of rule ~childhood.3.4- c: 1
+        rule: 84  ~childhood.3.5 b: 
+          line: 85 0  # Food? How weird. 
+          Complexity of rule ~childhood.3.5- b: 1
+        rule: 86  ~childhood.3.6 b: 
+          line: 87 0  # There are no non-human monster
+          Complexity of rule ~childhood.3.6- b: 1
+        rule: 88  ~childhood.3.7 b: 
+          line: 89 0  # I guess your parents didn't te
+          Complexity of rule ~childhood.3.7- b: 1
+        rule: 90  ~childhood.3.8 b: 
+          line: 91 0  # Are you afraid of all insects?
+          Complexity of rule ~childhood.3.8- b: 1
+        rule: 92  ~childhood.3.9 c: 
+          line: 93 0  # Haha insects are not threateni
+          Complexity of rule ~childhood.3.9- c: 1
+        rule: 94  ~childhood.3.10 b: 
+          line: 95 0  # You and Indiana Jones. Snakes 
+          Complexity of rule ~childhood.3.10- b: 1
+        rule: 96  ~childhood.3.11 b: 
+          line: 97 0  # Big animals are scary. Tiny on
+          Complexity of rule ~childhood.3.11- b: 1
+        rule: 98  ~childhood.3.12 b: 
+          line: 99 0  # Do you still have bad dreams n
+          Complexity of rule ~childhood.3.12- b: 1
+        rule: 100  ~childhood.3.13 c: 
+          line: 100 0  # That's too bad. Maybe you shou
+          Complexity of rule ~childhood.3.13- c: 1
+        rule: 101  ~childhood.3.14 c: 
+          line: 101 0  # I guess you no longer go to ho
+          Complexity of rule ~childhood.3.14- c: 1
+        rule: 102  ~childhood.3.15 b: 
+          line: 103 0  # Haha all fathers are strict to
+          Complexity of rule ~childhood.3.15- b: 1
+        rule: 104  ~childhood.3.16 b: 
+          line: 105 0  # Haha your mother were strict t
+          Complexity of rule ~childhood.3.16- b: 1
+        rule: 106  ~childhood.3.17 a: 
+          line: 107 0  # Wow you were so brave! 
+          Complexity of rule ~childhood.3.17- a: 1
+        rule: 109  ~childhood.4.0- t: 
+          line: 109 0  # I was scared of machines. I ha
+          Complexity of rule ~childhood.4.0- t: 1
+    concept: 112  ~genre
