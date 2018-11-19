@@ -53,61 +53,85 @@ t: Do you have any topic to talk with me?
 	a: ( ~no )
 		Then what about talking about our childhood?
 		b: ( !not [ ~yes good agree nice fine ] )
-			$child = true
-			^respond(~childhood)
+			^reuse(CHILDHOOD)
 		b: ( )
-			Hum.. then what will we do?
+			Then.. what will we do?
 
+u: CHILDHOOD ( $never )
+    Did you run away from home when you were little?
+    a: ( ~yes )
+        Was it fun?
+		b: ( )
+			^reuse(CHILDHOOD2)
+    a: ( ~no )
+        You should try it some time. Travel broadens the mind.
+		b: CHILDHOOD2 ( )
+    		I ran away once, but my parents found me and dragged me back. 
+			c: ( )
+    			Was there anything which scared you as a kid? 
+    			d: ( ~yes )
+        			What scared you?
+        			e: ( [ dark darkness ] ) 
+            			Did you use a nightlite? 
+            			f: ( ~yes )
+                			Hum.. You were scared of darkness very much!
+							^reuse(CHILDHOOD3)
+            			f: ( ~no )
+                			If you used it, maybe you were not scared of darkness.
+							^reuse(CHILDHOOD3)
+        			e: ( ~food ) 
+            			Food? How weird.
+						^reuse(CHILDHOOD3) 
+        			e: ( [ monster "boogie man"] ) 
+            			There are no non-human monsters out there. 
+						^reuse(CHILDHOOD3) 
+        			e: ( ~mythical_creatures ) 
+            			I guess your parents didn't tell you such creatures didn't exist. 
+						^reuse(CHILDHOOD3) 
+        			e: ( ~insects ) 
+            			Are you afraid of all insects?
+            			f: ( ~yes )
+                			Haha insects are not threatening. They are just ugly.
+							^reuse(CHILDHOOD3)
+						f: ( ~no )
+							It's a good thing you don't scare them.
+							^reuse(CHILDHOOD3)
+        			e: ( snake )
+            			You and Indiana Jones. Snakes would rather slither off than attack you. Just don't surprise them.
+						^reuse(CHILDHOOD3) 
+        			e: ( ~animals )
+            			Big animals are scary. Tiny ones are not, except to some timid humans.
+						^reuse(CHILDHOOD3) 
+        			e: ( [ dream nightmare ] )
+            			Do you still have bad dreams now?
+            			f: ( ~yes ) 
+							That's too bad. Maybe you should give up sleeping.
+							^reuse(CHILDHOOD3)
+            			f: ( ~no ) 
+							I guess you no longer go to horror movies.
+							^reuse(CHILDHOOD3)
+        			e: ( father )
+            			Haha all fathers are strict to children.
+						^reuse(CHILDHOOD3) 
+        			e: ( mother )
+            			Haha your mother were strict to you.
+						^reuse(CHILDHOOD3)
+					e: ( )
+						Haha you were timid!
+						^reuse(CHILDHOOD3) 
+    			d: ( [ nothing ~no not ] )
+        			Wow you were so brave!
+					e: CHILDHOOD3 ( ) .
+						f: ( )
+							I was  scared of machines. I had vivid dreams of the Terminator robots.
+				d: ( )
+					^reuse(CHILDHOOD3)
 
-TOPIC: ~childhood repeat keep []
+#! let's talk about our childhood
+u: ( [ childhood child kid ] )
+	^reuse(CHILDHOOD)
 
-t: ( !$child )
-	^respond(~talk)
-
-t: Did you run away from home when you were little? 
-	a: ( ~yes ) 
-		Was it fun?
-	a: ( ~no ) 
-		You should try it some time. Travel broadens the mind. 
-
-t: I ran away once, but my parents found me and dragged me back. 
-
-t: Was there anything which scared you as a kid? 
-	a: ( ~yes )
-		What scared you?
-    	b: ( [ dark darkness ] ) 
-			Did you use a nightlite? 
-			c: ( ~yes )
-				Hum.. You were scared of darkness very much!
-			c: ( ~no )
-				If you used it, maybe you were not scared of darkness.
-		b: ( ~food ) 
-			Food? How weird. 
-		b: ( [ monster "boogie man"] ) 
-			There are no non-human monsters out there. 
-		b: ( ~mythical_creatures ) 
-			I guess your parents didn't tell you such creatures didn't exist. 
-		b: ( ~insects ) 
-			Are you afraid of all insects?
-			c: ( ~yes )
-				Haha insects are not threatening. They are just ugly.
-		b: ( snake ) 
-			You and Indiana Jones. Snakes would rather slither off than attack you. Just don't surprise them. 
-		b: ( ~animals ) 
-			Big animals are scary. Tiny ones are not, except to some timid humans.
-		b: ( [ dream nightmare ] ) 
-			Do you still have bad dreams now? 
-			c: ( ~yes ) That's too bad. Maybe you should give up sleeping. 
-			c: ( ~no ) I guess you no longer go to horror movies.
-		b: ( father )
-			Haha all fathers are strict to children.
-		b: ( mother )
-			Haha your mother were strict to you.
-	a: ( [ nothing ~no not ] )
-		Wow you were so brave!
-
-t: I was  scared of machines. I had vivid dreams of the Terminator robots. 
-
+t: Good Bye
 
 concept: ~genre [
 	metal 

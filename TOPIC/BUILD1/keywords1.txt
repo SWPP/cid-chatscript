@@ -1,5 +1,4 @@
 ﻿T~control ( )
 T~xpostprocess ( )
 T~talk ( )
-T~childhood ( )
 ~genre ( k_pop j_pop c_pop ballad k-pop j-pop c-pop rap blues comedy country electronic folk hip_hop jazz latin pop soul R&B rock metal )
