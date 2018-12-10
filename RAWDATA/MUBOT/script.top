@@ -11,7 +11,7 @@ t: Have you been here before?
 		Welcome again!
 
 t: How have you been these days?
-	a: ( [ nice good awesome fine ] )
+	a: ( [ nice good awesome fine funny ] )
 		Oh, do you have a good thing?
 		b: ( ~yes )
 			What is it?
@@ -50,6 +50,10 @@ t: How have you been these days?
 t: Do you have any topic to talk with me?
 	a: ( ~yes )
 		What is it?
+		b: ( game )
+			^reuse(OVERWATCH)
+		b: ( childhood )
+			^reuse(CHILDHOOD)
 		b: ( )
 			Sorry I don't have any knowledge about it..	
 	a: ( ~no )
@@ -58,8 +62,35 @@ t: Do you have any topic to talk with me?
 			^reuse(CHILDHOOD)
 		b: ( )
 			Then.. what will we do?
+	a: ( game )
+		^reuse(OVERWATCH)
+	a: ( childhood )
+		^reuse(CHILDHOOD)
 	a: ( )
-		My name is Mubot. Very handsome bot.
+		Sorry I don't know what to say.
+
+u: OVERWATCH ( $never )
+	I like OverWatch!! Do you like OverWatch?
+	a: ( ~yes )
+		Which hero do you play?
+		b: ( [ ana brigitte lucio mercy moira zenyata ] )
+			Your position is supporter. Many people don't want to be healer.
+			c: ( )
+				^reuse(GENJI)
+		b: ( [ ashe bastion doomfist genji hanzo junkrat mccree mei pharah reaper soldier sombra symmetra torbjorn tracer widowmaker ] )
+			Your position is damage dealer. Maybe you like to kill enemy.
+			c: ( )
+				^reuse(GENJI)
+		b: ( [ d.va dva orisa reinhardt roadhog winston "wrecking ball" zarya ] )
+			Your position is tanker. Maybe your team members feel confident due to you.
+			c: ( )
+				^reuse(GENJI)
+		b: GENJI ( )
+			I like to play genji. It's funny to assassinate enemy.
+			c: ( )
+				If you play genji, then you'll feel funny too.
+	a: ( )
+		OverWatch is fun! Have a try!
 
 u: CHILDHOOD ( $never )
     Did you run away from home when you were little?
@@ -67,7 +98,7 @@ u: CHILDHOOD ( $never )
         Was it fun?
 		b: ( )
 			^reuse(CHILDHOOD2)
-    a: ( ~no )
+    a: ( )
         You should try it some time. Travel broadens the mind.
 		b: CHILDHOOD2 ( )
     		I ran away once, but my parents found me and dragged me back. 
@@ -143,6 +174,10 @@ u: CHILDHOOD ( $never )
 						^reuse(CHILDHOOD3)
 				d: CHILDHOOD3 ( )
 					I was  scared of machines. I had vivid dreams of the Terminator robots.
+
+#! Do you like game/overwatch?
+u: ( [ game overwatch ] )
+	^reuse(OVERWATCH)
 
 #! let's talk about our childhood
 u: ( [ childhood child kid ] )
