@@ -246,7 +246,7 @@ file: 0  /home/sungjae/cid-chatscript/RAWDATA/MUBOT/script.top
           line: 46 0  # Cheer up!! There will be a goo
           Complexity of rule ~talk.2.16- b: 1
         rule: 47  ~talk.2.17 a: 
-          line: 48 0  # Haha you have nothing special 
+          line: 48 0  # I see. I feel not bad. 
           Complexity of rule ~talk.2.17- a: 1
         rule: 50  ~talk.3.0- t: 
           line: 50 0  # Do you have any topic to talk 
@@ -270,7 +270,7 @@ file: 0  /home/sungjae/cid-chatscript/RAWDATA/MUBOT/script.top
           line: 62 0  # ^reuse ( CHILDHOOD ) 
           Complexity of rule ~talk.3.6- b: 1
         rule: 63  ~talk.3.7 b: 
-          line: 64 0  # Then.. what will we do? 
+          line: 64 0  # Then.. ^reuse ( MAJOR ) 
           Complexity of rule ~talk.3.7- b: 1
         rule: 65  ~talk.3.8 a: 
           line: 66 0  # ^reuse ( OVERWATCH ) 
@@ -437,13 +437,40 @@ file: 0  /home/sungjae/cid-chatscript/RAWDATA/MUBOT/script.top
         rule: 175  ~talk.5.40-CHILDHOOD3 d: 
           line: 176 0  # I was scared of machines. I ha
           Complexity of rule ~talk.5.40-CHILDHOOD3 d: 1
-        rule: 179  ~talk.6.0 u: 
-          line: 180 0  # ^reuse ( OVERWATCH ) 
-          Complexity of rule ~talk.6.0- u: 1
-        rule: 183  ~talk.7.0 u: 
-          line: 184 0  # ^reuse ( CHILDHOOD ) 
+        rule: 178  ~talk.6.0-MAJOR u: 
+          line: 179 0  # What's your major? 
+          Complexity of rule ~talk.6.0-MAJOR u: 1
+        rule: 180  ~talk.6.1 a: 
+          line: 181 0  # Oh, really? I am majoring in c
+          Complexity of rule ~talk.6.1- a: 1
+        rule: 182  ~talk.6.2 b: 
+          line: 183 0  # ^reuse ( MAJOR2 ) 
+          Complexity of rule ~talk.6.2- b: 1
+        rule: 184  ~talk.6.3 a: 
+          line: 185 0  # Oh, I see. I am majoring in co
+          Complexity of rule ~talk.6.3- a: 1
+        rule: 186  ~talk.6.4-MAJOR2 b: 
+          line: 187 0  # Do you like your major? 
+          Complexity of rule ~talk.6.4-MAJOR2 b: 1
+        rule: 188  ~talk.6.5 c: 
+          line: 189 0  # It's very lucky that you like 
+          Complexity of rule ~talk.6.5- c: 1
+        rule: 190  ~talk.6.6 c: 
+          line: 191 0  # Oh.. Many people don't like th
+          Complexity of rule ~talk.6.6- c: 1
+        rule: 192  ~talk.6.7 d: 
+          line: 193 0  # Don't give up. Cheer up! 
+          Complexity of rule ~talk.6.7- d: 1
+        rule: 194  ~talk.6.8 c: 
+          line: 195 0  # Haha I love my major! 
+          Complexity of rule ~talk.6.8- c: 1
+        rule: 198  ~talk.7.0 u: 
+          line: 199 0  # ^reuse ( OVERWATCH ) 
           Complexity of rule ~talk.7.0- u: 1
-        rule: 186  ~talk.8.0- t: 
-          line: 186 0  # Good Bye 
-          Complexity of rule ~talk.8.0- t: 1
-    concept: 188  ~genre
+        rule: 202  ~talk.8.0 u: 
+          line: 203 0  # ^reuse ( CHILDHOOD ) 
+          Complexity of rule ~talk.8.0- u: 1
+        rule: 205  ~talk.9.0- t: 
+          line: 205 0  # Good Bye 
+          Complexity of rule ~talk.9.0- t: 1
+    concept: 207  ~genre

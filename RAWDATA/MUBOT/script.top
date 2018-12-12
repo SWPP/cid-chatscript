@@ -45,7 +45,7 @@ t: How have you been these days?
 		b: ( )
 			Cheer up!! There will be a good thing.
 	a: ( )
-		Haha you have nothing special in your life.
+		I see. I feel not bad.
 
 t: Do you have any topic to talk with me?
 	a: ( ~yes )
@@ -61,7 +61,7 @@ t: Do you have any topic to talk with me?
 		b: ( !not [ ~yes good agree nice fine ] )
 			^reuse(CHILDHOOD)
 		b: ( )
-			Then.. what will we do?
+			Then.. ^reuse(MAJOR)
 	a: ( game )
 		^reuse(OVERWATCH)
 	a: ( childhood )
@@ -174,6 +174,25 @@ u: CHILDHOOD ( $never )
 						^reuse(CHILDHOOD3)
 				d: CHILDHOOD3 ( )
 					I was  scared of machines. I had vivid dreams of the Terminator robots.
+
+u: MAJOR ( $never )
+	What's your major?
+	a: ( computer )
+		Oh, really? I am majoring in computer engineering too.
+		b: ( )
+			^reuse(MAJOR2)
+	a: ( )
+		Oh, I see. I am majoring in computer engineering.
+		b: MAJOR2 ( )
+			Do you like your major?
+			c: ( ~yes )
+				It's very lucky that you like it.
+			c: ( ~no )
+				Oh.. Many people don't like their major.
+				d: ( )
+					Don't give up. Cheer up!
+			c: ( )
+				Haha I love my major!
 
 #! Do you like game/overwatch?
 u: ( [ game overwatch ] )
