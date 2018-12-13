@@ -12,6 +12,9 @@ u: ( << [ recommend song ] _~genre >> )
 u: ( [ recommend song ] )
 	How about this song?@@recommend: {}
 
+u: ( I will rate _*1 points on _* )
+	Successfully evaluated.@@evaluate: {rating= '_0, title= \" '_1 \"}
+
 t: Welecome to be here!
 
 t: Have you been here before?

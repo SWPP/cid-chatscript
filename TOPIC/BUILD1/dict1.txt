@@ -1,6 +1,7 @@
 ﻿+ faces VERB_PRESENT_3PS NOUN VERB NOUN_PLURAL KINDERGARTEN 
 + mubot 
 + defaultbot 
++ points VERB_PRESENT_3PS NOUN VERB NOUN_PLURAL KINDERGARTEN 
 + bueno_clinic 
 + david_jones 
 + farenthide_&_hubertuse 
