@@ -1,5 +1,8 @@
 TOPIC: ~talk repeat keep []
 
+u: ( [ recommend song ] )
+	How about this song?
+
 t: Welecome to be here!
 
 t: Have you been here before?
@@ -68,6 +71,20 @@ t: Do you have any topic to talk with me?
 		^reuse(CHILDHOOD)
 	a: ( )
 		Sorry I don't know what to say.
+
+t: It's cold these days.
+
+t: When you go out, dress warmly.
+
+t: Christmas is coming soon.
+
+t: I hope this Christmas to be White Christmas.
+
+t: ^reuse(CHRISTMAS)
+
+t: Cheer up for today as well!
+
+t: I cheer all days of yours!
 
 u: OVERWATCH ( $never )
 	I like OverWatch!! Do you like OverWatch?
@@ -194,6 +211,13 @@ u: MAJOR ( $never )
 			c: ( )
 				Haha I love my major!
 
+u: CHRISTMAS ( $never )
+	What will you do on Christmas?
+	a: ( )
+		Haha I will eat tangerines under a blanket!!
+		b: ( )
+			Have a Merry Christmas!
+
 #! Do you like game/overwatch?
 u: ( [ game overwatch ] )
 	^reuse(OVERWATCH)
@@ -203,6 +227,8 @@ u: ( [ childhood child kid ] )
 	^reuse(CHILDHOOD)
 
 t: Good Bye
+
+t: If you want to reset conversation, enter ":reset"
 
 concept: ~genre [
 	metal 
