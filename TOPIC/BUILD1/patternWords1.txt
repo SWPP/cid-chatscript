@@ -25,7 +25,11 @@ winston
 wrecking_ball
 zarya
 boogie_man
+don_'t_know
+dont_know
 overwatch
+x-mas
+x_mas
 latin
 c-pop
 j-pop

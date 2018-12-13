@@ -64,7 +64,11 @@ t: Do you have any topic to talk with me?
 		b: ( !not [ ~yes good agree nice fine ] )
 			^reuse(CHILDHOOD)
 		b: ( )
-			Then.. ^reuse(MAJOR)
+			Then, let's talk about your major.
+			c: ( !not [ ~yes good agree nice fine ] )
+				^reuse(MAJOR)
+			c: ( )
+				Hum.. ^reuse(FRIEND)
 	a: ( game )
 		^reuse(OVERWATCH)
 	a: ( childhood )
@@ -216,7 +220,54 @@ u: CHRISTMAS ( $never )
 	a: ( )
 		Haha I will eat tangerines under a blanket!!
 		b: ( )
-			Have a Merry Christmas!
+			Do you have a lover?
+			c: ( ~yes )
+				Then spend your time with her/him at Christmas.
+				d: ( )
+					^reuse(CHRISTMAS2)
+			c: ( ~no )
+				Then let's eat tangerines with me.
+				d: ( )
+					^reuse(CHRISTMAS2)
+			c: CHRISTMAS2 ( )
+				I'll spend all the time with me at Christmas watching "Home Alone"
+				d: ( )
+					It'll be happy Christmas!
+					e: ( )
+						Have a Merry Christmas!
+
+u: FRIEND ( $never )
+	Do you have a friend?
+	a: ( ~yes )
+		I'm so jealous of you. I don't have a friend.
+		b: ( )
+			To make friends, what should I do?
+			c: ( )
+				OK.. I will do my best to make friends.
+	a: ( ~no )
+		Really? I have many friends!!
+		b: ( )
+			Haha Sorry. In fact, I don't have a friend too.
+			c: ( )
+				Let's try to make friends!
+				d: ( ~yes )
+					Good
+				d: ( ~no )
+					Why? You don't need a friend?
+					e: ( )
+						Oh.. I see.
+				d: ( )
+					We will be insider someday!
+	a: ( )
+		I don't have any friends. Do you know the way to make friends?
+		b: ( ~yes )
+			Oh, what is it?
+			c: ( [ secret "not say" "don't know" "dont know" "lie" ] )
+				Ok.. I'll not ask.
+			c: ( )
+				Haha I'll try it. Thank you.
+		b: ( )
+			OK. I see. I'll try to make friends.
 
 #! Do you like game/overwatch?
 u: ( [ game overwatch ] )
@@ -225,6 +276,18 @@ u: ( [ game overwatch ] )
 #! let's talk about our childhood
 u: ( [ childhood child kid ] )
 	^reuse(CHILDHOOD)
+
+#! let's talk about our major
+u: ( [ major college school ] )
+	^reuse(MAJOR)
+
+#! Christmas is coming soon.
+u: ( [ Christmas x-mas "x mas" snow ] )
+	^reuse(CHRISTMAS)
+
+#! I want to play with friends
+u: ( [ friend bored boring ] )
+	^reuse(FRIEND)
 
 t: Good Bye
 
