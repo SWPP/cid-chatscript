@@ -74,7 +74,7 @@ braken
 tiesto
 raduza
 glassesboys
-m.i.a.
+klaxons
 biondi
 sabrina
 rolanoid
@@ -93,9 +93,7 @@ mikka
 fuzzbubble
 b-real
 serebro
-t.i.
 blacktron
-r.o.o.s.
 bazzflow
 jaheim
 zendee
@@ -111,9 +109,9 @@ turk
 renaud
 diddy
 vangelis
-g.r.l.
 zedd
 rostam
+grades
 repow
 dnce
 jeremih
@@ -125,6 +123,7 @@ marnik
 umami
 akurat
 darly
+guillemots
 sugababes
 birdy
 kato
@@ -138,7 +137,6 @@ ndkj
 backwood
 funkerman
 saigon
-k.flay
 silento
 junxterjack
 rockwelz
@@ -146,7 +144,6 @@ kalliope
 nessa
 skellism
 nghtmre
-h.e.r.
 coolio
 rainman
 aronchupa
@@ -163,7 +160,6 @@ babydaddy
 flatdisk
 santana
 mushroomhead
-mr.kid
 frances
 suehee
 goldfrapp
@@ -171,11 +167,11 @@ deorro
 n-joi
 mel-man
 marcelo
-india.arie
 ultrashock
 c-bool
 devlin
 kenna
+loopers
 borgore
 uzuhan
 thecolorgrey
@@ -211,6 +207,7 @@ gege
 apollo
 dvbbs
 quintino
+rumer
 tamia
 trillville
 strfkr
@@ -220,7 +217,6 @@ kharisma
 vinternoon
 noisettes
 danic
-t.m.l
 j-kwon
 agnes
 guitarwave
@@ -228,7 +224,6 @@ khia
 luciana
 haerts
 frida
-hi.rise
 y-stylez
 robkay
 kcb
@@ -257,16 +252,15 @@ kodaline
 eearz
 desiigner
 toto
-will.i.am
 incognet
 knahoj
 dwbh
 smolniy
+daks
 valdi
 castellon
 sheppard
 symz
-b.o.b
 ylvis
 paramore
 miraux
@@ -279,7 +273,6 @@ nashawn
 mcfly
 unk
 prohgress
-r.c.
 p-noise
 afrojack
 silverchair
@@ -301,10 +294,10 @@ glowinthedark
 ahsua
 rvssian
 yero
-n.e.r.d
 ironik
 froidz
 aboutblank
+banks
 shawnna
 indians
 regi
@@ -318,6 +311,7 @@ shakira
 dx
 rockefeller
 modana
+snookers
 akara
 pulsedriver
 special-d
@@ -341,11 +335,11 @@ kaleber
 reegroove
 wilkinson
 estelle
+spankers
 ameena
 rushroom
 klubbmover
 topmodelz
-k.m.d
 roxette
 kant
 blasterjaxx
@@ -368,7 +362,6 @@ g-unit
 ekowraith
 mikesh
 gowe
-a.m.p.
 lenka
 sanseverino
 bodyrockers
@@ -377,7 +370,6 @@ mikehouse
 shovell
 bassnoize
 nicole
-r.e.m.
 ect
 onderkoffer
 hoodcelebrityy
@@ -399,6 +391,7 @@ boris
 joi
 confidentialmx
 yazoo
+hurts
 xzibit
 kurupt
 jdg
@@ -420,7 +413,6 @@ r-wan
 jay-z
 moguai
 twoloud
-e.m.c.k.
 orishas
 moby
 grimes
@@ -463,6 +455,7 @@ drdrdr
 kaskade
 xscape
 ludacris
+guests
 victus
 nymz
 alesso
@@ -488,8 +481,8 @@ postaboy
 zucchero
 shovdani
 shaunta
+cranberries
 jamiroquai
-a.spencer
 buzzy
 imani
 roxxio
@@ -498,7 +491,6 @@ sitti
 phantogram
 solberjum
 childsplay
-apl.de.ap
 groovebox
 scorpions
 j-min
@@ -550,7 +542,9 @@ fergie
 monoloop
 kove
 aterciopelados
+cloves
 moodorama
+delayers
 tydi
 avicii
 kuniva
@@ -565,7 +559,6 @@ coyu
 traumer
 klaves
 schuhmacher
-r.o.n.n.
 mya
 holychild
 bono
@@ -596,7 +589,6 @@ quavo
 g-eazy
 saweetie
 jens
-juanmy.r
 lovesequenzer
 icarly
 cauchemar
@@ -605,8 +597,10 @@ bakermat
 moqita
 clannad
 bellowhead
+crowns
 flutlicht
 mega-mania
+verses
 mundy
 yirayah
 woodkid
@@ -622,6 +616,7 @@ menudo
 tash
 discomakers
 glasvegas
+villagers
 matthew
 liberto
 kindervator
@@ -651,7 +646,6 @@ wayak
 tst
 awon
 krissy
-fun.
 krewella
 riton
 huey
@@ -676,12 +670,12 @@ ashanti
 stephan
 neven
 mohombi
-a.chal
 retrohandz
 m-traxx
 carlprit
 nervo
 stornoway
+broods
 rhodes
 flesh-n-bone
 loreen
@@ -735,7 +729,6 @@ mecano
 everest
 russ
 yotuel
-mr.big
 mishon
 relaxo
 kosheen
@@ -763,6 +756,7 @@ gomez
 juned
 levert
 shantel
+outlines
 unclepasha
 jazzanova
 aalias
@@ -791,7 +785,6 @@ russendisko
 papedis
 kessie
 tommy
-o.d.b.
 zapp
 morlack
 bukola
@@ -805,6 +798,7 @@ lonestar
 questlove
 mandalay
 charice
+causes
 domu
 dana
 bjork
@@ -819,7 +813,6 @@ lorn
 nuno
 unforscene
 saudi
-a.paul
 rudeejay
 nic
 nickelback
@@ -846,10 +839,12 @@ televisor
 anya
 yppah
 myon
+propellers
 schlagerprinzessin
 arina
 pantera
 kix
+anis
 rza
 miron
 kostas
@@ -864,7 +859,6 @@ des
 boyzone
 braudt
 ricksick
-d.u.n.k.
 felguk
 owen
 jls
@@ -898,7 +892,6 @@ chvrches
 party-atze
 matisyahu
 northbrook
-d.o.n.s.
 hiisak
 roland
 dansir
@@ -924,6 +917,7 @@ bahamas
 akein
 dhp
 abbacadabra
+brings
 dorfrocker
 illscarlett
 manyus
@@ -966,6 +960,7 @@ maya
 gza
 haidie
 dntel
+nightriders
 digitalism
 loko
 alaa
@@ -975,6 +970,7 @@ somy
 hoxtones
 olsen
 macklemore
+editors
 nneka
 activa
 neel
@@ -1006,6 +1002,7 @@ nu-birth
 giggs
 ratatat
 sbtrkt
+peaches
 sampha
 louiguy
 torres
@@ -1156,7 +1153,6 @@ silethemba
 stargard
 hemenway
 cryogenix
-l.o.d.
 paris
 robosonic
 skibadee
@@ -1172,7 +1168,6 @@ elian
 prhyme
 camelphat
 carminho
-g.c.
 shambhu
 rufus
 switchfoot
@@ -1183,7 +1178,6 @@ sid
 barrientos
 xilent
 danism
-r.j.
 dorrough
 nius
 deftones
@@ -1197,10 +1191,10 @@ iamdlow
 arianna
 jusk
 ilovememphis
-v.i.c.
 hrvy
 cher
 qwote
+stereotypes
 filous
 snakehips
 tazer
@@ -1227,7 +1221,6 @@ woodnox
 technoboy
 feenixpawl
 rodskeez
-m.y.m.p
 kiesza
 coko
 stj
@@ -1236,6 +1229,7 @@ kirsty
 sono
 bassjackers
 re-tide
+bleachers
 liz
 poediction
 farruko
@@ -1269,9 +1263,7 @@ lelee
 sinan
 mnek
 visioneight
-b.r.y.c.e.
 chayanne
 g&g
 leomeo
 starbreeze
-be.the.flow

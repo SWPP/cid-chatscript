@@ -21,11 +21,9 @@
 + john_legend 
 + stefflon_don 
 + emeli_sande 
-+ r._kelly 
 + marsha_ambrosius 
 + ella_eyre 
 + calvin_harris 
-+ mary_j._blige 
 + jordin_sparks 
 + mark_ronson 
 + ella_henderson 
@@ -55,7 +53,6 @@
 + anthony_hamilton 
 + digitalmode_&_bueno_clinic 
 + georgia_ku 
-+ k._michelle 
 + marko_penn 
 + meek_mill 
 + the_game 
@@ -170,8 +167,6 @@
 + the_jessy_dixon_singers 
 + mike_hogan 
 + jordi_veliz 
-+ mr._black 
-+ klaxons NOUN NOUN_PLURAL 
 + jessie_j 
 + aaron_neville 
 + mr_hudson 
@@ -185,7 +180,6 @@
 + damon_grey_&_michael_murica 
 + sugar_hill 
 + broz_rodriguez 
-+ p._diddy 
 + dj_drama 
 + wayne_sermon 
 + haiiro_de_rossi 
@@ -306,7 +300,6 @@
 + junkie_xl 
 + rita_ora 
 + jam_master_jay 
-+ ms._roq 
 + new_order 
 + the_heavy 
 + paul_stewart 
@@ -337,11 +330,9 @@
 + boom_face 
 + gary_d 
 + dj_yanny 
-+ alex_m. 
 + barry_love 
 + paul_weller 
 + ted_dwane 
-+ d._smith 
 + darrin_mooney 
 + dual_playaz 
 + alex_hepburn 
@@ -349,7 +340,6 @@
 + lubos_pospisil 
 + win_butler 
 + jess_glynne 
-+ the_d.o.c. 
 + chidera_anamege 
 + tori_amos 
 + tay_dizm 
@@ -366,7 +356,6 @@
 + schoolboy_q 
 + slim_jxmmi 
 + siedah_garrett 
-+ grades VERB_PRESENT_3PS NOUN VERB NOUN_PLURAL KINDERGARTEN 
 + joe_jonas 
 + gwen_stefani 
 + big_boi 
@@ -397,7 +386,6 @@
 + shawn_colvin 
 + eartha_kitt 
 + jose_molina 
-+ corale_voci_bianche_-_g._verdi 
 + miranda_cosgrove 
 + dean_butterworth 
 + alex_goncharenko 
@@ -412,13 +400,11 @@
 + mark_pontius 
 + charis_henry 
 + ian_mcculloch 
-+ guillemots NOUN NOUN_PLURAL 
 + pariston_hills 
 + kevin_sawka 
 + ian_matthews 
 + stephen_large 
 + travis_barker 
-+ harry_connick_jr. 
 + bonnie_tyler 
 + glenn_tipton 
 + duke_ellington 
@@ -616,13 +602,11 @@
 + ben_gibbard 
 + kelvin_swaby 
 + syleena_johnson 
-+ de-grees_vs._the_real_booty_babes 
 + jan_wayne 
 + candy_boys 
 + tilly_and_the_wall 
 + cash_cash 
 + sasha_dith 
-+ loopers NOUN NOUN_PLURAL 
 + secondhand_serenade 
 + michael_mcdonald 
 + the_civil_wars 
@@ -704,7 +688,6 @@
 + reba_mcentire 
 + brian_press 
 + gabrielle_aplin 
-+ portugal_._the_man 
 + alan_pownall 
 + nick_harmer 
 + grant_marshall 
@@ -727,7 +710,6 @@
 + robb_banks 
 + olivia_project 
 + original_television_cast_of_jesus_christ_superstar 
-+ j.j._fad 
 + glass_animals 
 + andy_connell 
 + daniel_johns 
@@ -739,7 +721,6 @@
 + morten_harket 
 + atli_orvarsson 
 + kevin_baird 
-+ d._graham 
 + dj_andrew 
 + jhene_aiko 
 + jim_carrey 
@@ -805,7 +786,6 @@
 + tone_hangers 
 + ben_lovett 
 + paul_smith 
-+ rumer MORE_FORM ADJECTIVE ADJECTIVE_NORMAL KINDERGARTEN 
 + emmylou_harris 
 + kid_cudi 
 + jeff_apruzzese 
@@ -849,7 +829,6 @@
 + dad_d_noy 
 + syn_cole 
 + jerome_robins 
-+ dr._dre 
 + chris_beattie 
 + action_bronson 
 + souls_rest 
@@ -871,7 +850,6 @@
 + benji_madden 
 + gary_wolk 
 + diamond_city 
-+ dr._sergei_shaboutin 
 + lush_&_simon 
 + blac_smyth 
 + ying_yang_twins 
@@ -893,7 +871,6 @@
 + michael_bolton 
 + harry_nilsson 
 + matthias_jabs 
-+ c._j._snare 
 + barry_manilow 
 + alistair_brammer 
 + daniel_hope 
@@ -922,7 +899,6 @@
 + ibrahim_maalouf 
 + lauryn_hill 
 + alex_aiono 
-+ tom_t._hall 
 + doris_day 
 + tracy_byrd 
 + the_beach_boys 
@@ -967,7 +943,6 @@
 + stephen_letnes 
 + riggi_&_piros 
 + alex_sensation 
-+ mr._smith 
 + jason_nevins 
 + c_&_c_music_factory 
 + derrick_mckenzie 
@@ -998,7 +973,6 @@
 + marcus_mumford 
 + antonio_pinto 
 + john_lefler 
-+ j._balvin 
 + cece_rogers 
 + mt_eden 
 + conor_maynard 
@@ -1044,7 +1018,6 @@
 + adelaide_symphony_orchestra 
 + george_dreyfus 
 + ronald_hamner 
-+ david_a._stewart 
 + richard_mills 
 + the_budapest_film_orchestra 
 + the_philharmonia_orchestra 
@@ -1062,7 +1035,6 @@
 + guru_josh 
 + gabriel_&_castellon 
 + niall_horan 
-+ daks NOUN NOUN_PLURAL 
 + mondo_wells 
 + mike_de_ville 
 + ian_carey 
@@ -1095,7 +1067,6 @@
 + jesse_giddings 
 + dj_mix 
 + dj_tibby 
-+ jens_o. 
 + steve_h 
 + louis_the_child 
 + the_barden_bellas 
@@ -1117,7 +1088,6 @@
 + kris_kristofferson 
 + bebe_&_cece_winans 
 + rose_maddox 
-+ anderson_.paak 
 + tom_odell 
 + tony_hadley 
 + jimmy_page 
@@ -1132,7 +1102,6 @@
 + falko_niestolik 
 + dolly_rockers 
 + filip_jenven 
-+ e.m.c.k._&_alex_denada 
 + plastik_funk 
 + angelo_ferreri 
 + wrecking_crew 
@@ -1164,7 +1133,6 @@
 + glen_power 
 + tim_wanstall 
 + clarke_isaac_hanson 
-+ k.d._lang 
 + boz_scaggs 
 + roger_glover 
 + rick_nielsen 
@@ -1204,7 +1172,6 @@
 + steve_tyrell 
 + angelo_badalamenti 
 + martin_kemp 
-+ general_m.d.shirinda 
 + art_garfunkel 
 + tommie_marshall 
 + disk_noize 
@@ -1248,7 +1215,6 @@
 + drawz_patino 
 + mike_posner 
 + dummie_project 
-+ j._velarde_&_luque 
 + lisa_crawford 
 + abel_almena 
 + orchestral_manoeuvres_in_the_dark 
@@ -1261,7 +1227,6 @@
 + diana_krall 
 + soul_asylum 
 + kevin_cronin 
-+ bun_e._carlos 
 + macy_gray 
 + samantha_barks 
 + gary_beach 
@@ -1292,7 +1257,6 @@
 + tracy_nelson 
 + fiona_apple 
 + double_xx_posse 
-+ banks VERB_PRESENT_3PS NOUN VERB NOUN_PLURAL KINDERGARTEN 
 + johnny_hallyday 
 + tim_commerford 
 + don_williams 
@@ -1352,7 +1316,6 @@
 + olly_murs 
 + louis_tomlinson 
 + jordan_rivera 
-+ snookers VERB_PRESENT_3PS NOUN VERB NOUN_PLURAL 
 + kate_nash 
 + chris_de_burgh 
 + martin_skarendahl 
@@ -1458,14 +1421,11 @@
 + lebo_m 
 + josh_strickland 
 + lewis_watson 
-+ messiah_j. 
 + jamie_xx 
 + doug_robb 
-+ spankers NOUN NOUN_PLURAL 
 + sebastian_ingrosso 
 + ayron_michael 
 + peter_spence 
-+ t._orlando 
 + pascal_device 
 + michael_mind 
 + the_infinitives 
@@ -1528,14 +1488,12 @@
 + nikki_renee 
 + david_chalmin 
 + aleksandar_dimitrijevic 
-+ mark_s._crocker 
 + don_taylor 
 + phonosound_bradbury 
 + gabriele_ciampi 
 + svetlana_bashlykova 
 + mumford_&_sons 
 + tego_calderon 
-+ boo-yaa_t.r.i.b.e. 
 + samual_james 
 + jennifer_lopez 
 + kev_nish 
@@ -1604,7 +1562,6 @@
 + larry_lurex 
 + the_abc_showband 
 + wendy_couch 
-+ stephanie_j._block 
 + abc_melbourne_showband 
 + willem_van_otterloo 
 + mike_strike 
@@ -1648,7 +1605,6 @@
 + steve_angello 
 + mike_nero 
 + tom_stevens 
-+ u.s._test 
 + incredible_bongo_band 
 + anna_kendrick 
 + kylie_minogue 
@@ -1700,13 +1656,11 @@
 + dj_kharitonov 
 + gonzalo_rubalcaba 
 + ideascapes_music 
-+ fernando_n._gonzalez 
 + the_music_bakery 
 + ammar_yasin 
 + jun_naotsuka 
 + nils_olaf 
 + valentino_khan 
-+ hurts VERB_PRESENT_3PS NOUN VERB NOUN_PLURAL KINDERGARTEN 
 + rich_the_kid 
 + le_youth 
 + waze_&_odyssey 
@@ -1718,7 +1672,6 @@
 + paul_harding 
 + tom_delonge 
 + kevin_spacey 
-+ mr._mister 
 + paul_mccartney 
 + steven_sweet 
 + matt_frenette 
@@ -1732,7 +1685,6 @@
 + daniel_taylor 
 + hard_rock_sofa 
 + the_real_booty_babes 
-+ mr._jones 
 + lazy_monkeys 
 + mon_dj 
 + ron_van_den_beuken 
@@ -1833,7 +1785,6 @@
 + morgan_heritage 
 + alex_megane 
 + andrew_spencer 
-+ franky_b. 
 + alex_clare 
 + nick_drake 
 + penn_masala 
@@ -1934,7 +1885,6 @@
 + maria_doyle_kennedy 
 + ivan_klass 
 + zac_efron 
-+ o.t._genasis 
 + mayer_hawthorne 
 + mario_winans 
 + ben_folds 
@@ -2035,7 +1985,6 @@
 + sebastien_drums 
 + fred_fairbrass 
 + ella_mai 
-+ the_radio_dept. 
 + jack_lawrence 
 + no_middle_name 
 + marina_and_the_diamonds 
@@ -2045,7 +1994,6 @@
 + louis_proud 
 + vanilla_ace_&_chad_tyson 
 + dave_silcox 
-+ dr._john 
 + rozonda_thomas 
 + shawn_stockman 
 + simon_taylor-davis 
@@ -2080,7 +2028,6 @@
 + rob_harris 
 + patrik_aurelle 
 + ana_luiza 
-+ cranberries NOUN NOUN_PLURAL 
 + olle_corneer 
 + danny_jones 
 + ida_maria 
@@ -2089,7 +2036,6 @@
 + julio_iglesias 
 + billy_ozzello 
 + brian_tichy 
-+ b.b._king 
 + london_palladium_cast 
 + barbara_marineau 
 + molly_picon 
@@ -2171,7 +2117,6 @@
 + chris_reeder 
 + britney_spears 
 + teedra_moses 
-+ j._cole 
 + ray_toro 
 + trupa_velvet 
 + spencer_&_hill 
@@ -2256,7 +2201,6 @@
 + michael_silvestri 
 + marcello_appignani 
 + will_sparks 
-+ junior_m.a.f.i.a. 
 + spandau_ballet 
 + hip_hop_mix_usa 
 + rogue_traders 
@@ -2301,13 +2245,11 @@
 + cameron_seely 
 + biz_markie 
 + benjamin_biolay 
-+ g._dep 
 + bad_boys 
 + michael_penn 
 + pimp_c 
 + patsy_cline 
 + dorothy_squires 
-+ mt._desolation 
 + russell_hitchcock 
 + jessy_dixon 
 + the_shins 
@@ -2332,9 +2274,7 @@
 + going_deeper_&_ryan_konline 
 + mazai_&_dolly_rockers 
 + david_guetta 
-+ mr._cheeks 
 + frank_novinec 
-+ cloves NOUN NOUN_PLURAL 
 + nicole_scherzinger 
 + vladimir_ponkin 
 + norbert_leo_butz 
@@ -2342,7 +2282,6 @@
 + orchestre_philharmonique_de_monte_carlo 
 + mel_bounce 
 + ray_worx 
-+ delayers NOUN NOUN_PLURAL 
 + gumpoldskirchner_spatzen 
 + steven_van_zandt 
 + rudy_pusateri 
@@ -2393,7 +2332,6 @@
 + glen_hansard_&_marketa_irglova 
 + joan_osborne 
 + dj_chris 
-+ pete_rock_&_c.l._smooth 
 + olu_dara 
 + j_lyriq 
 + eddy_arnold 
@@ -2425,7 +2363,6 @@
 + andre_plati 
 + patrick_hofmann 
 + fermin_iv 
-+ richard_z._kruspe 
 + a_june_&_j_beat 
 + aloe_blacc 
 + jean_tan 
@@ -2444,7 +2381,6 @@
 + chet_nichols 
 + a-p-m_productions 
 + per_samuelsson 
-+ d._silverstone 
 + fabrizio_marioni 
 + cali_swag_district 
 + martin_garrix 
@@ -2480,7 +2416,6 @@
 + jamie_dornan 
 + magnus_sveningsson 
 + leona_naess 
-+ skagen_inc. 
 + lauren_jauregui 
 + bad_royale 
 + becky_jean_williams 
@@ -2588,7 +2523,6 @@
 + charley_pride 
 + bonnie_lou 
 + montgomery_gentry 
-+ ben_e._king 
 + simon_le_bon 
 + andrew_wessen 
 + lenny_kravitz 
@@ -2662,7 +2596,6 @@
 + john_rubinstein 
 + frightened_rabbit 
 + butch_walker 
-+ crowns VERB_PRESENT_3PS NOUN VERB NOUN_PLURAL KINDERGARTEN 
 + johnny_marr 
 + jan_van_bass 
 + jorg_schmid 
@@ -2674,7 +2607,6 @@
 + carrie_underwood 
 + holmes_&_watson 
 + mysto_&_pizzi 
-+ verses VERB_PRESENT_3PS NOUN VERB NOUN_PLURAL GRADE5_6 
 + meg_myers 
 + henry_jackman 
 + brandi_carlile 
@@ -2736,7 +2668,6 @@
 + miley_cyrus 
 + the_chainsmokers 
 + the_party_boyz 
-+ dr._alban 
 + brace_paine 
 + sunnery_james_&_ryan_marciano 
 + chris_count 
@@ -2752,10 +2683,8 @@
 + chester_gregory_ii 
 + john_allen 
 + zac_brown_band 
-+ villagers NOUN NOUN_PLURAL 
 + neko_case 
 + glenn_kotche 
-+ picco_vs._jens_o. 
 + tom_mountain 
 + taio_cruz 
 + samantha_gongol 
@@ -2853,7 +2782,6 @@
 + john_michael_higgins 
 + winston_marshall 
 + martin_duffy 
-+ max_k. 
 + willy_william 
 + lil_uzi_vert 
 + robert_de_boron 
@@ -2862,7 +2790,6 @@
 + ian_hultquist 
 + derez_deshon 
 + nicole_atkins 
-+ booker_t._jones 
 + jacques_dutronc 
 + jessica_mauboy 
 + mother_maybelle_carter 
@@ -2913,13 +2840,11 @@
 + tim_finity 
 + wayne_&_woods 
 + richard_bonynge 
-+ dani_w._schmid 
 + kevin_h_ross 
 + charles_holgate 
 + shamis_khassenov 
 + style_of_eye 
 + miss_elliott 
-+ mr._probz 
 + mike_lopo 
 + juanito_do_cabo 
 + jianda_&_patchen 
@@ -2944,7 +2869,6 @@
 + pat_sansone 
 + liz_phair 
 + daniel_kyo 
-+ steve_h. 
 + latin_formation 
 + ryan_adams 
 + tegan_and_sara 
@@ -2953,10 +2877,8 @@
 + lil_pump 
 + sondre_lerche_&_the_faces_down 
 + the_decemberists 
-+ ray_parker_jr. 
 + dj_lethal 
 + jin_ha 
-+ the_notorious_b.i.g. 
 + corinne_drewery 
 + lynn_anderson 
 + wanda_jackson 
@@ -2980,14 +2902,12 @@
 + pat_monahan 
 + mikey_martin 
 + veerus_&_maxie_devine 
-+ mr._bizz 
 + marc_fisher_&_vanesse_ekpenyong 
 + like_mike 
 + hoxton_whores 
 + paul_darey 
 + luke_db 
 + jerome_robins_&_dolly_rockers 
-+ paul_h._landers 
 + the_minions 
 + nick_jonas 
 + club_des_belugas 
@@ -3050,14 +2970,12 @@
 + chris_fryar 
 + no_jumper 
 + angie_martinez 
-+ broods VERB_PRESENT_3PS NOUN VERB NOUN_PLURAL 
 + maryline_moine 
 + brad_wilk 
 + paul_wall 
 + loretta_lynn 
 + country_bear_jamboree 
 + juice_newton 
-+ b.j._thomas 
 + london_boys 
 + steve_berlin 
 + daniel_tjader 
@@ -3067,7 +2985,6 @@
 + jack_white 
 + fetty_wap 
 + charity_strike 
-+ charlie_brown_jr. 
 + henrix_&_celeda 
 + hot_natured 
 + cise_star 
@@ -3122,7 +3039,6 @@
 + simon_bartholomew 
 + art_bears 
 + daniel_roger 
-+ christoph_h._muller 
 + dan_beeman 
 + flying_lotus 
 + adam_beyer 
@@ -3184,7 +3100,6 @@
 + modern_romance 
 + stacy_lattisaw 
 + doug_aldrich 
-+ gary_clark_jr. 
 + joseph_milligan 
 + les_campayoux 
 + alex_svenningsson 
@@ -3210,7 +3125,6 @@
 + anne_sofie_von_otter 
 + brad_mehldau 
 + david_lindley 
-+ f._knuckles 
 + wouter_hamel 
 + atlantic_starr 
 + steve_arrington 
@@ -3251,7 +3165,6 @@
 + kocani_orkestar 
 + tommy_kessler 
 + shuggie_otis 
-+ mr._scruff 
 + christopher_lennertz 
 + hunter_burgan 
 + courtney_pine 
@@ -3347,7 +3260,6 @@
 + will_anderson 
 + maurice_dadier 
 + noah_lennox 
-+ a.c._lewis 
 + anti-pop_consortium 
 + pacific_air 
 + bernie_pershay 
@@ -3400,7 +3312,6 @@
 + hunter_hunted 
 + mads_langer 
 + vicki_peterson 
-+ m._shadows 
 + the_enemy 
 + dusty_springfield 
 + the_jayhawks 
@@ -3409,7 +3320,6 @@
 + matt_bianco 
 + marti_pellow 
 + la_la_land_cast 
-+ harvey_mason_sr. 
 + stephen_christian 
 + maurice_larcange 
 + james_hetfield 
@@ -3429,7 +3339,6 @@
 + ralf_sommer 
 + pete_robertson 
 + larry_gatlin 
-+ j._quinton_johnson 
 + leonard_cohen 
 + ali_shaheed_muhammad 
 + elsa_kopf 
@@ -3488,7 +3397,6 @@
 + dusky_grey 
 + andrew_bird 
 + jack_black 
-+ alexa_p. 
 + kevin_marx 
 + andre_makus 
 + michael_reinecke 
@@ -3524,7 +3432,6 @@
 + nerina_pallot 
 + chris_geddes 
 + the_remix_cartell 
-+ st._lucia 
 + jim_brickman 
 + city_and_colour 
 + eric_singleton 
@@ -3537,7 +3444,6 @@
 + kit_french 
 + david_sylvian 
 + debbie_harry 
-+ outlines VERB_PRESENT_3PS NOUN VERB NOUN_PLURAL GRADE3_4 
 + ed_simons 
 + mark_collie 
 + gary_cherone 
@@ -3551,7 +3457,6 @@
 + chris_alexandros 
 + faith_hill 
 + clay_aiken 
-+ hank_williams_jr. 
 + steve_earle 
 + dj_snake_&_aluna_george 
 + finley_quaye 
@@ -3593,7 +3498,6 @@
 + francois_feldman 
 + elvis_costello_&_the_attractions 
 + stiff_little_fingers 
-+ the_j._geils_band 
 + karyn_white 
 + nu_shooz 
 + neil_mitchell 
@@ -3627,7 +3531,6 @@
 + jaki_graham 
 + kc_&_the_sunshine_band 
 + tommy_cunningham 
-+ d.a._wallach 
 + glam_sam_and_his_combo 
 + christian_mcalhaney 
 + anja_garbarek 
@@ -3689,7 +3592,6 @@
 + brian_ruedy 
 + chris_botti_&_paula_cole 
 + the_messengers 
-+ chelonis_r._jones 
 + killing_joke 
 + will_self 
 + quincy_&_xen_cuts_allstars 
@@ -3731,7 +3633,6 @@
 + paul_gilbert 
 + trisha_covington 
 + laura_nyro 
-+ danny_.s. 
 + tom_waits 
 + lea_marie_kaiser 
 + stevie_jackson 
@@ -3771,14 +3672,12 @@
 + jessi_colter 
 + the_cast_of_dirty_dancing 
 + kat_edmonson 
-+ causes VERB_PRESENT_3PS NOUN VERB NOUN_PLURAL GRADE3_4 
 + sophia_somajo 
 + elin_bell 
 + ingrid_arthur 
 + victor_manuelle 
 + del_amitri 
 + bad_company 
-+ grover_washington_jr. 
 + the_sisters_of_mercy 
 + hollywood_beyond 
 + frank_beard 
@@ -3798,7 +3697,6 @@
 + bobby_anthony 
 + angela_tor 
 + markus_&_yvonne_konig 
-+ m._craft 
 + chriss_martin 
 + richard_colburn 
 + chris_zasche 
@@ -3869,7 +3767,6 @@
 + the_bouncing_czecks 
 + the_fugees 
 + chemical_brothers 
-+ dinosaur_jr. 
 + kenny_g 
 + sebastian_oberg 
 + the_jordanaires 
@@ -3965,7 +3862,6 @@
 + johnny_stubblefield 
 + os_mutantes 
 + karine_fontaine 
-+ burton_c._bell 
 + terry_callier 
 + lou_rhodes 
 + hunter_hayes 
@@ -3995,7 +3891,6 @@
 + laura_dreyfuss 
 + jeff_bernat 
 + sleigh_bells 
-+ propellers NOUN NOUN_PLURAL 
 + frank_thomas 
 + trio_vulcano 
 + torben_klein 
@@ -4017,7 +3912,6 @@
 + jay_jay_french 
 + tyler_glenn 
 + nouvelle_vague 
-+ anis NOUN NOUN_PLURAL 
 + charlie_rich 
 + marie_musette 
 + mad_capsule_markets 
@@ -4193,7 +4087,6 @@
 + jack_johnson 
 + zee_avi 
 + pat_boone 
-+ larry_mullen_jr. 
 + tracy_ackerman 
 + eponym_&_esta 
 + maximum_lush 
@@ -4249,7 +4142,6 @@
 + bada_bing 
 + soundextra_&_looper 
 + alessandra_&_wilson 
-+ rick_j._jordan 
 + blues_traveler_with_thompson_square 
 + alex_gaskarth 
 + inaya_day 
@@ -4440,14 +4332,11 @@
 + zach_myers 
 + chris_melin 
 + francis_macdonald 
-+ st._vincent 
 + alexandre_desplat 
 + stil_&_bense 
 + jp_chronic 
-+ j.b._gill 
 + mehdi_milani 
 + trina_broussard 
-+ brings VERB_PRESENT_3PS VERB KINDERGARTEN 
 + dj_karneval 
 + diego_baliardo 
 + kevin_jonas 
@@ -4574,7 +4463,6 @@
 + rogue_wave 
 + jeffrey_alexander_chorus 
 + eric_roberts 
-+ dj_patjoo.com 
 + tom_dot_kom 
 + social_hooliganz 
 + dj_tarantino 
@@ -4607,17 +4495,14 @@
 + shamari_fears 
 + high_life_family 
 + nana_caymmi 
-+ g._love 
 + dark_secret 
 + danny_suko 
 + mc_junkie 
 + cj_stone 
 + official_nancie 
 + heavens_cry 
-+ nightriders NOUN NOUN_PLURAL 
 + corrosion_of_conformity 
 + zack_merrick 
-+ max_c. 
 + marion_raven 
 + telly_richter_wheeler 
 + raymond_mcginley 
@@ -4641,7 +4526,6 @@
 + damien_&_chebacca 
 + the_divine_comedy 
 + jenna_lodge 
-+ editors NOUN NOUN_PLURAL GRADE5_6 
 + nicky_wire 
 + urban_trip 
 + masta_killa 
@@ -4738,7 +4622,6 @@
 + caro_emerald 
 + the_nycer 
 + frank_neuenfels 
-+ nik_p. 
 + gottlieb_wendehals 
 + da_zillertaler_und_die_geigerin 
 + nat_king_cole 
@@ -4757,7 +4640,6 @@
 + paul_duffy 
 + sugar_ray 
 + tom_ze 
-+ g.g._anderson 
 + almir_guineto 
 + nicolas_reyes 
 + danny_duncan 
@@ -4775,7 +4657,6 @@
 + jermain_jackman 
 + chicco_secci 
 + tony_jaguar 
-+ boney_m. 
 + sarah_washington 
 + markus_becker 
 + vanessa_neigert 
@@ -4809,13 +4690,11 @@
 + laurent_wery 
 + vincent_niclo 
 + basement_jaxx 
-+ roy_davis_jr. 
 + the_white_stripes 
 + jonny_l 
 + various_production 
 + the_horrors 
 + bobby_womack 
-+ peaches VERB_PRESENT_3PS NOUN VERB NOUN_PLURAL KINDERGARTEN 
 + jai_paul 
 + pearl_jam 
 + badly_drawn_boy 
@@ -4893,7 +4772,6 @@
 + james_ford_murphy 
 + djs_from_mars 
 + rob_brizzi 
-+ h.p._baxxter 
 + will_rockwell-scott 
 + thomas_ian_nicholas 
 + andrew_stockdale 
@@ -4919,7 +4797,6 @@
 + jewelz_&_scott_sparks 
 + owen_clarke 
 + james_skelly 
-+ r._city 
 + mikey_graham 
 + nico_pusch 
 + franz_ferdinand 
@@ -4933,7 +4810,6 @@
 + juan_luis_guerra 
 + chin_alcantara 
 + dave_grusin 
-+ sheila_e. 
 + james_horner 
 + adam_yauch 
 + jericho_rosales 
@@ -4954,7 +4830,6 @@
 + stephen_kay 
 + amine_edge 
 + daniel_saturn 
-+ dj_k.o. 
 + seinabo_sey 
 + the_pretty_reckless 
 + larry_graham 
@@ -4985,7 +4860,6 @@
 + new_radicals 
 + amy_lou_barnes 
 + ringo_starr 
-+ richard_m._sherman 
 + dick_dale 
 + andrew_shirley 
 + one_direction 
@@ -4994,7 +4868,6 @@
 + raw_theory 
 + six_blade 
 + andy_caldwell 
-+ coco_o. 
 + obie_trice 
 + don_mclean 
 + porter_robinson 
@@ -5100,7 +4973,6 @@
 + david_benoit 
 + joey_seminara 
 + tom_greisgraber_&_bert_lams 
-+ jackson_c._frank 
 + liz_english 
 + billy_crystal 
 + xavier_atencio 
@@ -5171,7 +5043,6 @@
 + betty_taylor 
 + sixpence_none_the_richer 
 + dashboard_confessional 
-+ dj_s.k.t 
 + floyd_lavine 
 + funky_truckerz 
 + antoine_becks 
@@ -5182,7 +5053,6 @@
 + the_hustle_standard 
 + walt_dohrn 
 + rene_kuppens 
-+ s._carey 
 + jeffrey_tambor 
 + mark_holmes 
 + the_jud_conlon_chorus 
@@ -5356,7 +5226,6 @@
 + dj_haze 
 + hannche_bobis 
 + the_time 
-+ swifty_mcvay_&_mr._porter 
 + kunal_nayyar 
 + mary_fahl 
 + dorothy_compton 
@@ -5418,7 +5287,6 @@
 + clive_griffin 
 + cliff_edwards 
 + sean_marshall 
-+ robert_b._sherman 
 + jerome_fontamillas 
 + antonio_eudi 
 + eddie_cuesta 
@@ -5450,7 +5318,6 @@
 + rich_homie_quan 
 + famous_to_most 
 + kaz_james 
-+ the_gemini_bros. 
 + fito_blanko 
 + the_narcicyst 
 + dillon_francis 
@@ -5468,7 +5335,6 @@
 + yo_gotti_&_dj_rell 
 + wiz_khalifa_&_dj_rell 
 + d_nero 
-+ t.i._&_dj_rell 
 + yo_gottia_&_dj_rell 
 + boo_rossini 
 + dj_kronic 
@@ -5507,7 +5373,6 @@
 + jorge_gomez 
 + michel_telo 
 + heymous_molly 
-+ stereotypes VERB_PRESENT_3PS NOUN VERB NOUN_PLURAL 
 + james_hersey 
 + lucky_rose 
 + milly_pye 
@@ -5563,7 +5428,6 @@
 + gene_clark 
 + carmen_twillie 
 + michael_wilk 
-+ clarence_coffee_jr. 
 + bag_raiders 
 + maria_mena 
 + hugh_grant 
@@ -5577,7 +5441,6 @@
 + sleeping_beauty_chorus 
 + mickey_mouse 
 + bruce_healey 
-+ j._holiday 
 + bad_meets_evil 
 + ja_rule 
 + boney_m 
@@ -5604,7 +5467,6 @@
 + eva_simons 
 + andy_bell 
 + felix_cartal 
-+ bleachers NOUN NOUN_PLURAL 
 + howie_dorough 
 + tomo_milicevic 
 + gem_archer 
@@ -5687,7 +5549,6 @@
 + cynthia_erivo 
 + katy_b 
 + carly_rae_jepsen 
-+ samuel_e._wright 
 + bob_dylan 
 + haley_bennett 
 + shannon_leto 
@@ -5705,7 +5566,6 @@
 + victorious_cast 
 + eddy_chrome 
 + martin_solveig 
-+ a.j._mclean 
 + claudio_tempesta 
 + hilary_duff 
 + rene_auberjonois 
