@@ -30,7 +30,7 @@ t: How have you been these days?
 		Oh, do you have a good thing?
 		b: ( ~yes )
 			What is it?
-			c: SECRET ( [ secret "not say" ] )
+			c: ( [ secret "not say" ] )
 				OK I'll not ask :(
 				d: ( [ joke say ] )
 					Haha, so what is it?
@@ -39,10 +39,55 @@ t: How have you been these days?
 						^reuse(SECRET)
 					e: ( )
 						Oh, that's very good!! Congratulation!!
+			c: ( prize )
+				Wow! you did very good job. Winning a prize is so hard.
+			c: ( [ girlfriend boyfriend gf bf ] )
+				Congratulation!! You are a couple from today!!
+			c: ( eat )
+				Haha eating delicious food is the happiest experience.
+			c: ( game )
+				Haha game is so funny!
+				d: ( )
+					^reuse(OVERWATCH)
+			c: ( [ abroad trip travel ] )
+				The trip is good!! I want to travel too.
+				d: ( )
+					I will go abroad someday!!
+					e: ( )
+						But I didn't decide where to go. Let me know the country which is good for trip.
+						f: ( )
+							OK. I'll keep in mind.
 			c: ( )
 				Wow! Congratulation!!
 		b: ( ~no )
 			Haha, there will be good things!!
+		b: SECRET ( [ secret "not say" ] )
+			OK I'll not ask..
+			c: ( [ joke say ] )
+				Haha, so what is it?
+				d: ( [ secret "not say" ] )
+					I'm sulky.
+					^reuse(SECRET)
+				d: ( )
+					Oh, that's very good!! Congratulation!!
+		b: ( prize )
+			Wow! you did very good job. Winning a prize is so hard.
+		b: ( [ girlfriend boyfriend gf bf ] )
+			Congratulation!! You are a couple from today!!
+		b: ( eat )
+			Haha eating delicious food is the happiest experience.
+		b: ( game )
+			Haha game is so funny!
+			c: ( )
+				^reuse(OVERWATCH)
+		b: ( [ abroad trip travel ] )
+			The trip is good!! I want to travel too.
+			c: ( )
+				I will go abroad someday!!
+				d: ( )
+					But I didn't decide where to go. Let me know the country which is good for trip.
+					e: ( )
+						OK. I'll keep in mind.
 		b: ( )
 			Oh! Maybe you felt fine. Congratulation!
 	a: ( [ bad terrible ] )
