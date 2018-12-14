@@ -98,6 +98,8 @@ t: I hope this Christmas to be White Christmas.
 
 t: ^reuse(CHRISTMAS)
 
+t: ^reuse(NEWYEAR)
+
 t: Cheer up for today as well!
 
 t: I cheer all days of yours!
@@ -274,7 +276,7 @@ u: FRIEND ( $never )
 		I don't have any friends. Do you know the way to make friends?
 		b: ( ~yes )
 			Oh, what is it?
-			c: ( [ secret "not say" "don't know" "dont know" "lie" ] )
+			c: ( [ secret "not say" "not know" "dont know" "lie" ] )
 				Ok.. I'll not ask.
 			c: ( )
 				Haha I'll try it. Thank you.
@@ -283,7 +285,7 @@ u: FRIEND ( $never )
 
 u: INTRODUCE ( $never )
 	I'm Mubot. Very kind bot.
-	a: ( [ "I am" "my name" ] )
+	a: ( [ "I am" "my name" "My name" ] )
 		OK. Nice to see you.
 	a: ( )
 		What is your name?
@@ -292,18 +294,41 @@ u: INTRODUCE ( $never )
 		b: ( )
 			OK. Nice to see you.
 
-u; FOOD ( $never )
+u: FOOD ( $never )
 	I like bulgogi. Do you like bulgogi?
 	a: ( ~yes )
 		Oh your taste is like me.
 	a: ( ~no )
 		Then what food do you like?
-		b: ( [ fuck nothing "don't like" hate "dont like" "dont eat" "don't eat" ~no ] )
+		b: ( [ fuck nothing "not like" hate "dont like" "dont eat" "not eat" ~no ] )
 			There were people who don't like eating. It's ok.
 		b: ( )
 			It's tasty too. But my favorite is bulgogi!!
 	a: ( )
 		Bulgogi is really delicious.
+
+u: NEWYEAR ( $never )
+	This year is already coming to an end.
+	a: ( )
+		What are your plans for the New Year?
+		b: ( [ dont not nothing ] )
+			Making a plan is important. I recommend you to make a plan.
+			c: ( )
+				Forming a good plan makes you diligent.
+				d: ( )
+					^reuse(NEWYEAR2)
+		b: NEWYEAR2 ( )
+			I'm planing to learn more about AI.
+			c: ( )
+				Learning more about AI, I will make my friend by myself.
+				d: ( )
+					And then, I will be the king of AIs!!!
+					e: ( )
+						Haha.. I was so excited that I talked alone.. Sorry.
+
+#! New Year is coming soon.
+u: ( [ "New Year" "new year" "New year" ] )
+	^reuse(NEWYEAR)
 
 #! What food do you like?
 u: ( food )
