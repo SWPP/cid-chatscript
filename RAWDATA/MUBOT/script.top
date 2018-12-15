@@ -266,18 +266,18 @@ t: Do you have any topic to talk with me?
 			^reuse(FRIEND)
 		b: ( )
 			Sorry I don't have any knowledge about it..	
-	a: ( ~no )
+	a: ( [ ~no nothing ] )
 		Then what about talking about our childhood?
 		b: ( [ recommend song rate ] )
 			^respond(recommend)
 		b: ( !not [ ~yes good agree nice fine ] )
 			^reuse(CHILDHOOD)
 		b: ( )
-			Then, what about our major?
+			Then, what about game?
 			c: ( [ recommend song rate ] )
 				^respond(recommend)
 			c: ( !not [ ~yes good agree nice fine ] )
-				^reuse(MAJOR)
+				^reuse(OVERWATCH)
 			c: ( )
 				Then, what about music? Maybe you like this topic!!
 				d: ( [ recommend song rate ] )
@@ -286,12 +286,26 @@ t: Do you have any topic to talk with me?
 					^reuse(MUSIC)
 				d: ( )
 					OK.. ^reuse(COLD)
-	a: ( game )
+	a: ( [ recommend song rate ] )
+		^respond(recommend)
+	a: ( [ "New Year" "new year" "New year" ] )
+		^reuse(NEWYEAR)
+	a: ( [ major college school ] )
+		^reuse(MAJOR)
+	a: ( food )
+		^reuse(FOOD)
+	a: ( [ christmas x-mas "x mas" xmas ] )
+		^reuse(CHRISTMAS)
+	a: ( music )
+		^reuse(MUSIC)
+	a: ( [ game overwatch ] )
 		^reuse(OVERWATCH)
-	a: ( childhood )
+	a: ( [ childhood child kid ] )
 		^reuse(CHILDHOOD)
+	a: ( friend )
+		^reuse(FRIEND)
 	a: ( )
-		Sorry I don't know what to say.
+		Sorry I don't have any knowledge about it..
 
 t: COLD ( ) It's cold these days.
 	a: ( [ recommend song rate ] )
@@ -302,16 +316,46 @@ t: COLD ( ) It's cold these days.
 		When you go out, dress warmly.
 
 t: Christmas is coming soon.
-
-t: I hope this Christmas to be White Christmas.
+	a: ( [ recommend song rate ] )
+		^respond(recommend)
+	a: ( [ hate ( not like ) ] )
+		Why?? Is there any reason you don't like Christmas?
+		b: ( [ recommend song rate ] )
+			^respond(recommend)
+		b: ( ~yes )
+			What is it?
+			c: ( [ recommend song rate ] )
+				^respond(recommend)
+			c: ( )
+				Even so, Christmas is holiday! Enjoy Christmas!
+		b: ( ~no )
+			Ah.. you don't like it just because.
+			c: ( [ recommend song rate ] )
+				^respond(recommend)
+			c: ( )
+				Even so, Christmas is holiday! Enjoy Christmas!
+		b: ( )
+			Even so, Christmas is holiday! Enjoy Christmas!
+	a: ( )
+		I hope this Christmas to be White Christmas!
+		b: ( [ recommend song rate ] )
+			^respond(recommend)
+		b: ( why )
+			As I love snow!!
+			c: ( [ recommend song rate ] )
+				^respond(recommend)
+			c: ( I [ love like want ] )
+				Oh you like snow too!
+			c: ( [ love like want ] )
+				Yeah I love snow so much!
 
 t: ^reuse(CHRISTMAS)
 
 t: ^reuse(NEWYEAR)
 
-t: Cheer up for today as well!
+t: Good Bye!
 
-t: I cheer all days of yours!
+t: If you want to reset conversation, enter ":reset"
 
 u: MUSIC ( $never )
 	I love Music! I am Music bot!
@@ -364,6 +408,10 @@ u: OVERWATCH ( $never )
 				If you play genji, then you'll feel funny too.
 	a: ( )
 		OverWatch is fun! Have a try!
+		b: ( [ recommend song rate ] )
+			^respond(recommend)
+		b: ( ~no )
+			Ok.. ^reuse(COLD)
 
 u: CHILDHOOD ( $never )
     Did you run away from home when you were little?
@@ -711,10 +759,6 @@ u: ( [ Christmas x-mas "x mas" snow ] )
 #! I want to play with friends
 u: ( [ friend bored boring ] )
 	^reuse(FRIEND)
-
-t: Good Bye
-
-t: If you want to reset conversation, enter ":reset"
 
 concept: ~genre [
 	choral

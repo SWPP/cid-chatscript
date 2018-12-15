@@ -575,13 +575,13 @@ file: 0  /home/sungjae/cid-chatscript/RAWDATA/MUBOT/script.top
           line: 274 0  # ^reuse ( CHILDHOOD ) 
           Complexity of rule ~talk.3.15- b: 1
         rule: 275  ~talk.3.16 b: 
-          line: 276 0  # Then, what about our major? 
+          line: 276 0  # Then, what about game? 
           Complexity of rule ~talk.3.16- b: 1
         rule: 277  ~talk.3.17 c: 
           line: 278 0  # ^respond ( recommend ) 
           Complexity of rule ~talk.3.17- c: 1
         rule: 279  ~talk.3.18 c: 
-          line: 280 0  # ^reuse ( MAJOR ) 
+          line: 280 0  # ^reuse ( OVERWATCH ) 
           Complexity of rule ~talk.3.18- c: 1
         rule: 281  ~talk.3.19 c: 
           line: 282 0  # Then, what about music? Maybe 
@@ -596,604 +596,670 @@ file: 0  /home/sungjae/cid-chatscript/RAWDATA/MUBOT/script.top
           line: 288 0  # OK.. ^reuse ( COLD ) 
           Complexity of rule ~talk.3.22- d: 1
         rule: 289  ~talk.3.23 a: 
-          line: 290 0  # ^reuse ( OVERWATCH ) 
+          line: 290 0  # ^respond ( recommend ) 
           Complexity of rule ~talk.3.23- a: 1
         rule: 291  ~talk.3.24 a: 
-          line: 292 0  # ^reuse ( CHILDHOOD ) 
+          line: 292 0  # ^reuse ( NEWYEAR ) 
           Complexity of rule ~talk.3.24- a: 1
         rule: 293  ~talk.3.25 a: 
-          line: 294 0  # Sorry I don't know what to say
+          line: 294 0  # ^reuse ( MAJOR ) 
           Complexity of rule ~talk.3.25- a: 1
-        rule: 296  ~talk.4.0-COLD t: 
-          line: 296 0  # It's cold these days. 
+        rule: 295  ~talk.3.26 a: 
+          line: 296 0  # ^reuse ( FOOD ) 
+          Complexity of rule ~talk.3.26- a: 1
+        rule: 297  ~talk.3.27 a: 
+          line: 298 0  # ^reuse ( CHRISTMAS ) 
+          Complexity of rule ~talk.3.27- a: 1
+        rule: 299  ~talk.3.28 a: 
+          line: 300 0  # ^reuse ( MUSIC ) 
+          Complexity of rule ~talk.3.28- a: 1
+        rule: 301  ~talk.3.29 a: 
+          line: 302 0  # ^reuse ( OVERWATCH ) 
+          Complexity of rule ~talk.3.29- a: 1
+        rule: 303  ~talk.3.30 a: 
+          line: 304 0  # ^reuse ( CHILDHOOD ) 
+          Complexity of rule ~talk.3.30- a: 1
+        rule: 305  ~talk.3.31 a: 
+          line: 306 0  # ^reuse ( FRIEND ) 
+          Complexity of rule ~talk.3.31- a: 1
+        rule: 307  ~talk.3.32 a: 
+          line: 308 0  # Sorry I don't have any knowled
+          Complexity of rule ~talk.3.32- a: 1
+        rule: 310  ~talk.4.0-COLD t: 
+          line: 310 0  # It's cold these days. 
           Complexity of rule ~talk.4.0-COLD t: 1
-        rule: 297  ~talk.4.1 a: 
-          line: 298 0  # ^respond ( recommend ) 
+        rule: 311  ~talk.4.1 a: 
+          line: 312 0  # ^respond ( recommend ) 
           Complexity of rule ~talk.4.1- a: 1
-        rule: 299  ~talk.4.2 a: 
-          line: 300 0  # Ah.. I am so jealous. I want w
+        rule: 313  ~talk.4.2 a: 
+          line: 314 0  # Ah.. I am so jealous. I want w
           Complexity of rule ~talk.4.2- a: 1
-        rule: 301  ~talk.4.3 a: 
-          line: 302 0  # When you go out, dress warmly.
+        rule: 315  ~talk.4.3 a: 
+          line: 316 0  # When you go out, dress warmly.
           Complexity of rule ~talk.4.3- a: 1
-        rule: 304  ~talk.5.0- t: 
-          line: 304 0  # Christmas is coming soon. 
+        rule: 318  ~talk.5.0- t: 
+          line: 318 0  # Christmas is coming soon. 
           Complexity of rule ~talk.5.0- t: 1
-        rule: 306  ~talk.6.0- t: 
-          line: 306 0  # I hope this Christmas to be Wh
+        rule: 319  ~talk.5.1 a: 
+          line: 320 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.5.1- a: 1
+        rule: 321  ~talk.5.2 a: 
+          line: 322 0  # Why?? Is there any reason you 
+          Complexity of rule ~talk.5.2- a: 1
+        rule: 323  ~talk.5.3 b: 
+          line: 324 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.5.3- b: 1
+        rule: 325  ~talk.5.4 b: 
+          line: 326 0  # What is it? 
+          Complexity of rule ~talk.5.4- b: 1
+        rule: 327  ~talk.5.5 c: 
+          line: 328 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.5.5- c: 1
+        rule: 329  ~talk.5.6 c: 
+          line: 330 0  # Even so, Christmas is holiday!
+          Complexity of rule ~talk.5.6- c: 1
+        rule: 331  ~talk.5.7 b: 
+          line: 332 0  # Ah.. you don't like it just be
+          Complexity of rule ~talk.5.7- b: 1
+        rule: 333  ~talk.5.8 c: 
+          line: 334 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.5.8- c: 1
+        rule: 335  ~talk.5.9 c: 
+          line: 336 0  # Even so, Christmas is holiday!
+          Complexity of rule ~talk.5.9- c: 1
+        rule: 337  ~talk.5.10 b: 
+          line: 338 0  # Even so, Christmas is holiday!
+          Complexity of rule ~talk.5.10- b: 1
+        rule: 339  ~talk.5.11 a: 
+          line: 340 0  # I hope this Christmas to be Wh
+          Complexity of rule ~talk.5.11- a: 1
+        rule: 341  ~talk.5.12 b: 
+          line: 342 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.5.12- b: 1
+        rule: 343  ~talk.5.13 b: 
+          line: 344 0  # As I love snow!! 
+          Complexity of rule ~talk.5.13- b: 1
+        rule: 345  ~talk.5.14 c: 
+          line: 346 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.5.14- c: 1
+        rule: 347  ~talk.5.15 c: 
+          line: 348 0  # Oh you like snow too! 
+          Complexity of rule ~talk.5.15- c: 1
+        rule: 349  ~talk.5.16 c: 
+          line: 350 0  # Yeah I love snow so much! 
+          Complexity of rule ~talk.5.16- c: 1
+        rule: 352  ~talk.6.0- t: 
+          line: 352 0  # ^reuse ( CHRISTMAS ) 
           Complexity of rule ~talk.6.0- t: 1
-        rule: 308  ~talk.7.0- t: 
-          line: 308 0  # ^reuse ( CHRISTMAS ) 
+        rule: 354  ~talk.7.0- t: 
+          line: 354 0  # ^reuse ( NEWYEAR ) 
           Complexity of rule ~talk.7.0- t: 1
-        rule: 310  ~talk.8.0- t: 
-          line: 310 0  # ^reuse ( NEWYEAR ) 
+        rule: 356  ~talk.8.0- t: 
+          line: 356 0  # Good Bye! 
           Complexity of rule ~talk.8.0- t: 1
-        rule: 312  ~talk.9.0- t: 
-          line: 312 0  # Cheer up for today as well! 
+        rule: 358  ~talk.9.0- t: 
+          line: 358 0  # If you want to reset conversat
           Complexity of rule ~talk.9.0- t: 1
-        rule: 314  ~talk.10.0- t: 
-          line: 314 0  # I cheer all days of yours! 
-          Complexity of rule ~talk.10.0- t: 1
-        rule: 316  ~talk.11.0-MUSIC u: 
-          line: 317 0  # I love Music! I am Music bot! 
-          Complexity of rule ~talk.11.0-MUSIC u: 1
-        rule: 318  ~talk.11.1 a: 
-          line: 319 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.11.1- a: 1
-        rule: 320  ~talk.11.2 a: 
-          line: 321 0  # My favorite song is "Starlight
-          Complexity of rule ~talk.11.2- a: 1
-        rule: 322  ~talk.11.3 b: 
-          line: 323 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.11.3- b: 1
-        rule: 324  ~talk.11.4 b: 
-          line: 325 0  # Oh I love that song too. Let m
-          Complexity of rule ~talk.11.4- b: 1
-        rule: 326  ~talk.11.5 c: 
-          line: 327 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.11.5- c: 1
-        rule: 328  ~talk.11.6 c: 
-          line: 329 0  # ^reuse ( MUSIC2 ) 
-          Complexity of rule ~talk.11.6- c: 1
-        rule: 330  ~talk.11.7-MUSIC2 b: 
-          line: 331 0  # If you wanna get recommendatio
-          Complexity of rule ~talk.11.7-MUSIC2 b: 1
-        rule: 333  ~talk.12.0-OVERWATCH u: 
-          line: 334 0  # I like OverWatch!! Do you like
-          Complexity of rule ~talk.12.0-OVERWATCH u: 1
-        rule: 335  ~talk.12.1 a: 
-          line: 336 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.12.1- a: 1
-        rule: 337  ~talk.12.2 a: 
-          line: 338 0  # Which hero do you play? 
-          Complexity of rule ~talk.12.2- a: 1
-        rule: 339  ~talk.12.3 b: 
-          line: 340 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.12.3- b: 1
-        rule: 341  ~talk.12.4 b: 
-          line: 342 0  # Your position is supporter. Ma
-          Complexity of rule ~talk.12.4- b: 1
-        rule: 343  ~talk.12.5 c: 
-          line: 344 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.12.5- c: 1
-        rule: 345  ~talk.12.6 c: 
-          line: 346 0  # ^reuse ( GENJI ) 
-          Complexity of rule ~talk.12.6- c: 1
-        rule: 347  ~talk.12.7 b: 
-          line: 348 0  # Your position is damage dealer
-          Complexity of rule ~talk.12.7- b: 1
-        rule: 349  ~talk.12.8 c: 
-          line: 350 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.12.8- c: 1
-        rule: 351  ~talk.12.9 c: 
-          line: 352 0  # ^reuse ( GENJI ) 
-          Complexity of rule ~talk.12.9- c: 1
-        rule: 353  ~talk.12.10 b: 
-          line: 354 0  # Your position is tanker. Maybe
-          Complexity of rule ~talk.12.10- b: 1
-        rule: 355  ~talk.12.11 c: 
-          line: 356 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.12.11- c: 1
-        rule: 357  ~talk.12.12 c: 
-          line: 358 0  # ^reuse ( GENJI ) 
-          Complexity of rule ~talk.12.12- c: 1
-        rule: 359  ~talk.12.13-GENJI b: 
-          line: 360 0  # I like to play genji. It's fun
-          Complexity of rule ~talk.12.13-GENJI b: 1
-        rule: 361  ~talk.12.14 c: 
-          line: 362 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.12.14- c: 1
-        rule: 363  ~talk.12.15 c: 
-          line: 364 0  # If you play genji, then you'll
-          Complexity of rule ~talk.12.15- c: 1
-        rule: 365  ~talk.12.16 a: 
-          line: 366 0  # OverWatch is fun! Have a try! 
-          Complexity of rule ~talk.12.16- a: 1
-        rule: 368  ~talk.13.0-CHILDHOOD u: 
-          line: 369 0  # Did you run away from home whe
-          Complexity of rule ~talk.13.0-CHILDHOOD u: 1
-        rule: 370  ~talk.13.1 a: 
+        rule: 360  ~talk.10.0-MUSIC u: 
+          line: 361 0  # I love Music! I am Music bot! 
+          Complexity of rule ~talk.10.0-MUSIC u: 1
+        rule: 362  ~talk.10.1 a: 
+          line: 363 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.10.1- a: 1
+        rule: 364  ~talk.10.2 a: 
+          line: 365 0  # My favorite song is "Starlight
+          Complexity of rule ~talk.10.2- a: 1
+        rule: 366  ~talk.10.3 b: 
+          line: 367 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.10.3- b: 1
+        rule: 368  ~talk.10.4 b: 
+          line: 369 0  # Oh I love that song too. Let m
+          Complexity of rule ~talk.10.4- b: 1
+        rule: 370  ~talk.10.5 c: 
           line: 371 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.13.1- a: 1
-        rule: 372  ~talk.13.2 a: 
-          line: 373 0  # Was it fun? 
-          Complexity of rule ~talk.13.2- a: 1
-        rule: 374  ~talk.13.3 b: 
-          line: 375 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.13.3- b: 1
-        rule: 376  ~talk.13.4 b: 
-          line: 377 0  # ^reuse ( CHILDHOOD2 ) 
-          Complexity of rule ~talk.13.4- b: 1
-        rule: 378  ~talk.13.5 a: 
-          line: 379 0  # You should try it some time. T
-          Complexity of rule ~talk.13.5- a: 1
-        rule: 380  ~talk.13.6 b: 
-          line: 381 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.13.6- b: 1
-        rule: 382  ~talk.13.7-CHILDHOOD2 b: 
-          line: 383 0  # I ran away once, but my parent
-          Complexity of rule ~talk.13.7-CHILDHOOD2 b: 1
-        rule: 384  ~talk.13.8 c: 
-          line: 385 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.13.8- c: 1
-        rule: 386  ~talk.13.9 c: 
-          line: 387 0  # Was there anything which scare
-          Complexity of rule ~talk.13.9- c: 1
-        rule: 388  ~talk.13.10 d: 
-          line: 389 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.13.10- d: 1
-        rule: 390  ~talk.13.11 d: 
-          line: 391 0  # What scared you? 
-          Complexity of rule ~talk.13.11- d: 1
-        rule: 392  ~talk.13.12 e: 
-          line: 393 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.13.12- e: 1
-        rule: 394  ~talk.13.13 e: 
-          line: 395 0  # Did you use a nightlite? 
-          Complexity of rule ~talk.13.13- e: 1
-        rule: 396  ~talk.13.14 f: 
-          line: 397 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.13.14- f: 1
-        rule: 398  ~talk.13.15 f: 
-          line: 399 0  # Hum.. You were scared of darkn
-          Complexity of rule ~talk.13.15- f: 1
-        rule: 400  ~talk.13.16 g: 
-          line: 401 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.13.16- g: 1
-        rule: 402  ~talk.13.17 g: 
-          line: 403 0  # ^reuse ( CHILDHOOD3 ) 
-          Complexity of rule ~talk.13.17- g: 1
-        rule: 404  ~talk.13.18 f: 
-          line: 405 0  # If you used it, maybe you were
-          Complexity of rule ~talk.13.18- f: 1
-        rule: 406  ~talk.13.19 g: 
-          line: 407 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.13.19- g: 1
-        rule: 408  ~talk.13.20 g: 
-          line: 409 0  # ^reuse ( CHILDHOOD3 ) 
-          Complexity of rule ~talk.13.20- g: 1
-        rule: 410  ~talk.13.21 e: 
-          line: 411 0  # Food? How weird. 
-          Complexity of rule ~talk.13.21- e: 1
-        rule: 412  ~talk.13.22 f: 
-          line: 413 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.13.22- f: 1
-        rule: 414  ~talk.13.23 f: 
-          line: 415 0  # ^reuse ( CHILDHOOD3 ) 
-          Complexity of rule ~talk.13.23- f: 1
-        rule: 416  ~talk.13.24 e: 
-          line: 417 0  # There are no non-human monster
-          Complexity of rule ~talk.13.24- e: 1
-        rule: 418  ~talk.13.25 f: 
+          Complexity of rule ~talk.10.5- c: 1
+        rule: 372  ~talk.10.6 c: 
+          line: 373 0  # ^reuse ( MUSIC2 ) 
+          Complexity of rule ~talk.10.6- c: 1
+        rule: 374  ~talk.10.7-MUSIC2 b: 
+          line: 375 0  # If you wanna get recommendatio
+          Complexity of rule ~talk.10.7-MUSIC2 b: 1
+        rule: 377  ~talk.11.0-OVERWATCH u: 
+          line: 378 0  # I like OverWatch!! Do you like
+          Complexity of rule ~talk.11.0-OVERWATCH u: 1
+        rule: 379  ~talk.11.1 a: 
+          line: 380 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.11.1- a: 1
+        rule: 381  ~talk.11.2 a: 
+          line: 382 0  # Which hero do you play? 
+          Complexity of rule ~talk.11.2- a: 1
+        rule: 383  ~talk.11.3 b: 
+          line: 384 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.11.3- b: 1
+        rule: 385  ~talk.11.4 b: 
+          line: 386 0  # Your position is supporter. Ma
+          Complexity of rule ~talk.11.4- b: 1
+        rule: 387  ~talk.11.5 c: 
+          line: 388 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.11.5- c: 1
+        rule: 389  ~talk.11.6 c: 
+          line: 390 0  # ^reuse ( GENJI ) 
+          Complexity of rule ~talk.11.6- c: 1
+        rule: 391  ~talk.11.7 b: 
+          line: 392 0  # Your position is damage dealer
+          Complexity of rule ~talk.11.7- b: 1
+        rule: 393  ~talk.11.8 c: 
+          line: 394 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.11.8- c: 1
+        rule: 395  ~talk.11.9 c: 
+          line: 396 0  # ^reuse ( GENJI ) 
+          Complexity of rule ~talk.11.9- c: 1
+        rule: 397  ~talk.11.10 b: 
+          line: 398 0  # Your position is tanker. Maybe
+          Complexity of rule ~talk.11.10- b: 1
+        rule: 399  ~talk.11.11 c: 
+          line: 400 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.11.11- c: 1
+        rule: 401  ~talk.11.12 c: 
+          line: 402 0  # ^reuse ( GENJI ) 
+          Complexity of rule ~talk.11.12- c: 1
+        rule: 403  ~talk.11.13-GENJI b: 
+          line: 404 0  # I like to play genji. It's fun
+          Complexity of rule ~talk.11.13-GENJI b: 1
+        rule: 405  ~talk.11.14 c: 
+          line: 406 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.11.14- c: 1
+        rule: 407  ~talk.11.15 c: 
+          line: 408 0  # If you play genji, then you'll
+          Complexity of rule ~talk.11.15- c: 1
+        rule: 409  ~talk.11.16 a: 
+          line: 410 0  # OverWatch is fun! Have a try! 
+          Complexity of rule ~talk.11.16- a: 1
+        rule: 411  ~talk.11.17 b: 
+          line: 412 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.11.17- b: 1
+        rule: 413  ~talk.11.18 b: 
+          line: 414 0  # Ok.. ^reuse ( COLD ) 
+          Complexity of rule ~talk.11.18- b: 1
+        rule: 416  ~talk.12.0-CHILDHOOD u: 
+          line: 417 0  # Did you run away from home whe
+          Complexity of rule ~talk.12.0-CHILDHOOD u: 1
+        rule: 418  ~talk.12.1 a: 
           line: 419 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.13.25- f: 1
-        rule: 420  ~talk.13.26 f: 
-          line: 421 0  # ^reuse ( CHILDHOOD3 ) 
-          Complexity of rule ~talk.13.26- f: 1
-        rule: 422  ~talk.13.27 e: 
-          line: 423 0  # I guess your parents didn't te
-          Complexity of rule ~talk.13.27- e: 1
-        rule: 424  ~talk.13.28 f: 
-          line: 425 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.13.28- f: 1
-        rule: 426  ~talk.13.29 f: 
-          line: 427 0  # ^reuse ( CHILDHOOD3 ) 
-          Complexity of rule ~talk.13.29- f: 1
-        rule: 428  ~talk.13.30 e: 
-          line: 429 0  # Are you afraid of all insects?
-          Complexity of rule ~talk.13.30- e: 1
-        rule: 430  ~talk.13.31 f: 
-          line: 431 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.13.31- f: 1
-        rule: 432  ~talk.13.32 f: 
-          line: 433 0  # Haha insects are not threateni
-          Complexity of rule ~talk.13.32- f: 1
-        rule: 434  ~talk.13.33 g: 
-          line: 435 0  # ^reuse ( CHILDHOOD3 ) 
-          Complexity of rule ~talk.13.33- g: 1
-        rule: 436  ~talk.13.34 f: 
-          line: 437 0  # It's a good thing you don't sc
-          Complexity of rule ~talk.13.34- f: 1
-        rule: 438  ~talk.13.35 g: 
-          line: 439 0  # ^reuse ( CHILDHOOD3 ) 
-          Complexity of rule ~talk.13.35- g: 1
-        rule: 440  ~talk.13.36 e: 
-          line: 441 0  # You and Indiana Jones. Snakes 
-          Complexity of rule ~talk.13.36- e: 1
-        rule: 442  ~talk.13.37 f: 
-          line: 443 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.13.37- f: 1
-        rule: 444  ~talk.13.38 f: 
-          line: 445 0  # ^reuse ( CHILDHOOD3 ) 
-          Complexity of rule ~talk.13.38- f: 1
-        rule: 446  ~talk.13.39 e: 
-          line: 447 0  # Big animals are scary. Tiny on
-          Complexity of rule ~talk.13.39- e: 1
-        rule: 448  ~talk.13.40 f: 
+          Complexity of rule ~talk.12.1- a: 1
+        rule: 420  ~talk.12.2 a: 
+          line: 421 0  # Was it fun? 
+          Complexity of rule ~talk.12.2- a: 1
+        rule: 422  ~talk.12.3 b: 
+          line: 423 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.12.3- b: 1
+        rule: 424  ~talk.12.4 b: 
+          line: 425 0  # ^reuse ( CHILDHOOD2 ) 
+          Complexity of rule ~talk.12.4- b: 1
+        rule: 426  ~talk.12.5 a: 
+          line: 427 0  # You should try it some time. T
+          Complexity of rule ~talk.12.5- a: 1
+        rule: 428  ~talk.12.6 b: 
+          line: 429 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.12.6- b: 1
+        rule: 430  ~talk.12.7-CHILDHOOD2 b: 
+          line: 431 0  # I ran away once, but my parent
+          Complexity of rule ~talk.12.7-CHILDHOOD2 b: 1
+        rule: 432  ~talk.12.8 c: 
+          line: 433 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.12.8- c: 1
+        rule: 434  ~talk.12.9 c: 
+          line: 435 0  # Was there anything which scare
+          Complexity of rule ~talk.12.9- c: 1
+        rule: 436  ~talk.12.10 d: 
+          line: 437 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.12.10- d: 1
+        rule: 438  ~talk.12.11 d: 
+          line: 439 0  # What scared you? 
+          Complexity of rule ~talk.12.11- d: 1
+        rule: 440  ~talk.12.12 e: 
+          line: 441 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.12.12- e: 1
+        rule: 442  ~talk.12.13 e: 
+          line: 443 0  # Did you use a nightlite? 
+          Complexity of rule ~talk.12.13- e: 1
+        rule: 444  ~talk.12.14 f: 
+          line: 445 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.12.14- f: 1
+        rule: 446  ~talk.12.15 f: 
+          line: 447 0  # Hum.. You were scared of darkn
+          Complexity of rule ~talk.12.15- f: 1
+        rule: 448  ~talk.12.16 g: 
           line: 449 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.13.40- f: 1
-        rule: 450  ~talk.13.41 f: 
+          Complexity of rule ~talk.12.16- g: 1
+        rule: 450  ~talk.12.17 g: 
           line: 451 0  # ^reuse ( CHILDHOOD3 ) 
-          Complexity of rule ~talk.13.41- f: 1
-        rule: 452  ~talk.13.42 e: 
-          line: 453 0  # Do you still have bad dreams n
-          Complexity of rule ~talk.13.42- e: 1
-        rule: 454  ~talk.13.43 f: 
+          Complexity of rule ~talk.12.17- g: 1
+        rule: 452  ~talk.12.18 f: 
+          line: 453 0  # If you used it, maybe you were
+          Complexity of rule ~talk.12.18- f: 1
+        rule: 454  ~talk.12.19 g: 
           line: 455 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.13.43- f: 1
-        rule: 456  ~talk.13.44 f: 
-          line: 457 0  # That's too bad. Maybe you shou
-          Complexity of rule ~talk.13.44- f: 1
-        rule: 458  ~talk.13.45 g: 
-          line: 459 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.13.45- g: 1
-        rule: 460  ~talk.13.46 g: 
-          line: 461 0  # ^reuse ( CHILDHOOD3 ) 
-          Complexity of rule ~talk.13.46- g: 1
-        rule: 462  ~talk.13.47 f: 
-          line: 463 0  # I guess you no longer go to ho
-          Complexity of rule ~talk.13.47- f: 1
-        rule: 464  ~talk.13.48 g: 
-          line: 465 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.13.48- g: 1
-        rule: 466  ~talk.13.49 g: 
-          line: 467 0  # ^reuse ( CHILDHOOD3 ) 
-          Complexity of rule ~talk.13.49- g: 1
-        rule: 468  ~talk.13.50 e: 
-          line: 469 0  # Haha all fathers are strict to
-          Complexity of rule ~talk.13.50- e: 1
-        rule: 470  ~talk.13.51 f: 
-          line: 471 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.13.51- f: 1
-        rule: 472  ~talk.13.52 f: 
-          line: 473 0  # ^reuse ( CHILDHOOD3 ) 
-          Complexity of rule ~talk.13.52- f: 1
-        rule: 474  ~talk.13.53 e: 
-          line: 475 0  # Haha your mother were strict t
-          Complexity of rule ~talk.13.53- e: 1
-        rule: 476  ~talk.13.54 f: 
-          line: 477 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.13.54- f: 1
-        rule: 478  ~talk.13.55 f: 
-          line: 479 0  # ^reuse ( CHILDHOOD3 ) 
-          Complexity of rule ~talk.13.55- f: 1
-        rule: 480  ~talk.13.56 e: 
-          line: 481 0  # Haha you were timid! 
-          Complexity of rule ~talk.13.56- e: 1
-        rule: 482  ~talk.13.57 f: 
-          line: 483 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.13.57- f: 1
-        rule: 484  ~talk.13.58 f: 
-          line: 485 0  # ^reuse ( CHILDHOOD3 ) 
-          Complexity of rule ~talk.13.58- f: 1
-        rule: 486  ~talk.13.59 d: 
-          line: 487 0  # Wow you were so brave! 
-          Complexity of rule ~talk.13.59- d: 1
-        rule: 488  ~talk.13.60 e: 
-          line: 489 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.13.60- e: 1
-        rule: 490  ~talk.13.61 e: 
-          line: 491 0  # ^reuse ( CHILDHOOD3 ) 
-          Complexity of rule ~talk.13.61- e: 1
-        rule: 492  ~talk.13.62-CHILDHOOD3 d: 
-          line: 493 0  # I was scared of machines. I ha
-          Complexity of rule ~talk.13.62-CHILDHOOD3 d: 1
-        rule: 495  ~talk.14.0-MAJOR u: 
-          line: 496 0  # What's your major? 
-          Complexity of rule ~talk.14.0-MAJOR u: 1
-        rule: 497  ~talk.14.1 a: 
-          line: 498 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.14.1- a: 1
-        rule: 499  ~talk.14.2 a: 
-          line: 500 0  # Oh, really? I am majoring in c
-          Complexity of rule ~talk.14.2- a: 1
-        rule: 501  ~talk.14.3 b: 
-          line: 502 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.14.3- b: 1
-        rule: 503  ~talk.14.4 b: 
-          line: 504 0  # ^reuse ( MAJOR2 ) 
-          Complexity of rule ~talk.14.4- b: 1
-        rule: 505  ~talk.14.5 a: 
-          line: 506 0  # Oh, I see. I am majoring in co
-          Complexity of rule ~talk.14.5- a: 1
-        rule: 507  ~talk.14.6 b: 
-          line: 508 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.14.6- b: 1
-        rule: 509  ~talk.14.7-MAJOR2 b: 
-          line: 510 0  # Do you like your major? 
-          Complexity of rule ~talk.14.7-MAJOR2 b: 1
-        rule: 511  ~talk.14.8 c: 
-          line: 512 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.14.8- c: 1
-        rule: 513  ~talk.14.9 c: 
-          line: 514 0  # It's very lucky that you like 
-          Complexity of rule ~talk.14.9- c: 1
-        rule: 515  ~talk.14.10 c: 
-          line: 516 0  # Oh.. Many people don't like th
-          Complexity of rule ~talk.14.10- c: 1
-        rule: 517  ~talk.14.11 d: 
-          line: 518 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.14.11- d: 1
-        rule: 519  ~talk.14.12 d: 
-          line: 520 0  # Don't give up. Cheer up! 
-          Complexity of rule ~talk.14.12- d: 1
-        rule: 521  ~talk.14.13 c: 
-          line: 522 0  # Haha I love my major! 
-          Complexity of rule ~talk.14.13- c: 1
-        rule: 524  ~talk.15.0-CHRISTMAS u: 
-          line: 525 0  # What will you do on Christmas?
-          Complexity of rule ~talk.15.0-CHRISTMAS u: 1
-        rule: 526  ~talk.15.1 a: 
-          line: 527 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.15.1- a: 1
-        rule: 528  ~talk.15.2 a: 
-          line: 529 0  # Haha I will eat tangerines und
-          Complexity of rule ~talk.15.2- a: 1
-        rule: 530  ~talk.15.3 b: 
+          Complexity of rule ~talk.12.19- g: 1
+        rule: 456  ~talk.12.20 g: 
+          line: 457 0  # ^reuse ( CHILDHOOD3 ) 
+          Complexity of rule ~talk.12.20- g: 1
+        rule: 458  ~talk.12.21 e: 
+          line: 459 0  # Food? How weird. 
+          Complexity of rule ~talk.12.21- e: 1
+        rule: 460  ~talk.12.22 f: 
+          line: 461 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.12.22- f: 1
+        rule: 462  ~talk.12.23 f: 
+          line: 463 0  # ^reuse ( CHILDHOOD3 ) 
+          Complexity of rule ~talk.12.23- f: 1
+        rule: 464  ~talk.12.24 e: 
+          line: 465 0  # There are no non-human monster
+          Complexity of rule ~talk.12.24- e: 1
+        rule: 466  ~talk.12.25 f: 
+          line: 467 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.12.25- f: 1
+        rule: 468  ~talk.12.26 f: 
+          line: 469 0  # ^reuse ( CHILDHOOD3 ) 
+          Complexity of rule ~talk.12.26- f: 1
+        rule: 470  ~talk.12.27 e: 
+          line: 471 0  # I guess your parents didn't te
+          Complexity of rule ~talk.12.27- e: 1
+        rule: 472  ~talk.12.28 f: 
+          line: 473 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.12.28- f: 1
+        rule: 474  ~talk.12.29 f: 
+          line: 475 0  # ^reuse ( CHILDHOOD3 ) 
+          Complexity of rule ~talk.12.29- f: 1
+        rule: 476  ~talk.12.30 e: 
+          line: 477 0  # Are you afraid of all insects?
+          Complexity of rule ~talk.12.30- e: 1
+        rule: 478  ~talk.12.31 f: 
+          line: 479 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.12.31- f: 1
+        rule: 480  ~talk.12.32 f: 
+          line: 481 0  # Haha insects are not threateni
+          Complexity of rule ~talk.12.32- f: 1
+        rule: 482  ~talk.12.33 g: 
+          line: 483 0  # ^reuse ( CHILDHOOD3 ) 
+          Complexity of rule ~talk.12.33- g: 1
+        rule: 484  ~talk.12.34 f: 
+          line: 485 0  # It's a good thing you don't sc
+          Complexity of rule ~talk.12.34- f: 1
+        rule: 486  ~talk.12.35 g: 
+          line: 487 0  # ^reuse ( CHILDHOOD3 ) 
+          Complexity of rule ~talk.12.35- g: 1
+        rule: 488  ~talk.12.36 e: 
+          line: 489 0  # You and Indiana Jones. Snakes 
+          Complexity of rule ~talk.12.36- e: 1
+        rule: 490  ~talk.12.37 f: 
+          line: 491 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.12.37- f: 1
+        rule: 492  ~talk.12.38 f: 
+          line: 493 0  # ^reuse ( CHILDHOOD3 ) 
+          Complexity of rule ~talk.12.38- f: 1
+        rule: 494  ~talk.12.39 e: 
+          line: 495 0  # Big animals are scary. Tiny on
+          Complexity of rule ~talk.12.39- e: 1
+        rule: 496  ~talk.12.40 f: 
+          line: 497 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.12.40- f: 1
+        rule: 498  ~talk.12.41 f: 
+          line: 499 0  # ^reuse ( CHILDHOOD3 ) 
+          Complexity of rule ~talk.12.41- f: 1
+        rule: 500  ~talk.12.42 e: 
+          line: 501 0  # Do you still have bad dreams n
+          Complexity of rule ~talk.12.42- e: 1
+        rule: 502  ~talk.12.43 f: 
+          line: 503 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.12.43- f: 1
+        rule: 504  ~talk.12.44 f: 
+          line: 505 0  # That's too bad. Maybe you shou
+          Complexity of rule ~talk.12.44- f: 1
+        rule: 506  ~talk.12.45 g: 
+          line: 507 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.12.45- g: 1
+        rule: 508  ~talk.12.46 g: 
+          line: 509 0  # ^reuse ( CHILDHOOD3 ) 
+          Complexity of rule ~talk.12.46- g: 1
+        rule: 510  ~talk.12.47 f: 
+          line: 511 0  # I guess you no longer go to ho
+          Complexity of rule ~talk.12.47- f: 1
+        rule: 512  ~talk.12.48 g: 
+          line: 513 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.12.48- g: 1
+        rule: 514  ~talk.12.49 g: 
+          line: 515 0  # ^reuse ( CHILDHOOD3 ) 
+          Complexity of rule ~talk.12.49- g: 1
+        rule: 516  ~talk.12.50 e: 
+          line: 517 0  # Haha all fathers are strict to
+          Complexity of rule ~talk.12.50- e: 1
+        rule: 518  ~talk.12.51 f: 
+          line: 519 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.12.51- f: 1
+        rule: 520  ~talk.12.52 f: 
+          line: 521 0  # ^reuse ( CHILDHOOD3 ) 
+          Complexity of rule ~talk.12.52- f: 1
+        rule: 522  ~talk.12.53 e: 
+          line: 523 0  # Haha your mother were strict t
+          Complexity of rule ~talk.12.53- e: 1
+        rule: 524  ~talk.12.54 f: 
+          line: 525 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.12.54- f: 1
+        rule: 526  ~talk.12.55 f: 
+          line: 527 0  # ^reuse ( CHILDHOOD3 ) 
+          Complexity of rule ~talk.12.55- f: 1
+        rule: 528  ~talk.12.56 e: 
+          line: 529 0  # Haha you were timid! 
+          Complexity of rule ~talk.12.56- e: 1
+        rule: 530  ~talk.12.57 f: 
           line: 531 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.15.3- b: 1
-        rule: 532  ~talk.15.4 b: 
-          line: 533 0  # Do you have a lover? 
-          Complexity of rule ~talk.15.4- b: 1
-        rule: 534  ~talk.15.5 c: 
-          line: 535 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.15.5- c: 1
-        rule: 536  ~talk.15.6 c: 
-          line: 537 0  # Then spend your time with her/
-          Complexity of rule ~talk.15.6- c: 1
-        rule: 538  ~talk.15.7 d: 
-          line: 539 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.15.7- d: 1
-        rule: 540  ~talk.15.8 d: 
-          line: 541 0  # ^reuse ( CHRISTMAS2 ) 
-          Complexity of rule ~talk.15.8- d: 1
-        rule: 542  ~talk.15.9 c: 
-          line: 543 0  # Then let's eat tangerines with
-          Complexity of rule ~talk.15.9- c: 1
-        rule: 544  ~talk.15.10 d: 
-          line: 545 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.15.10- d: 1
-        rule: 546  ~talk.15.11 d: 
-          line: 547 0  # ^reuse ( CHRISTMAS2 ) 
-          Complexity of rule ~talk.15.11- d: 1
-        rule: 548  ~talk.15.12-CHRISTMAS2 c: 
-          line: 549 0  # I'll spend all the time with m
-          Complexity of rule ~talk.15.12-CHRISTMAS2 c: 1
-        rule: 550  ~talk.15.13 d: 
-          line: 551 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.15.13- d: 1
-        rule: 552  ~talk.15.14 d: 
-          line: 553 0  # It'll be happy Christmas! 
-          Complexity of rule ~talk.15.14- d: 1
-        rule: 554  ~talk.15.15 e: 
-          line: 555 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.15.15- e: 1
-        rule: 556  ~talk.15.16 e: 
-          line: 557 0  # Have a Merry Christmas! 
-          Complexity of rule ~talk.15.16- e: 1
-        rule: 559  ~talk.16.0-FRIEND u: 
-          line: 560 0  # Do you have a friend? 
-          Complexity of rule ~talk.16.0-FRIEND u: 1
-        rule: 561  ~talk.16.1 a: 
-          line: 562 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.16.1- a: 1
-        rule: 563  ~talk.16.2 a: 
-          line: 564 0  # I'm so jealous of you. I don't
-          Complexity of rule ~talk.16.2- a: 1
-        rule: 565  ~talk.16.3 b: 
+          Complexity of rule ~talk.12.57- f: 1
+        rule: 532  ~talk.12.58 f: 
+          line: 533 0  # ^reuse ( CHILDHOOD3 ) 
+          Complexity of rule ~talk.12.58- f: 1
+        rule: 534  ~talk.12.59 d: 
+          line: 535 0  # Wow you were so brave! 
+          Complexity of rule ~talk.12.59- d: 1
+        rule: 536  ~talk.12.60 e: 
+          line: 537 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.12.60- e: 1
+        rule: 538  ~talk.12.61 e: 
+          line: 539 0  # ^reuse ( CHILDHOOD3 ) 
+          Complexity of rule ~talk.12.61- e: 1
+        rule: 540  ~talk.12.62-CHILDHOOD3 d: 
+          line: 541 0  # I was scared of machines. I ha
+          Complexity of rule ~talk.12.62-CHILDHOOD3 d: 1
+        rule: 543  ~talk.13.0-MAJOR u: 
+          line: 544 0  # What's your major? 
+          Complexity of rule ~talk.13.0-MAJOR u: 1
+        rule: 545  ~talk.13.1 a: 
+          line: 546 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.13.1- a: 1
+        rule: 547  ~talk.13.2 a: 
+          line: 548 0  # Oh, really? I am majoring in c
+          Complexity of rule ~talk.13.2- a: 1
+        rule: 549  ~talk.13.3 b: 
+          line: 550 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.13.3- b: 1
+        rule: 551  ~talk.13.4 b: 
+          line: 552 0  # ^reuse ( MAJOR2 ) 
+          Complexity of rule ~talk.13.4- b: 1
+        rule: 553  ~talk.13.5 a: 
+          line: 554 0  # Oh, I see. I am majoring in co
+          Complexity of rule ~talk.13.5- a: 1
+        rule: 555  ~talk.13.6 b: 
+          line: 556 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.13.6- b: 1
+        rule: 557  ~talk.13.7-MAJOR2 b: 
+          line: 558 0  # Do you like your major? 
+          Complexity of rule ~talk.13.7-MAJOR2 b: 1
+        rule: 559  ~talk.13.8 c: 
+          line: 560 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.13.8- c: 1
+        rule: 561  ~talk.13.9 c: 
+          line: 562 0  # It's very lucky that you like 
+          Complexity of rule ~talk.13.9- c: 1
+        rule: 563  ~talk.13.10 c: 
+          line: 564 0  # Oh.. Many people don't like th
+          Complexity of rule ~talk.13.10- c: 1
+        rule: 565  ~talk.13.11 d: 
           line: 566 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.16.3- b: 1
-        rule: 567  ~talk.16.4 b: 
-          line: 568 0  # To make friends, what should I
-          Complexity of rule ~talk.16.4- b: 1
-        rule: 569  ~talk.16.5 c: 
-          line: 570 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.16.5- c: 1
-        rule: 571  ~talk.16.6 c: 
-          line: 572 0  # OK.. I will do my best to make
-          Complexity of rule ~talk.16.6- c: 1
-        rule: 573  ~talk.16.7 a: 
-          line: 574 0  # Really? I have many friends!! 
-          Complexity of rule ~talk.16.7- a: 1
-        rule: 575  ~talk.16.8 b: 
-          line: 576 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.16.8- b: 1
-        rule: 577  ~talk.16.9 b: 
-          line: 578 0  # Haha Sorry. In fact, I don't h
-          Complexity of rule ~talk.16.9- b: 1
-        rule: 579  ~talk.16.10 c: 
-          line: 580 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.16.10- c: 1
-        rule: 581  ~talk.16.11 c: 
-          line: 582 0  # Let's try to make friends! 
-          Complexity of rule ~talk.16.11- c: 1
-        rule: 583  ~talk.16.12 d: 
-          line: 584 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.16.12- d: 1
-        rule: 585  ~talk.16.13 d: 
-          line: 586 0  # Good 
-          Complexity of rule ~talk.16.13- d: 1
-        rule: 587  ~talk.16.14 d: 
-          line: 588 0  # Why? You don't need a friend? 
-          Complexity of rule ~talk.16.14- d: 1
-        rule: 589  ~talk.16.15 e: 
-          line: 590 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.16.15- e: 1
-        rule: 591  ~talk.16.16 e: 
-          line: 592 0  # Oh.. I see. 
-          Complexity of rule ~talk.16.16- e: 1
-        rule: 593  ~talk.16.17 d: 
-          line: 594 0  # We will be insider someday! 
-          Complexity of rule ~talk.16.17- d: 1
-        rule: 595  ~talk.16.18 a: 
-          line: 596 0  # I don't have any friends. Do y
-          Complexity of rule ~talk.16.18- a: 1
-        rule: 597  ~talk.16.19 b: 
-          line: 598 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.16.19- b: 1
-        rule: 599  ~talk.16.20 b: 
-          line: 600 0  # Oh, what is it? 
-          Complexity of rule ~talk.16.20- b: 1
-        rule: 601  ~talk.16.21 c: 
-          line: 602 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.16.21- c: 1
-        rule: 603  ~talk.16.22 c: 
-          line: 604 0  # Ok.. I'll not ask. 
-          Complexity of rule ~talk.16.22- c: 1
-        rule: 605  ~talk.16.23 c: 
-          line: 606 0  # Haha I'll try it. Thank you. 
-          Complexity of rule ~talk.16.23- c: 1
-        rule: 607  ~talk.16.24 b: 
-          line: 608 0  # OK. I see. I'll try to make fr
-          Complexity of rule ~talk.16.24- b: 1
-        rule: 610  ~talk.17.0-INTRODUCE u: 
-          line: 611 0  # I'm Mubot. Very kind bot. 
-          Complexity of rule ~talk.17.0-INTRODUCE u: 1
-        rule: 612  ~talk.17.1 a: 
-          line: 613 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.17.1- a: 1
-        rule: 614  ~talk.17.2 a: 
-          line: 615 0  # OK. Nice to see you. 
-          Complexity of rule ~talk.17.2- a: 1
-        rule: 616  ~talk.17.3 a: 
-          line: 617 0  # What is your name? 
-          Complexity of rule ~talk.17.3- a: 1
-        rule: 618  ~talk.17.4 b: 
-          line: 619 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.17.4- b: 1
-        rule: 620  ~talk.17.5 b: 
-          line: 621 0  # OK.. I'll not ask. 
-          Complexity of rule ~talk.17.5- b: 1
-        rule: 622  ~talk.17.6 b: 
-          line: 623 0  # OK. Nice to see you. 
-          Complexity of rule ~talk.17.6- b: 1
-        rule: 625  ~talk.18.0-FOOD u: 
-          line: 626 0  # I like bulgogi. Do you like bu
-          Complexity of rule ~talk.18.0-FOOD u: 1
-        rule: 627  ~talk.18.1 a: 
+          Complexity of rule ~talk.13.11- d: 1
+        rule: 567  ~talk.13.12 d: 
+          line: 568 0  # Don't give up. Cheer up! 
+          Complexity of rule ~talk.13.12- d: 1
+        rule: 569  ~talk.13.13 c: 
+          line: 570 0  # Haha I love my major! 
+          Complexity of rule ~talk.13.13- c: 1
+        rule: 572  ~talk.14.0-CHRISTMAS u: 
+          line: 573 0  # What will you do on Christmas?
+          Complexity of rule ~talk.14.0-CHRISTMAS u: 1
+        rule: 574  ~talk.14.1 a: 
+          line: 575 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.14.1- a: 1
+        rule: 576  ~talk.14.2 a: 
+          line: 577 0  # Haha I will eat tangerines und
+          Complexity of rule ~talk.14.2- a: 1
+        rule: 578  ~talk.14.3 b: 
+          line: 579 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.14.3- b: 1
+        rule: 580  ~talk.14.4 b: 
+          line: 581 0  # Do you have a lover? 
+          Complexity of rule ~talk.14.4- b: 1
+        rule: 582  ~talk.14.5 c: 
+          line: 583 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.14.5- c: 1
+        rule: 584  ~talk.14.6 c: 
+          line: 585 0  # Then spend your time with her/
+          Complexity of rule ~talk.14.6- c: 1
+        rule: 586  ~talk.14.7 d: 
+          line: 587 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.14.7- d: 1
+        rule: 588  ~talk.14.8 d: 
+          line: 589 0  # ^reuse ( CHRISTMAS2 ) 
+          Complexity of rule ~talk.14.8- d: 1
+        rule: 590  ~talk.14.9 c: 
+          line: 591 0  # Then let's eat tangerines with
+          Complexity of rule ~talk.14.9- c: 1
+        rule: 592  ~talk.14.10 d: 
+          line: 593 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.14.10- d: 1
+        rule: 594  ~talk.14.11 d: 
+          line: 595 0  # ^reuse ( CHRISTMAS2 ) 
+          Complexity of rule ~talk.14.11- d: 1
+        rule: 596  ~talk.14.12-CHRISTMAS2 c: 
+          line: 597 0  # I'll spend all the time with m
+          Complexity of rule ~talk.14.12-CHRISTMAS2 c: 1
+        rule: 598  ~talk.14.13 d: 
+          line: 599 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.14.13- d: 1
+        rule: 600  ~talk.14.14 d: 
+          line: 601 0  # It'll be happy Christmas! 
+          Complexity of rule ~talk.14.14- d: 1
+        rule: 602  ~talk.14.15 e: 
+          line: 603 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.14.15- e: 1
+        rule: 604  ~talk.14.16 e: 
+          line: 605 0  # Have a Merry Christmas! 
+          Complexity of rule ~talk.14.16- e: 1
+        rule: 607  ~talk.15.0-FRIEND u: 
+          line: 608 0  # Do you have a friend? 
+          Complexity of rule ~talk.15.0-FRIEND u: 1
+        rule: 609  ~talk.15.1 a: 
+          line: 610 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.15.1- a: 1
+        rule: 611  ~talk.15.2 a: 
+          line: 612 0  # I'm so jealous of you. I don't
+          Complexity of rule ~talk.15.2- a: 1
+        rule: 613  ~talk.15.3 b: 
+          line: 614 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.15.3- b: 1
+        rule: 615  ~talk.15.4 b: 
+          line: 616 0  # To make friends, what should I
+          Complexity of rule ~talk.15.4- b: 1
+        rule: 617  ~talk.15.5 c: 
+          line: 618 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.15.5- c: 1
+        rule: 619  ~talk.15.6 c: 
+          line: 620 0  # OK.. I will do my best to make
+          Complexity of rule ~talk.15.6- c: 1
+        rule: 621  ~talk.15.7 a: 
+          line: 622 0  # Really? I have many friends!! 
+          Complexity of rule ~talk.15.7- a: 1
+        rule: 623  ~talk.15.8 b: 
+          line: 624 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.15.8- b: 1
+        rule: 625  ~talk.15.9 b: 
+          line: 626 0  # Haha Sorry. In fact, I don't h
+          Complexity of rule ~talk.15.9- b: 1
+        rule: 627  ~talk.15.10 c: 
           line: 628 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.18.1- a: 1
-        rule: 629  ~talk.18.2 a: 
-          line: 630 0  # Oh your taste is like me. 
-          Complexity of rule ~talk.18.2- a: 1
-        rule: 631  ~talk.18.3 a: 
-          line: 632 0  # Then what food do you like? 
-          Complexity of rule ~talk.18.3- a: 1
-        rule: 633  ~talk.18.4 b: 
-          line: 634 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.18.4- b: 1
-        rule: 635  ~talk.18.5 b: 
-          line: 636 0  # There were people who don't li
-          Complexity of rule ~talk.18.5- b: 1
-        rule: 637  ~talk.18.6 b: 
-          line: 638 0  # It's tasty too. But my favorit
-          Complexity of rule ~talk.18.6- b: 1
-        rule: 639  ~talk.18.7 a: 
-          line: 640 0  # Bulgogi is really delicious. 
-          Complexity of rule ~talk.18.7- a: 1
-        rule: 642  ~talk.19.0-NEWYEAR u: 
-          line: 643 0  # This year is already coming to
-          Complexity of rule ~talk.19.0-NEWYEAR u: 1
-        rule: 644  ~talk.19.1 a: 
-          line: 645 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.19.1- a: 1
-        rule: 646  ~talk.19.2 a: 
-          line: 647 0  # What are your plans for the Ne
-          Complexity of rule ~talk.19.2- a: 1
-        rule: 648  ~talk.19.3 b: 
-          line: 649 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.19.3- b: 1
-        rule: 650  ~talk.19.4 b: 
-          line: 651 0  # Making a plan is important. I 
-          Complexity of rule ~talk.19.4- b: 1
-        rule: 652  ~talk.19.5 c: 
-          line: 653 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.19.5- c: 1
-        rule: 654  ~talk.19.6 c: 
-          line: 655 0  # Forming a good plan makes you 
-          Complexity of rule ~talk.19.6- c: 1
-        rule: 656  ~talk.19.7 d: 
-          line: 657 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.19.7- d: 1
-        rule: 658  ~talk.19.8 d: 
-          line: 659 0  # ^reuse ( NEWYEAR2 ) 
-          Complexity of rule ~talk.19.8- d: 1
-        rule: 660  ~talk.19.9-NEWYEAR2 b: 
-          line: 661 0  # I'm planing to learn more abou
-          Complexity of rule ~talk.19.9-NEWYEAR2 b: 1
-        rule: 662  ~talk.19.10 c: 
-          line: 663 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.19.10- c: 1
-        rule: 664  ~talk.19.11 c: 
-          line: 665 0  # Learning more about AI, I will
-          Complexity of rule ~talk.19.11- c: 1
-        rule: 666  ~talk.19.12 d: 
+          Complexity of rule ~talk.15.10- c: 1
+        rule: 629  ~talk.15.11 c: 
+          line: 630 0  # Let's try to make friends! 
+          Complexity of rule ~talk.15.11- c: 1
+        rule: 631  ~talk.15.12 d: 
+          line: 632 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.15.12- d: 1
+        rule: 633  ~talk.15.13 d: 
+          line: 634 0  # Good 
+          Complexity of rule ~talk.15.13- d: 1
+        rule: 635  ~talk.15.14 d: 
+          line: 636 0  # Why? You don't need a friend? 
+          Complexity of rule ~talk.15.14- d: 1
+        rule: 637  ~talk.15.15 e: 
+          line: 638 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.15.15- e: 1
+        rule: 639  ~talk.15.16 e: 
+          line: 640 0  # Oh.. I see. 
+          Complexity of rule ~talk.15.16- e: 1
+        rule: 641  ~talk.15.17 d: 
+          line: 642 0  # We will be insider someday! 
+          Complexity of rule ~talk.15.17- d: 1
+        rule: 643  ~talk.15.18 a: 
+          line: 644 0  # I don't have any friends. Do y
+          Complexity of rule ~talk.15.18- a: 1
+        rule: 645  ~talk.15.19 b: 
+          line: 646 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.15.19- b: 1
+        rule: 647  ~talk.15.20 b: 
+          line: 648 0  # Oh, what is it? 
+          Complexity of rule ~talk.15.20- b: 1
+        rule: 649  ~talk.15.21 c: 
+          line: 650 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.15.21- c: 1
+        rule: 651  ~talk.15.22 c: 
+          line: 652 0  # Ok.. I'll not ask. 
+          Complexity of rule ~talk.15.22- c: 1
+        rule: 653  ~talk.15.23 c: 
+          line: 654 0  # Haha I'll try it. Thank you. 
+          Complexity of rule ~talk.15.23- c: 1
+        rule: 655  ~talk.15.24 b: 
+          line: 656 0  # OK. I see. I'll try to make fr
+          Complexity of rule ~talk.15.24- b: 1
+        rule: 658  ~talk.16.0-INTRODUCE u: 
+          line: 659 0  # I'm Mubot. Very kind bot. 
+          Complexity of rule ~talk.16.0-INTRODUCE u: 1
+        rule: 660  ~talk.16.1 a: 
+          line: 661 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.16.1- a: 1
+        rule: 662  ~talk.16.2 a: 
+          line: 663 0  # OK. Nice to see you. 
+          Complexity of rule ~talk.16.2- a: 1
+        rule: 664  ~talk.16.3 a: 
+          line: 665 0  # What is your name? 
+          Complexity of rule ~talk.16.3- a: 1
+        rule: 666  ~talk.16.4 b: 
           line: 667 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.19.12- d: 1
-        rule: 668  ~talk.19.13 d: 
-          line: 669 0  # And then, I will be the king o
-          Complexity of rule ~talk.19.13- d: 1
-        rule: 670  ~talk.19.14 e: 
-          line: 671 0  # ^respond ( recommend ) 
-          Complexity of rule ~talk.19.14- e: 1
-        rule: 672  ~talk.19.15 e: 
-          line: 673 0  # Haha.. I was so excited that I
-          Complexity of rule ~talk.19.15- e: 1
-        rule: 676  ~talk.20.0 u: 
-          line: 677 0  # ^reuse ( MUSIC ) 
+          Complexity of rule ~talk.16.4- b: 1
+        rule: 668  ~talk.16.5 b: 
+          line: 669 0  # OK.. I'll not ask. 
+          Complexity of rule ~talk.16.5- b: 1
+        rule: 670  ~talk.16.6 b: 
+          line: 671 0  # OK. Nice to see you. 
+          Complexity of rule ~talk.16.6- b: 1
+        rule: 673  ~talk.17.0-FOOD u: 
+          line: 674 0  # I like bulgogi. Do you like bu
+          Complexity of rule ~talk.17.0-FOOD u: 1
+        rule: 675  ~talk.17.1 a: 
+          line: 676 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.17.1- a: 1
+        rule: 677  ~talk.17.2 a: 
+          line: 678 0  # Oh your taste is like me. 
+          Complexity of rule ~talk.17.2- a: 1
+        rule: 679  ~talk.17.3 a: 
+          line: 680 0  # Then what food do you like? 
+          Complexity of rule ~talk.17.3- a: 1
+        rule: 681  ~talk.17.4 b: 
+          line: 682 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.17.4- b: 1
+        rule: 683  ~talk.17.5 b: 
+          line: 684 0  # There were people who don't li
+          Complexity of rule ~talk.17.5- b: 1
+        rule: 685  ~talk.17.6 b: 
+          line: 686 0  # It's tasty too. But my favorit
+          Complexity of rule ~talk.17.6- b: 1
+        rule: 687  ~talk.17.7 a: 
+          line: 688 0  # Bulgogi is really delicious. 
+          Complexity of rule ~talk.17.7- a: 1
+        rule: 690  ~talk.18.0-NEWYEAR u: 
+          line: 691 0  # This year is already coming to
+          Complexity of rule ~talk.18.0-NEWYEAR u: 1
+        rule: 692  ~talk.18.1 a: 
+          line: 693 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.18.1- a: 1
+        rule: 694  ~talk.18.2 a: 
+          line: 695 0  # What are your plans for the Ne
+          Complexity of rule ~talk.18.2- a: 1
+        rule: 696  ~talk.18.3 b: 
+          line: 697 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.18.3- b: 1
+        rule: 698  ~talk.18.4 b: 
+          line: 699 0  # Making a plan is important. I 
+          Complexity of rule ~talk.18.4- b: 1
+        rule: 700  ~talk.18.5 c: 
+          line: 701 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.18.5- c: 1
+        rule: 702  ~talk.18.6 c: 
+          line: 703 0  # Forming a good plan makes you 
+          Complexity of rule ~talk.18.6- c: 1
+        rule: 704  ~talk.18.7 d: 
+          line: 705 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.18.7- d: 1
+        rule: 706  ~talk.18.8 d: 
+          line: 707 0  # ^reuse ( NEWYEAR2 ) 
+          Complexity of rule ~talk.18.8- d: 1
+        rule: 708  ~talk.18.9-NEWYEAR2 b: 
+          line: 709 0  # I'm planing to learn more abou
+          Complexity of rule ~talk.18.9-NEWYEAR2 b: 1
+        rule: 710  ~talk.18.10 c: 
+          line: 711 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.18.10- c: 1
+        rule: 712  ~talk.18.11 c: 
+          line: 713 0  # Learning more about AI, I will
+          Complexity of rule ~talk.18.11- c: 1
+        rule: 714  ~talk.18.12 d: 
+          line: 715 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.18.12- d: 1
+        rule: 716  ~talk.18.13 d: 
+          line: 717 0  # And then, I will be the king o
+          Complexity of rule ~talk.18.13- d: 1
+        rule: 718  ~talk.18.14 e: 
+          line: 719 0  # ^respond ( recommend ) 
+          Complexity of rule ~talk.18.14- e: 1
+        rule: 720  ~talk.18.15 e: 
+          line: 721 0  # Haha.. I was so excited that I
+          Complexity of rule ~talk.18.15- e: 1
+        rule: 724  ~talk.19.0 u: 
+          line: 725 0  # ^reuse ( MUSIC ) 
+          Complexity of rule ~talk.19.0- u: 1
+        rule: 728  ~talk.20.0 u: 
+          line: 729 0  # ^reuse ( NEWYEAR ) 
           Complexity of rule ~talk.20.0- u: 1
-        rule: 680  ~talk.21.0 u: 
-          line: 681 0  # ^reuse ( NEWYEAR ) 
+        rule: 732  ~talk.21.0 u: 
+          line: 733 0  # ^reuse ( FOOD ) 
           Complexity of rule ~talk.21.0- u: 1
-        rule: 684  ~talk.22.0 u: 
-          line: 685 0  # ^reuse ( FOOD ) 
+        rule: 736  ~talk.22.0 u: 
+          line: 737 0  # I'm talking with you! 
           Complexity of rule ~talk.22.0- u: 1
-        rule: 688  ~talk.23.0 u: 
-          line: 689 0  # I'm talking with you! 
+        rule: 740  ~talk.23.0 u: 
+          line: 741 0  # ^reuse ( INTRODUCE ) 
           Complexity of rule ~talk.23.0- u: 1
-        rule: 692  ~talk.24.0 u: 
-          line: 693 0  # ^reuse ( INTRODUCE ) 
+        rule: 744  ~talk.24.0 u: 
+          line: 745 0  # ^reuse ( OVERWATCH ) 
           Complexity of rule ~talk.24.0- u: 1
-        rule: 696  ~talk.25.0 u: 
-          line: 697 0  # ^reuse ( OVERWATCH ) 
+        rule: 748  ~talk.25.0 u: 
+          line: 749 0  # ^reuse ( CHILDHOOD ) 
           Complexity of rule ~talk.25.0- u: 1
-        rule: 700  ~talk.26.0 u: 
-          line: 701 0  # ^reuse ( CHILDHOOD ) 
+        rule: 752  ~talk.26.0 u: 
+          line: 753 0  # ^reuse ( MAJOR ) 
           Complexity of rule ~talk.26.0- u: 1
-        rule: 704  ~talk.27.0 u: 
-          line: 705 0  # ^reuse ( MAJOR ) 
+        rule: 756  ~talk.27.0 u: 
+          line: 757 0  # ^reuse ( CHRISTMAS ) 
           Complexity of rule ~talk.27.0- u: 1
-        rule: 708  ~talk.28.0 u: 
-          line: 709 0  # ^reuse ( CHRISTMAS ) 
+        rule: 760  ~talk.28.0 u: 
+          line: 761 0  # ^reuse ( FRIEND ) 
           Complexity of rule ~talk.28.0- u: 1
-        rule: 712  ~talk.29.0 u: 
-          line: 713 0  # ^reuse ( FRIEND ) 
-          Complexity of rule ~talk.29.0- u: 1
-        rule: 715  ~talk.30.0- t: 
-          line: 715 0  # Good Bye 
-          Complexity of rule ~talk.30.0- t: 1
-        rule: 717  ~talk.31.0- t: 
-          line: 717 0  # If you want to reset conversat
-          Complexity of rule ~talk.31.0- t: 1
-    concept: 719  ~genre
-    concept: 747  ~artist
+    concept: 763  ~genre
+    concept: 791  ~artist
