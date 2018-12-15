@@ -10,6 +10,13 @@ korea
 taiwan
 africa
 grilfriend
+new_year
+New_year
+christmas
+x-mas
+x_mas
+xmas
+overwatch
 brigitte
 lucio
 moira
@@ -43,12 +50,7 @@ dont_like
 dont_eat
 not_eat
 dont
-new_year
-New_year
 Who
-overwatch
-x-mas
-x_mas
 r&b
 electronica
 freakhouze

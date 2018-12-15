@@ -248,10 +248,22 @@ t: Do you have any topic to talk with me?
 		What is it?
 		b: ( [ recommend song rate ] )
 			^respond(recommend)
-		b: ( game )
+		b: ( [ "New Year" "new year" "New year" ] )
+			^reuse(NEWYEAR)
+		b: ( [ major college school ] )
+			^reuse(MAJOR)
+		b: ( food )
+			^reuse(FOOD)
+		b: ( [ christmas x-mas "x mas" xmas ] )
+			^reuse(CHRISTMAS)
+		b: ( music )
+			^reuse(MUSIC)
+		b: ( [ game overwatch ] )
 			^reuse(OVERWATCH)
-		b: ( childhood )
+		b: ( [ childhood child kid ] )
 			^reuse(CHILDHOOD)
+		b: ( friend )
+			^reuse(FRIEND)
 		b: ( )
 			Sorry I don't have any knowledge about it..	
 	a: ( ~no )
@@ -261,13 +273,19 @@ t: Do you have any topic to talk with me?
 		b: ( !not [ ~yes good agree nice fine ] )
 			^reuse(CHILDHOOD)
 		b: ( )
-			Then, let's talk about your major.
+			Then, what about our major?
 			c: ( [ recommend song rate ] )
 				^respond(recommend)
 			c: ( !not [ ~yes good agree nice fine ] )
 				^reuse(MAJOR)
 			c: ( )
-				Hum.. ^reuse(FRIEND)
+				Then, what about music? Maybe you like this topic!!
+				d: ( [ recommend song rate ] )
+					^respond(recommend)
+				d: ( !not [ ~yes good agree nice fine ] )
+					^reuse(MUSIC)
+				d: ( )
+					OK.. ^reuse(COLD)
 	a: ( game )
 		^reuse(OVERWATCH)
 	a: ( childhood )
@@ -275,9 +293,13 @@ t: Do you have any topic to talk with me?
 	a: ( )
 		Sorry I don't know what to say.
 
-t: It's cold these days.
-
-t: When you go out, dress warmly.
+t: COLD ( ) It's cold these days.
+	a: ( [ recommend song rate ] )
+		^respond(recommend)
+	a: ( [ ( !not warm ) southern ( not cold ) ( !not hot ) ] )
+		Ah.. I am so jealous. I want warm weather.
+	a: ( )
+		When you go out, dress warmly.
 
 t: Christmas is coming soon.
 
@@ -290,6 +312,23 @@ t: ^reuse(NEWYEAR)
 t: Cheer up for today as well!
 
 t: I cheer all days of yours!
+
+u: MUSIC ( $never )
+	I love Music! I am Music bot!
+	a: ( [ recommend song rate ] )
+		^respond(recommend)
+	a: ( )
+		My favorite song is "Starlight" of "Muse"
+		b: ( [ recommend song rate ] )
+			^respond(recommend)
+		b: ( [ like love favorite ] )
+			Oh I love that song too. Let me recommend you some songs.
+			c: ( [ recommend song rate ] )
+				^respond(recommend)
+			c: ( )
+				^reuse(MUSIC2)
+		b: MUSIC2 ( )
+			If you wanna get recommendation, type "recommend".
 
 u: OVERWATCH ( $never )
 	I like OverWatch!! Do you like OverWatch?
@@ -632,6 +671,10 @@ u: NEWYEAR ( $never )
 						^respond(recommend)
 					e: ( )
 						Haha.. I was so excited that I talked alone.. Sorry.
+
+#! Do you like music?
+u: ( music )
+	^reuse(MUSIC)
 
 #! New Year is coming soon.
 u: ( [ "New Year" "new year" "New year" ] )
