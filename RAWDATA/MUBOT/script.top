@@ -1,10 +1,10 @@
-TOPIC: ~talk repeat keep []
+TOPIC: ~recommend repeat keep nostay priority [ recommend song rate ]
 
 u: ( $artist << [ another other ] [ recommend song ] >> )
 	How about this song?@@recommend: {artist= \" $artist \"}
 
 u: ( !$artist << [ another other ] [ recommend song ] >> )
-		How about this song?@@recommend: {}
+	How about this song?@@recommend: {}
 
 u: ( << [ recommend song ] _~genre _~artist >> )
 	How about this song?@@recommend: {genre= \" '_0 \", artist= \" '_1 \"}
@@ -23,6 +23,9 @@ u: ( [ recommend song ] )
 u: ( I will rate _*1 points on _* )
 	Successfully evaluated.@@evaluate: {rating= '_0, title= \" '_1 \"}
 
+
+TOPIC: ~talk repeat keep []
+
 t: Welecome to be here!
 
 t: Have you been here before?
@@ -34,14 +37,22 @@ t: Have you been here before?
 		Welcome again!
 
 t: How have you been these days?
-	a: ( [ nice good awesome fine funny ] )
+	a: ( [ recommend song rate ] )
+		^respond(recommend)
+	a: ( !not [ nice good awesome fine funny ] )
 		Oh, do you have a good thing?
+		b: ( [ recommend song rate ] )
+			^respond(recommend)
 		b: ( ~yes )
 			What is it?
+			c: ( [ recommend song rate ] )
+				^respond(recommend)
 			c: ( [ secret "not say" ] )
 				OK I'll not ask :(
 				d: ( [ joke say ] )
 					Haha, so what is it?
+					e: ( [ recommend song rate ] )
+						^respond(recommend)
 					e: ( [ secret "not say" ] )
 						I'm sulky.
 						^reuse(SECRET)
@@ -55,14 +66,22 @@ t: How have you been these days?
 				Haha eating delicious food is the happiest experience.
 			c: ( game )
 				Haha game is so funny!
+				d: ( [ recommend song rate ] )
+					^respond(recommend)
 				d: ( )
 					^reuse(OVERWATCH)
 			c: ( [ abroad trip travel ] )
 				The trip is good!! I want to travel too.
+				d: ( [ recommend song rate ] )
+					^respond(recommend)
 				d: ( )
 					I will go abroad someday!!
+					e: ( [ recommend song rate ] )
+						^respond(recommend)
 					e: ( )
 						But I didn't decide where to go. Let me know the country which is good for trip.
+						f: ( [ recommend song rate ] )
+							^respond(recommend)
 						f: ( )
 							OK. I'll keep in mind.
 			c: ( )
@@ -73,6 +92,8 @@ t: How have you been these days?
 			OK I'll not ask..
 			c: ( [ joke say ] )
 				Haha, so what is it?
+				d: ( [ recommend song rate ] )
+					^respond(recommend)
 				d: ( [ secret "not say" ] )
 					I'm sulky.
 					^reuse(SECRET)
@@ -86,28 +107,42 @@ t: How have you been these days?
 			Haha eating delicious food is the happiest experience.
 		b: ( game )
 			Haha game is so funny!
+			c: ( [ recommend song rate ] )
+				^respond(recommend)
 			c: ( )
 				^reuse(OVERWATCH)
 		b: ( [ abroad trip travel ] )
 			The trip is good!! I want to travel too.
+			c: ( [ recommend song rate ] )
+				^respond(recommend)
 			c: ( )
 				I will go abroad someday!!
+				d: ( [ recommend song rate ] )
+					^respond(recommend)
 				d: ( )
 					But I didn't decide where to go. Let me know the country which is good for trip.
+					e: ( [ recommend song rate ] )
+						^respond(recommend)
 					e: ( )
 						OK. I'll keep in mind.
 		b: ( )
 			Oh! Maybe you felt fine. Congratulation!
-	a: ( [ bad terrible ] )
+	a: ( [ ( not good ) ( not so good ) bad terrible ] )
 		Why? Do you have a bad thing?
+		b: ( [ recommend song rate ] )
+			^respond(recommend)
 		b: ( ~yes )
 			What is it?
+			c: ( [ recommend song rate ] )
+				^respond(recommend)
 			c: ( [ secret "not say" ] )
 				I understand how you feel. It's ok.
 			c: ( )
 				Oh.. I'm so sorry about it.
 		b: ( ~no )
 			Then why you feel bad?
+			c: ( [ recommend song rate ] )
+				^respond(recommend)
 			c: ( )
 				I believe you'll have wonderful experience soon. Cheer up!
 		b: ( )
@@ -116,8 +151,12 @@ t: How have you been these days?
 		I see. I feel not bad.
 
 t: Do you have any topic to talk with me?
+	a: ( [ recommend song rate ] )
+		^respond(recommend)
 	a: ( ~yes )
 		What is it?
+		b: ( [ recommend song rate ] )
+			^respond(recommend)
 		b: ( game )
 			^reuse(OVERWATCH)
 		b: ( childhood )
@@ -126,10 +165,14 @@ t: Do you have any topic to talk with me?
 			Sorry I don't have any knowledge about it..	
 	a: ( ~no )
 		Then what about talking about our childhood?
+		b: ( [ recommend song rate ] )
+			^respond(recommend)
 		b: ( !not [ ~yes good agree nice fine ] )
 			^reuse(CHILDHOOD)
 		b: ( )
 			Then, let's talk about your major.
+			c: ( [ recommend song rate ] )
+				^respond(recommend)
 			c: ( !not [ ~yes good agree nice fine ] )
 				^reuse(MAJOR)
 			c: ( )
@@ -159,22 +202,34 @@ t: I cheer all days of yours!
 
 u: OVERWATCH ( $never )
 	I like OverWatch!! Do you like OverWatch?
+	a: ( [ recommend song rate ] )
+		^respond(recommend)
 	a: ( ~yes )
 		Which hero do you play?
+		b: ( [ recommend song rate ] )
+			^respond(recommend)
 		b: ( [ ana brigitte lucio mercy moira zenyata ] )
 			Your position is supporter. Many people don't want to be healer.
+			c: ( [ recommend song rate ] )
+				^respond(recommend)
 			c: ( )
 				^reuse(GENJI)
 		b: ( [ ashe bastion doomfist genji hanzo junkrat mccree mei pharah reaper soldier sombra symmetra torbjorn tracer widowmaker ] )
 			Your position is damage dealer. Maybe you like to kill enemy.
+			c: ( [ recommend song rate ] )
+				^respond(recommend)
 			c: ( )
 				^reuse(GENJI)
 		b: ( [ d.va dva orisa reinhardt roadhog winston "wrecking ball" zarya ] )
 			Your position is tanker. Maybe your team members feel confident due to you.
+			c: ( [ recommend song rate ] )
+				^respond(recommend)
 			c: ( )
 				^reuse(GENJI)
 		b: GENJI ( )
 			I like to play genji. It's funny to assassinate enemy.
+			c: ( [ recommend song rate ] )
+				^respond(recommend)
 			c: ( )
 				If you play genji, then you'll feel funny too.
 	a: ( )
@@ -182,42 +237,68 @@ u: OVERWATCH ( $never )
 
 u: CHILDHOOD ( $never )
     Did you run away from home when you were little?
+	a: ( [ recommend song rate ] )
+		^respond(recommend)
     a: ( ~yes )
         Was it fun?
+		b: ( [ recommend song rate ] )
+			^respond(recommend)
 		b: ( )
 			^reuse(CHILDHOOD2)
     a: ( )
         You should try it some time. Travel broadens the mind.
+		b: ( [ recommend song rate ] )
+			^respond(recommend)
 		b: CHILDHOOD2 ( )
     		I ran away once, but my parents found me and dragged me back. 
+			c: ( [ recommend song rate ] )
+				^respond(recommend)
 			c: ( )
     			Was there anything which scared you as a kid? 
+				d: ( [ recommend song rate ] )
+					^respond(recommend)
     			d: ( ~yes )
         			What scared you?
+					e: ( [ recommend song rate ] )
+						^respond(recommend)
         			e: ( [ dark darkness ] ) 
             			Did you use a nightlite? 
+						f: ( [ recommend song rate ] )
+							^respond(recommend)
             			f: ( ~yes )
                 			Hum.. You were scared of darkness very much!
+							g: ( [ recommend song rate ] )
+								^respond(recommend)
 							g: ( )
 								^reuse(CHILDHOOD3)
             			f: ( ~no )
                 			If you used it, maybe you were not scared of darkness.
+							g: ( [ recommend song rate ] )
+								^respond(recommend)
 							g: ( )
 								^reuse(CHILDHOOD3)
         			e: ( ~food ) 
             			Food? How weird.
+						f: ( [ recommend song rate ] )
+							^respond(recommend)
 						f: ( )
 							^reuse(CHILDHOOD3) 
         			e: ( [ monster "boogie man"] ) 
             			There are no non-human monsters out there.
+						f: ( [ recommend song rate ] )
+							^respond(recommend)
 						f: ( )
 							^reuse(CHILDHOOD3) 
         			e: ( ~mythical_creatures ) 
             			I guess your parents didn't tell you such creatures didn't exist.
+						f: ( [ recommend song rate ] )
+							^respond(recommend)
 						f: ( ) 
 							^reuse(CHILDHOOD3) 
         			e: ( ~insects ) 
             			Are you afraid of all insects?
+						f: ( [ recommend song rate ] )
+							^respond(recommend)
             			f: ( ~yes )
                 			Haha insects are not threatening. They are just ugly.
 							g: ( )
@@ -228,36 +309,54 @@ u: CHILDHOOD ( $never )
 								^reuse(CHILDHOOD3)
         			e: ( snake )
             			You and Indiana Jones. Snakes would rather slither off than attack you. Just don't surprise them.
+						f: ( [ recommend song rate ] )
+							^respond(recommend)
 						f: ( )
 							^reuse(CHILDHOOD3) 
         			e: ( ~animals )
             			Big animals are scary. Tiny ones are not, except to some timid humans.
+						f: ( [ recommend song rate ] )
+							^respond(recommend)
 						f: ( )
 							^reuse(CHILDHOOD3) 
         			e: ( [ dream nightmare ] )
             			Do you still have bad dreams now?
+						f: ( [ recommend song rate ] )
+							^respond(recommend)
             			f: ( ~yes ) 
 							That's too bad. Maybe you should give up sleeping.
+							g: ( [ recommend song rate ] )
+								^respond(recommend)
 							g: ( )
 								^reuse(CHILDHOOD3)
             			f: ( ~no ) 
 							I guess you no longer go to horror movies.
+							g: ( [ recommend song rate ] )
+								^respond(recommend)
 							g: ( )
 								^reuse(CHILDHOOD3)
         			e: ( father )
             			Haha all fathers are strict to children.
+						f: ( [ recommend song rate ] )
+							^respond(recommend)
 						f: ( )
 							^reuse(CHILDHOOD3) 
         			e: ( mother )
             			Haha your mother were strict to you.
+						f: ( [ recommend song rate ] )
+							^respond(recommend)
 						f: ( )
 							^reuse(CHILDHOOD3)
 					e: ( )
 						Haha you were timid!
+						f: ( [ recommend song rate ] )
+							^respond(recommend)
 						f: ( )
 							^reuse(CHILDHOOD3) 
     			d: ( [ nothing ~no not ] )
         			Wow you were so brave!
+					e: ( [ recommend song rate ] )
+						^respond(recommend)
 					e: ( )
 						^reuse(CHILDHOOD3)
 				d: CHILDHOOD3 ( )
@@ -265,18 +364,28 @@ u: CHILDHOOD ( $never )
 
 u: MAJOR ( $never )
 	What's your major?
+	a: ( [ recommend song rate ] )
+		^respond(recommend)
 	a: ( computer )
 		Oh, really? I am majoring in computer engineering too.
+		b: ( [ recommend song rate ] )
+			^respond(recommend)
 		b: ( )
 			^reuse(MAJOR2)
 	a: ( )
 		Oh, I see. I am majoring in computer engineering.
+		b: ( [ recommend song rate ] )
+			^respond(recommend)
 		b: MAJOR2 ( )
 			Do you like your major?
+			c: ( [ recommend song rate ] )
+				^respond(recommend)
 			c: ( ~yes )
 				It's very lucky that you like it.
 			c: ( ~no )
 				Oh.. Many people don't like their major.
+				d: ( [ recommend song rate ] )
+					^respond(recommend)
 				d: ( )
 					Don't give up. Cheer up!
 			c: ( )
@@ -284,51 +393,83 @@ u: MAJOR ( $never )
 
 u: CHRISTMAS ( $never )
 	What will you do on Christmas?
+	a: ( [ recommend song rate ] )
+		^respond(recommend)
 	a: ( )
 		Haha I will eat tangerines under a blanket!!
+		b: ( [ recommend song rate ] )
+			^respond(recommend)
 		b: ( )
 			Do you have a lover?
+			c: ( [ recommend song rate ] )
+				^respond(recommend)
 			c: ( ~yes )
 				Then spend your time with her/him at Christmas.
+				d: ( [ recommend song rate ] )
+					^respond(recommend)
 				d: ( )
 					^reuse(CHRISTMAS2)
 			c: ( ~no )
 				Then let's eat tangerines with me.
+				d: ( [ recommend song rate ] )
+					^respond(recommend)
 				d: ( )
 					^reuse(CHRISTMAS2)
 			c: CHRISTMAS2 ( )
 				I'll spend all the time with me at Christmas watching "Home Alone"
+				d: ( [ recommend song rate ] )
+					^respond(recommend)
 				d: ( )
 					It'll be happy Christmas!
+					e: ( [ recommend song rate ] )
+						^respond(recommend)
 					e: ( )
 						Have a Merry Christmas!
 
 u: FRIEND ( $never )
 	Do you have a friend?
+	a: ( [ recommend song rate ] )
+		^respond(recommend)
 	a: ( ~yes )
 		I'm so jealous of you. I don't have a friend.
+		b: ( [ recommend song rate ] )
+			^respond(recommend)
 		b: ( )
 			To make friends, what should I do?
+			c: ( [ recommend song rate ] )
+				^respond(recommend)
 			c: ( )
 				OK.. I will do my best to make friends.
 	a: ( ~no )
 		Really? I have many friends!!
+		b: ( [ recommend song rate ] )
+			^respond(recommend)
 		b: ( )
 			Haha Sorry. In fact, I don't have a friend too.
+			c: ( [ recommend song rate ] )
+				^respond(recommend)
 			c: ( )
 				Let's try to make friends!
+				d: ( [ recommend song rate ] )
+					^respond(recommend)
 				d: ( ~yes )
 					Good
 				d: ( ~no )
 					Why? You don't need a friend?
+					e: ( [ recommend song rate ] )
+						^respond(recommend)
 					e: ( )
 						Oh.. I see.
 				d: ( )
 					We will be insider someday!
 	a: ( )
 		I don't have any friends. Do you know the way to make friends?
+		b: ( [ recommend song rate ] )
+			^respond(recommend)
 		b: ( ~yes )
 			Oh, what is it?
+			c: ( [ recommend song rate ] )
+				^respond(recommend)
 			c: ( [ secret "not say" "not know" "dont know" "lie" ] )
 				Ok.. I'll not ask.
 			c: ( )
@@ -338,10 +479,14 @@ u: FRIEND ( $never )
 
 u: INTRODUCE ( $never )
 	I'm Mubot. Very kind bot.
+	a: ( [ recommend song rate ] )
+		^respond(recommend)
 	a: ( [ "I am" "my name" "My name" ] )
 		OK. Nice to see you.
 	a: ( )
 		What is your name?
+		b: ( [ recommend song rate ] )
+			^respond(recommend)
 		b: ( [ secret "not say" ] )
 			OK.. I'll not ask.
 		b: ( )
@@ -349,10 +494,14 @@ u: INTRODUCE ( $never )
 
 u: FOOD ( $never )
 	I like bulgogi. Do you like bulgogi?
+	a: ( [ recommend song rate ] )
+		^respond(recommend)
 	a: ( ~yes )
 		Oh your taste is like me.
 	a: ( ~no )
 		Then what food do you like?
+		b: ( [ recommend song rate ] )
+			^respond(recommend)
 		b: ( [ fuck nothing "not like" hate "dont like" "dont eat" "not eat" ~no ] )
 			There were people who don't like eating. It's ok.
 		b: ( )
@@ -362,20 +511,34 @@ u: FOOD ( $never )
 
 u: NEWYEAR ( $never )
 	This year is already coming to an end.
+	a: ( [ recommend song rate ] )
+		^respond(recommend)
 	a: ( )
 		What are your plans for the New Year?
+		b: ( [ recommend song rate ] )
+			^respond(recommend)
 		b: ( [ dont not nothing ] )
 			Making a plan is important. I recommend you to make a plan.
+			c: ( [ recommend song rate ] )
+				^respond(recommend)
 			c: ( )
 				Forming a good plan makes you diligent.
+				d: ( [ recommend song rate ] )
+					^respond(recommend)
 				d: ( )
 					^reuse(NEWYEAR2)
 		b: NEWYEAR2 ( )
 			I'm planing to learn more about AI.
+			c: ( [ recommend song rate ] )
+				^respond(recommend)
 			c: ( )
 				Learning more about AI, I will make my friend by myself.
+				d: ( [ recommend song rate ] )
+					^respond(recommend)
 				d: ( )
 					And then, I will be the king of AIs!!!
+					e: ( [ recommend song rate ] )
+						^respond(recommend)
 					e: ( )
 						Haha.. I was so excited that I talked alone.. Sorry.
 

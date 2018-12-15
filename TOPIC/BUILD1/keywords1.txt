@@ -358,5 +358,6 @@
     Calvin_Harris Ella_Eyre Fantasia Sigala Marsha_Ambrosius Emeli_Sande Stefflon_Don John_Legend Jayda_Brown Monica Charlie_Wilson Little_Mix Mario Bebe_Rexha Becky_G Smokey_Robinson Bj_The_Chicago_Kid Zachary_James Trombone_Shorty Calum_Scott Skylar_Grey Motown_Magic_Cast Ne-yo Digital_Mode Farenthide_&_Hubertuse David_Jones New_Edition Catscan Hazel Freakhouze Bueno_Clinic )
 T~control ( )
 T~xpostprocess ( )
-T~talk ( )
+T~recommend ( rate song recommend )
 ~genre ( drama pop animation chamber hip-hop electronica dance rap soul symphony orchestra world concerto jazz vocal crossover blues r&b country ballad musical folk rock opera choral )
+T~talk ( )
