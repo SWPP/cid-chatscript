@@ -178,29 +178,33 @@ file: 0  /home/sungjae/cid-chatscript/RAWDATA/HARRY/simplecontrol.top
           Complexity of rule ~xpostprocess.0.0- t: 3
 file: 0  /home/sungjae/cid-chatscript/RAWDATA/MUBOT/script.top
     topic: 1  ~recommend
-        rule: 3  ~recommend.0.0 u: 
+        rule: 3  ~recommend.0.0-RECOMMEND1 u: 
           line: 4 0  # How about this song?@@recommen
-          Complexity of rule ~recommend.0.0- u: 1
-        rule: 6  ~recommend.1.0 u: 
-          line: 7 0  # How about this song?@@recommen
-          Complexity of rule ~recommend.1.0- u: 1
-        rule: 9  ~recommend.2.0 u: 
-          line: 10 0  # How about this song?@@recommen
-          line: 11 72  # $artist = '_1 
-          Complexity of rule ~recommend.2.0- u: 1
-        rule: 13  ~recommend.3.0 u: 
+          Complexity of rule ~recommend.0.0-RECOMMEND1 u: 1
+        rule: 5  ~recommend.0.1 a: 
+          line: 6 0  # ^reuse ( RECOMMEND1 ) 
+          Complexity of rule ~recommend.0.1- a: 1
+        rule: 8  ~recommend.1.0-RECOMMEND2 u: 
+          line: 9 0  # How about this song?@@recommen
+          Complexity of rule ~recommend.1.0-RECOMMEND2 u: 1
+        rule: 10  ~recommend.1.1 a: 
+          line: 11 0  # ^reuse ( RECOMMEND2 ) 
+          Complexity of rule ~recommend.1.1- a: 1
+        rule: 13  ~recommend.2.0-RECOMMEND3 u: 
           line: 14 0  # How about this song?@@recommen
-          line: 15 54  # $artist = '_0 
-          Complexity of rule ~recommend.3.0- u: 1
-        rule: 17  ~recommend.4.0 u: 
-          line: 18 0  # How about this song?@@recommen
-          Complexity of rule ~recommend.4.0- u: 1
-        rule: 20  ~recommend.5.0 u: 
-          line: 21 0  # How about this song?@@recommen
-          Complexity of rule ~recommend.5.0- u: 1
-        rule: 23  ~recommend.6.0 u: 
+          Complexity of rule ~recommend.2.0-RECOMMEND3 u: 1
+        rule: 15  ~recommend.2.1 a: 
+          line: 16 0  # ^reuse ( RECOMMEND3 ) 
+          Complexity of rule ~recommend.2.1- a: 1
+        rule: 18  ~recommend.3.0-RECOMMEND4 u: 
+          line: 19 0  # How about this song?@@recommen
+          Complexity of rule ~recommend.3.0-RECOMMEND4 u: 1
+        rule: 20  ~recommend.3.1 a: 
+          line: 21 0  # ^reuse ( RECOMMEND4 ) 
+          Complexity of rule ~recommend.3.1- a: 1
+        rule: 23  ~recommend.4.0 u: 
           line: 24 0  # Successfully evaluated.@@evalu
-          Complexity of rule ~recommend.6.0- u: 1
+          Complexity of rule ~recommend.4.0- u: 1
     topic: 27  ~talk
         rule: 29  ~talk.0.0- t: 
           line: 29 0  # Welecome to be here! 

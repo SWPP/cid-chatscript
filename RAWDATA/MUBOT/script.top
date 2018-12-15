@@ -1,24 +1,24 @@
 TOPIC: ~recommend repeat keep nostay priority [ recommend song rate ]
 
-u: ( $artist << [ another other ] [ recommend song ] >> )
-	How about this song?@@recommend: {artist= \" $artist \"}
-
-u: ( !$artist << [ another other ] [ recommend song ] >> )
-	How about this song?@@recommend: {}
-
-u: ( << [ recommend song ] _~genre _~artist >> )
+u: RECOMMEND1 ( << [ recommend song ] _~genre _~artist >> )
 	How about this song?@@recommend: {genre= \" '_0 \", artist= \" '_1 \"}
-	$artist = '_1
+	a: ( [ ( not good ) ( [ another other ] [ one song music ] ) ] )
+		^reuse(RECOMMEND1)
 
-u: ( << [ recommend song ] _~artist >> )
+u: RECOMMEND2 ( << [ recommend song ] _~artist >> )
 	How about this song?@@recommend: {artist= \" '_0 \"}
-	$artist = '_0
+	a: ( [ ( not good ) ( [ another other ] [ one song music ] ) ] )
+		^reuse(RECOMMEND2)
 
-u: ( << [ recommend song ] _~genre >> )
+u: RECOMMEND3 ( << [ recommend song ] _~genre >> )
 	How about this song?@@recommend: {genre= \" '_0 \"}
+	a: ( [ ( not good ) ( [ another other ] [ one song music ] ) ] )
+		^reuse(RECOMMEND3)
 
-u: ( [ recommend song ] )
+u: RECOMMEND4 ( [ recommend song ] )
 	How about this song?@@recommend: {}
+	a: ( [ ( not good ) ( [ another other ] [ one song music ] ) ] )
+		^reuse(RECOMMEND4)
 
 u: ( I will rate _*1 points on _* )
 	Successfully evaluated.@@evaluate: {rating= '_0, title= \" '_1 \"}
