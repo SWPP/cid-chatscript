@@ -29,6 +29,8 @@ TOPIC: ~talk repeat keep []
 t: Welecome to be here!
 
 t: Have you been here before?
+	a: ( [ recommend song rate ] )
+		^respond(recommend)
 	a: ( ~yes )
 		Welcome back!
 	a: ( ~no )
