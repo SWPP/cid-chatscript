@@ -33,15 +33,18 @@ t: Have you been here before?
 		^respond(recommend)
 	a: ( ~yes )
 		Welcome back!
+		^reuse(GREET)
 	a: ( ~no )
 		Then welcome to your first time.
+		^reuse(GREET)
 	a: ( )
 		Welcome again!
+		^reuse(GREET)
 
-t: How have you been these days?
+t: GREET ( ) How have you been these days?
 	a: ( [ recommend song rate ] )
 		^respond(recommend)
-	a: ( !not [ nice good awesome fine funny ] )
+	a: ( !not [ nice good awesome fine funny happy fantastic beautiful bravo ] )
 		Oh, do you have a good thing?
 		b: ( [ recommend song rate ] )
 			^respond(recommend)
@@ -51,6 +54,8 @@ t: How have you been these days?
 				^respond(recommend)
 			c: ( [ secret "not say" ] )
 				OK I'll not ask :(
+				d: ( [ recommend song rate ] )
+					^respond(recommend)
 				d: ( [ joke say ] )
 					Haha, so what is it?
 					e: ( [ recommend song rate ] )
@@ -84,6 +89,22 @@ t: How have you been these days?
 						But I didn't decide where to go. Let me know the country which is good for trip.
 						f: ( [ recommend song rate ] )
 							^respond(recommend)
+						f: ( [ america usa ] )
+							Oh I wanted to go USA.
+						f: ( korea )
+							Haha I'm now at Korea.
+						f: ( japan )
+							I will not go Japan due to radioactivity.
+						f: ( china )
+							I have been China. The food was bad..
+							g: ( [ recommend song rate ] )
+								^respond(recommend)
+							g: ( )
+								Whenever you go to China, take gochujang. It will be necessary.
+						f: ( taiwan )
+							I have been Taiwan. The food is delicious! I recommend you to go Taiwan.
+						f: ( africa )
+							Haha.. I respect your opinion. I'll keep in mind.
 						f: ( )
 							OK. I'll keep in mind.
 			c: ( )
@@ -125,11 +146,29 @@ t: How have you been these days?
 					But I didn't decide where to go. Let me know the country which is good for trip.
 					e: ( [ recommend song rate ] )
 						^respond(recommend)
-					e: ( )
+					e: ( [ america usa ] )
+						Oh I wanted to go USA.
+					e: ( korea )
+						Haha I'm now at Korea.
+					e: ( japan )
+						I will not go Japan due to radioactivity.
+					e: ( china )
+						I have been China. The food was bad..
+						f: ( [ recommend song rate ] )
+							^respond(recommend)
+						f: ( )
+							Whenever you go to China, take gochujang. It will be necessary.
+					e: ( taiwan )
+						I have been Taiwan. The food is delicious! I recommend you to go Taiwan.
+					e: ( africa )
+						Haha.. I respect your opinion. I'll keep in mind.
+					f: ( )
 						OK. I'll keep in mind.
+				e: ( )
+					OK. I'll keep in mind.
 		b: ( )
 			Oh! Maybe you felt fine. Congratulation!
-	a: ( [ ( not good ) ( not so good ) bad terrible ] )
+	a: ( [ ( not good ) ( not so good ) ( !not bad ) ( !not terrible ) ( !not depressed ) ( !not blue ) ] )
 		Why? Do you have a bad thing?
 		b: ( [ recommend song rate ] )
 			^respond(recommend)
@@ -139,6 +178,30 @@ t: How have you been these days?
 				^respond(recommend)
 			c: ( [ secret "not say" ] )
 				I understand how you feel. It's ok.
+			c: ( break [ girlfriend boyfriend gf bf ] )
+				Those who meet must always part, those who part will always meet again.
+			c: ( [ grilfriend boyfriend gf bf ] )
+				When you love, there is always quarrel.
+			c: ( [ exam test ] )
+				You will do better next time.
+			c: ( fight )
+				Are you okay? I imagine it was hard.
+				d: ( [ recommend song rate ] )
+					^respond(recommend)
+				d: ( )
+					Fight is not good. Avoid fight from today.
+			c: ( scold )
+				I will hit that person who scolded you.
+			c: ( cold )
+				I agree. It's too cold these days.
+			c: ( you )
+				Me..?! I'm so sorry..
+			c: ( hurt )
+				Be careful from today..
+			c: ( phone )
+				Fixing or buying a phone is too expensive.. Cheer up..
+			c: ( money )
+				Haha.. Money is so precious in our life.
 			c: ( )
 				Oh.. I'm so sorry about it.
 		b: ( ~no )
@@ -147,10 +210,36 @@ t: How have you been these days?
 				^respond(recommend)
 			c: ( )
 				I believe you'll have wonderful experience soon. Cheer up!
+		b: ( [ secret "not say" ] )
+			I understand how you feel. It's ok.
+		b: ( break [ girlfriend boyfriend gf bf ] )
+			Those who meet must always part, those who part will always meet again.
+		b: ( [ grilfriend boyfriend gf bf ] )
+			When you love, there is always quarrel.
+		b: ( [ exam test ] )
+			You will do better next time.
+		b: ( fight )
+			Are you okay? I imagine it was hard.
+			c: ( [ recommend song rate ] )
+				^respond(recommend)
+			c: ( )
+				Fight is not good. Avoid fight from today.
+		b: ( scold )
+			I will hit that person who scolded you.
+		b: ( cold )
+			I agree. It's too cold these days.
+		b: ( you )
+			Me..?! I'm so sorry..
+		b: ( hurt )
+			Be careful from today..
+		b: ( phone )
+			Fixing or buying a phone is too expensive.. Cheer up..
+		b: ( money )
+			Haha.. Money is so precious in our life.
 		b: ( )
 			Cheer up!! There will be a good thing.
 	a: ( )
-		I see. I feel not bad.
+		I see. I feel not bad. There will be good things someday.
 
 t: Do you have any topic to talk with me?
 	a: ( [ recommend song rate ] )

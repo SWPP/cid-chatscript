@@ -4,6 +4,12 @@ chatoutput
 not_say
 gf
 bf
+america
+usa
+korea
+taiwan
+africa
+grilfriend
 brigitte
 lucio
 moira
@@ -1067,7 +1073,6 @@ g-club
 leesa
 zongamin
 chiwoniso
-america
 hyde
 sfb
 dropgun
