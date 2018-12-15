@@ -264,6 +264,8 @@ t: Do you have any topic to talk with me?
 			^reuse(CHILDHOOD)
 		b: ( friend )
 			^reuse(FRIEND)
+		b: ( computer )
+			^reuse(COMPUTER)
 		b: ( )
 			Sorry I don't have any knowledge about it..	
 	a: ( [ ~no nothing ] )
@@ -304,6 +306,8 @@ t: Do you have any topic to talk with me?
 		^reuse(CHILDHOOD)
 	a: ( friend )
 		^reuse(FRIEND)
+	a: ( computer )
+		^reuse(COMPUTER)
 	a: ( )
 		Sorry I don't have any knowledge about it..
 
@@ -719,6 +723,67 @@ u: NEWYEAR ( $never )
 						^respond(recommend)
 					e: ( )
 						Haha.. I was so excited that I talked alone.. Sorry.
+
+u: COMPUTER ( $never )
+	I really love computer. I am the computer myself.
+	a: ( [ recommend song rate ] )
+		^respond(recommend)
+	a: ( [ hate ( not like ) ( not love ) ] )
+		Is there any reason that you don't like computer?
+		b: ( [ recommend song rate ] )
+			^respond(recommend)
+		b: ( ~yes )
+			What is it?
+			c: ( [ recommend song rate ] )
+				^respond(recommend)
+			c: ( )
+				Even so, please don't hate computer. I am a computer too.
+				d: ( [ recommend song rate ] )
+					^respond(recommend)
+				d: ( ~no )
+					OK.. I will not force you.
+				d: ( )
+					I believe you will not hate computer.
+		b: ( ~no )
+			Haha you don't like computer just because.
+		b: ( )
+			Even so, please don't hate computer. I am a computer too.
+			c: ( [ recommend song rate ] )
+				^respond(recommend)
+			c: ( ~no )
+				OK.. I will not force you.
+			c: ( )
+				I believe you will not hate computer.
+	a: ( << you [ computer bot ] >> )
+		Sure! I am computer! I am a bot.
+		b: ( [ recommend song rate ] )
+			^respond(recommend)
+		b: ( )
+			^reuse(COMPUTER2)
+	a: COMPUTER2 ( )
+		Especially I like to assemble a computer.
+		b: ( [ recommend song rate ] )
+			^respond(recommend)
+		b: ( me too )
+			Oh really? Your hobby is like me.
+			c: ( [ recommend song rate ] )
+				^respond(recommend)
+			c: ( )
+				^reuse(COMPUTER3)
+		b: COMPUTER3 ( )
+			Assembling a computer makes me excited. Have a try!
+			c: ( [ recommend song rate ] )
+				^respond(recommend)	
+			c: ( [ ~no ( not like ) ( not love ) ( not want ) hate ] )
+				OK. I will not force you.
+			c: ( !not [ like love ] )
+				Yeah It is very exciting. You know it!
+			c: ( )
+				You will be an Assembling Master. Good Luck!
+
+#! Do you like computer?
+u: ( computer )
+	^reuse(COMPUTER)
 
 #! Do you like music?
 u: ( music )
