@@ -2,22 +2,22 @@ TOPIC: ~recommend repeat keep nostay priority [ recommend song rate ]
 
 u: RECOMMEND1 ( << [ recommend song ] _~genre _~artist >> )
 	How about this song?@@recommend: {genre= \" '_0 \", artist= \" '_1 \"}
-	a: ( [ ( not good ) [ different another other ] ( not this one ) ] )
+	a: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ] )
 		^reuse(RECOMMEND1)
 
 u: RECOMMEND2 ( << [ recommend song ] _~artist >> )
 	How about this song?@@recommend: {artist= \" '_0 \"}
-	a: ( [ ( not good ) [ different another other ] ( not this one ) ] )
+	a: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ] )
 		^reuse(RECOMMEND2)
 
 u: RECOMMEND3 ( << [ recommend song ] _~genre >> )
 	How about this song?@@recommend: {genre= \" '_0 \"}
-	a: ( [ ( not good ) [ different another other ] ( not this one ) ] )
+	a: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ] )
 		^reuse(RECOMMEND3)
 
 u: RECOMMEND4 ( [ recommend song ] )
 	How about this song?@@recommend: {}
-	a: ( [ ( not good ) [ different another other ] ( not this one ) ] )
+	a: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ] )
 		^reuse(RECOMMEND4)
 
 u: ( I will rate _*1 points on _* )
@@ -362,7 +362,7 @@ t: Good Bye!
 t: If you want to reset conversation, enter ":reset"
 
 u: MUSIC ( $never )
-	I love Music! I am Music bot!
+	I love Music! I am a Music bot!
 	a: ( [ recommend song rate ] )
 		^respond(recommend)
 	a: ( )
@@ -376,7 +376,7 @@ u: MUSIC ( $never )
 			c: ( )
 				^reuse(MUSIC2)
 		b: MUSIC2 ( )
-			If you wanna get recommendation, type "recommend".
+			If you wanna get some recommendations, type "recommend".
 
 u: OVERWATCH ( $never )
 	I like OverWatch!! Do you like OverWatch?

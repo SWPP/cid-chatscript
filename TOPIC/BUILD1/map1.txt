@@ -707,7 +707,7 @@ file: 0  /home/sungjae/cid-chatscript/RAWDATA/MUBOT/script.top
           line: 362 0  # If you want to reset conversat
           Complexity of rule ~talk.9.0- t: 1
         rule: 364  ~talk.10.0-MUSIC u: 
-          line: 365 0  # I love Music! I am Music bot! 
+          line: 365 0  # I love Music! I am a Music bot
           Complexity of rule ~talk.10.0-MUSIC u: 1
         rule: 366  ~talk.10.1 a: 
           line: 367 0  # ^respond ( recommend ) 
@@ -728,7 +728,7 @@ file: 0  /home/sungjae/cid-chatscript/RAWDATA/MUBOT/script.top
           line: 377 0  # ^reuse ( MUSIC2 ) 
           Complexity of rule ~talk.10.6- c: 1
         rule: 378  ~talk.10.7-MUSIC2 b: 
-          line: 379 0  # If you wanna get recommendatio
+          line: 379 0  # If you wanna get some recommen
           Complexity of rule ~talk.10.7-MUSIC2 b: 1
         rule: 381  ~talk.11.0-OVERWATCH u: 
           line: 382 0  # I like OverWatch!! Do you like
