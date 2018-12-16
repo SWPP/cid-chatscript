@@ -76,20 +76,7 @@ u: ( I will rate _*1 points on _* )
 
 TOPIC: ~talk repeat keep []
 
-t: Welecome to be here!
-
-t: Have you been here before?
-	a: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
-		^respond(recommend)
-	a: ( ~yes )
-		Welcome back!
-		^reuse(GREET)
-	a: ( ~no )
-		Then welcome to your first time.
-		^reuse(GREET)
-	a: ( )
-		Welcome again!
-		^reuse(GREET)
+t: Welcome to be here!
 
 t: GREET ( ) How have you been these days?
 	a: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
