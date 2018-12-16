@@ -410,6 +410,18 @@ u: MUSIC ( $never )
 				^respond(recommend)
 			c: ( )
 				^reuse(MUSIC2)
+		b: ( why )
+			When I listen to this music, I feel excited!!
+			c: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
+				^respond(recommend)
+			c: ( )
+				^reuse(MUSIC2)
+		b: ( show me )
+			Sorry.. I don't have it now. Insted I will recommend some songs for you.
+			c: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
+				^respond(recommend)
+			c: ( )
+				^reuse(MUSIC2)
 		b: MUSIC2 ( )
 			If you wanna get some recommendations, type "recommend".
 
