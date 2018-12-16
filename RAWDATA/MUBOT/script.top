@@ -578,7 +578,7 @@ u: CHRISTMAS ( $never )
 	a: ( [ recommend song rate ] )
 		^respond(recommend)
 	a: ( )
-		Haha I will eat tangerines under a blanket!!
+		I will eat tangerines under a blanket!!
 		b: ( [ recommend song rate ] )
 			^respond(recommend)
 		b: ( )
@@ -589,24 +589,62 @@ u: CHRISTMAS ( $never )
 				Then spend your time with her/him at Christmas.
 				d: ( [ recommend song rate ] )
 					^respond(recommend)
+				d: ( [ ~no ( can not ) ] )
+					Why? Is there any problem with your lover?
+					e: ( [ recommend song rate ] )
+						^respond(recommend)
+					e: ( ~no )
+						Hum.. Maybe there is a problem which you can't talk.
+						f: ( [ recommend song rate ] )
+							^respond(recommend)
+						f: ( )
+							^reuse(CHRISTMAS2)
+					e: ( )
+						Ah.. Cheer up! Everything will be fine
+						f: ( [ recommend song rate ] )
+							^respond(recommend)
+						f: ( )
+							^reuse(CHRISTMAS2)
+				d: ( [ not break ] )
+					Ah.. Cheer up! Everything will be fine
+					e: ( [ recommend song rate ] )
+						^respond(recommend)
+					e: ( )
+						^reuse(CHRISTMAS2)
 				d: ( )
 					^reuse(CHRISTMAS2)
 			c: ( ~no )
 				Then let's eat tangerines with me.
 				d: ( [ recommend song rate ] )
 					^respond(recommend)
+				d: ( ~no )
+					Eating tangerines is happy experience..
+					e: ( [ recommend song rate ] )
+						^respond(recommend)
+					e: ( )
+						^reuse(CHRISTMAS2)
 				d: ( )
 					^reuse(CHRISTMAS2)
 			c: CHRISTMAS2 ( )
 				I'll spend all the time with me at Christmas watching "Home Alone"
 				d: ( [ recommend song rate ] )
 					^respond(recommend)
-				d: ( )
-					It'll be happy Christmas!
+				d: ( where )
+					At home!
 					e: ( [ recommend song rate ] )
 						^respond(recommend)
 					e: ( )
-						Have a Merry Christmas!
+						Haha, Have a Merry Christmas!
+				d: ( why )
+					As "Home Alone" is the best movie for Christmas!
+					e: ( [ recommend song rate ] )
+						^respond(recommend)
+					e: ( )
+						Haha, Have a Merry Christmas!
+				d: ( too )
+					Oh really? Have a Merry Crhistmas with "Home Alone"!
+				d: ( )
+					Haha, Have a Merry Christmas!
 
 u: FRIEND ( $never )
 	Do you have a friend?
@@ -635,7 +673,7 @@ u: FRIEND ( $never )
 				d: ( [ recommend song rate ] )
 					^respond(recommend)
 				d: ( ~yes )
-					Good
+					Good! We will be insider someday!
 				d: ( ~no )
 					Why? You don't need a friend?
 					e: ( [ recommend song rate ] )
@@ -643,7 +681,7 @@ u: FRIEND ( $never )
 					e: ( )
 						Oh.. I see.
 				d: ( )
-					We will be insider someday!
+					I will try until I become an insider!
 	a: ( )
 		I don't have any friends. Do you know the way to make friends?
 		b: ( [ recommend song rate ] )
@@ -685,7 +723,7 @@ u: FOOD ( $never )
 		b: ( [ recommend song rate ] )
 			^respond(recommend)
 		b: ( [ fuck nothing "not like" hate "dont like" "dont eat" "not eat" ~no ] )
-			There were people who don't like eating. It's ok.
+			There are people who don't like eating. It's ok.
 		b: ( )
 			It's tasty too. But my favorite is bulgogi!!
 	a: ( )
