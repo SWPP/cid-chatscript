@@ -4,21 +4,53 @@ u: RECOMMEND1 ( << [ recommend song ] _~genre _~artist >> )
 	How about this song?@@recommend: {genre= \" '_0 \", artist= \" '_1 \"}
 	a: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ] )
 		^reuse(RECOMMEND1)
+	a: ( is )
+		Sure!! Let's go back to the previous conversation.
+		b: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ] )
+			^reuse(RECOMMEND1)
+	a: ( !not [ thank nice good awesome fine funny happy fantastic beautiful bravo ] )
+		Not at all! Let's go back to the previous conversation.
+		b: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ] )
+			^reuse(RECOMMEND1)
 
 u: RECOMMEND2 ( << [ recommend song ] _~artist >> )
 	How about this song?@@recommend: {artist= \" '_0 \"}
 	a: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ] )
 		^reuse(RECOMMEND2)
+	a: ( is )
+		Sure!! Let's go back to the previous conversation.
+		b: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ] )
+			^reuse(RECOMMEND2)
+	a: ( !not [ thank nice good awesome fine funny happy fantastic beautiful bravo ] )
+		Not at all! Let's go back to the previous conversation.
+		b: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ] )
+			^reuse(RECOMMEND2)
 
 u: RECOMMEND3 ( << [ recommend song ] _~genre >> )
 	How about this song?@@recommend: {genre= \" '_0 \"}
 	a: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ] )
 		^reuse(RECOMMEND3)
+	a: ( is )
+		Sure!! Let's go back to the previous conversation.
+		b: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ] )
+			^reuse(RECOMMEND3)
+	a: ( !not [ thank nice good awesome fine funny happy fantastic beautiful bravo ] )
+		Not at all! Let's go back to the previous conversation.
+		b: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ] )
+			^reuse(RECOMMEND3)
 
 u: RECOMMEND4 ( [ recommend song ] )
 	How about this song?@@recommend: {}
 	a: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ] )
 		^reuse(RECOMMEND4)
+	a: ( is )
+		Sure!! Let's go back to the previous conversation.
+		b: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ] )
+			^reuse(RECOMMEND4)
+	a: ( !not [ thank nice good awesome fine funny happy fantastic beautiful bravo ] )
+		Not at all! Let's go back to the previous conversation.
+		b: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ] )
+			^reuse(RECOMMEND4)
 
 u: ( I will rate _*1 points on _* )
 	Successfully evaluated.@@evaluate: {rating= '_0, title= \" '_1 \"}
