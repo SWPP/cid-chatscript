@@ -1,6 +1,7 @@
 ﻿loopback
 direct_v
 chatoutput
+antifan
 not_say
 gf
 bf

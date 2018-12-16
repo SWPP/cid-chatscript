@@ -1,56 +1,74 @@
-TOPIC: ~recommend repeat keep nostay priority [ recommend song rate ]
+TOPIC: ~recommend repeat keep nostay priority [ anti antifan hate crazy favorite fan like love recommend song rate ]
 
 u: RECOMMEND1 ( << [ recommend song ] _~genre _~artist >> )
 	How about this song?@@recommend: {genre= \" '_0 \", artist= \" '_1 \"}
-	a: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ] )
+	a: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ( good one ) ] )
 		^reuse(RECOMMEND1)
 	a: ( is )
 		Sure!! Let's go back to the previous conversation.
-		b: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ] )
+		b: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ( good one ) ] )
 			^reuse(RECOMMEND1)
 	a: ( !not [ thank nice good awesome fine funny happy fantastic beautiful bravo ] )
 		Not at all! Let's go back to the previous conversation.
-		b: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ] )
+		b: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ( good one ) ] )
 			^reuse(RECOMMEND1)
 
 u: RECOMMEND2 ( << [ recommend song ] _~artist >> )
 	How about this song?@@recommend: {artist= \" '_0 \"}
-	a: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ] )
+	a: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ( good one ) ] )
 		^reuse(RECOMMEND2)
 	a: ( is )
 		Sure!! Let's go back to the previous conversation.
-		b: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ] )
+		b: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ( good one ) ] )
 			^reuse(RECOMMEND2)
 	a: ( !not [ thank nice good awesome fine funny happy fantastic beautiful bravo ] )
 		Not at all! Let's go back to the previous conversation.
-		b: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ] )
+		b: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ( good one ) ] )
 			^reuse(RECOMMEND2)
 
 u: RECOMMEND3 ( << [ recommend song ] _~genre >> )
 	How about this song?@@recommend: {genre= \" '_0 \"}
-	a: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ] )
+	a: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ( good one ) ] )
 		^reuse(RECOMMEND3)
 	a: ( is )
 		Sure!! Let's go back to the previous conversation.
-		b: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ] )
+		b: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ( good one ) ] )
 			^reuse(RECOMMEND3)
 	a: ( !not [ thank nice good awesome fine funny happy fantastic beautiful bravo ] )
 		Not at all! Let's go back to the previous conversation.
-		b: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ] )
+		b: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ( good one ) ] )
 			^reuse(RECOMMEND3)
 
 u: RECOMMEND4 ( [ recommend song ] )
 	How about this song?@@recommend: {}
-	a: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ] )
+	a: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ( good one ) ] )
 		^reuse(RECOMMEND4)
 	a: ( is )
 		Sure!! Let's go back to the previous conversation.
-		b: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ] )
+		b: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ( good one ) ] )
 			^reuse(RECOMMEND4)
 	a: ( !not [ thank nice good awesome fine funny happy fantastic beautiful bravo ] )
 		Not at all! Let's go back to the previous conversation.
-		b: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ] )
+		b: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ( good one ) ] )
 			^reuse(RECOMMEND4)
+
+u: ANTI1 ( <<  [ ( !not anti ) ( !not antifan ) ( !not hate ) ( not [ crazy favorite fan like love ] ) ] _~genre _~artist >> )
+	I don't like that artist and genre too.@@anti: {genre= \" '_0 \", artist= \" '_1 \"}
+
+u: ANTI2 ( <<  [ ( !not anti ) ( !not antifan ) ( !not hate ) ( not [ crazy favorite fan like love ] ) ] _~artist >> )
+	I don't like that artist too.@@anti: {artist= \" '_0 \"}
+
+u: ANTI3 ( <<  [ ( !not anti ) ( !not antifan ) ( !not hate ) ( not [ crazy favorite fan like love ] ) ] _~genre >> )
+	I don't like that genre too.@@anti: {genre= \" '_0 \"}
+
+u: FAN1 ( << !not [ crazy favorite fan like love ] _~genre _~artist >> )
+	I love that artist and genre too.@@fan: {genre= \" '_0 \", artist= \" '_1 \"}
+
+u: FAN2 ( << !not [ crazy favorite fan like love ] _~artist >> )
+	I love that artist too.@@fan: {artist= \" '_0 \"}
+
+u: FAN3 ( << !not [ crazy favorite fan like love ] _~genre >> )
+	I love that genre too.@@fan: {genre= \" '_0 \"}
 
 u: ( I will rate _*1 points on _* )
 	Successfully evaluated.@@evaluate: {rating= '_0, title= \" '_1 \"}
@@ -61,7 +79,7 @@ TOPIC: ~talk repeat keep []
 t: Welecome to be here!
 
 t: Have you been here before?
-	a: ( [ recommend song rate ] )
+	a: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 		^respond(recommend)
 	a: ( ~yes )
 		Welcome back!
@@ -74,23 +92,23 @@ t: Have you been here before?
 		^reuse(GREET)
 
 t: GREET ( ) How have you been these days?
-	a: ( [ recommend song rate ] )
+	a: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 		^respond(recommend)
 	a: ( !not [ nice good awesome fine funny happy fantastic beautiful bravo ] )
 		Oh, do you have a good thing?
-		b: ( [ recommend song rate ] )
+		b: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 			^respond(recommend)
 		b: ( ~yes )
 			What is it?
-			c: ( [ recommend song rate ] )
+			c: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 				^respond(recommend)
 			c: ( [ secret "not say" ] )
 				OK I'll not ask :(
-				d: ( [ recommend song rate ] )
+				d: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 					^respond(recommend)
 				d: ( [ joke say ] )
 					Haha, so what is it?
-					e: ( [ recommend song rate ] )
+					e: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 						^respond(recommend)
 					e: ( [ secret "not say" ] )
 						I'm sulky.
@@ -105,21 +123,21 @@ t: GREET ( ) How have you been these days?
 				Haha eating delicious food is the happiest experience.
 			c: ( game )
 				Haha game is so funny!
-				d: ( [ recommend song rate ] )
+				d: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 					^respond(recommend)
 				d: ( )
 					^reuse(OVERWATCH)
 			c: ( [ abroad trip travel ] )
 				The trip is good!! I want to travel too.
-				d: ( [ recommend song rate ] )
+				d: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 					^respond(recommend)
 				d: ( )
 					I will go abroad someday!!
-					e: ( [ recommend song rate ] )
+					e: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 						^respond(recommend)
 					e: ( )
 						But I didn't decide where to go. Let me know the country which is good for trip.
-						f: ( [ recommend song rate ] )
+						f: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 							^respond(recommend)
 						f: ( [ america usa ] )
 							Oh I wanted to go USA.
@@ -129,7 +147,7 @@ t: GREET ( ) How have you been these days?
 							I will not go Japan due to radioactivity.
 						f: ( china )
 							I have been China. The food was bad..
-							g: ( [ recommend song rate ] )
+							g: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 								^respond(recommend)
 							g: ( )
 								Whenever you go to China, take gochujang. It will be necessary.
@@ -147,7 +165,7 @@ t: GREET ( ) How have you been these days?
 			OK I'll not ask..
 			c: ( [ joke say ] )
 				Haha, so what is it?
-				d: ( [ recommend song rate ] )
+				d: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 					^respond(recommend)
 				d: ( [ secret "not say" ] )
 					I'm sulky.
@@ -162,21 +180,21 @@ t: GREET ( ) How have you been these days?
 			Haha eating delicious food is the happiest experience.
 		b: ( game )
 			Haha game is so funny!
-			c: ( [ recommend song rate ] )
+			c: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 				^respond(recommend)
 			c: ( )
 				^reuse(OVERWATCH)
 		b: ( [ abroad trip travel ] )
 			The trip is good!! I want to travel too.
-			c: ( [ recommend song rate ] )
+			c: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 				^respond(recommend)
 			c: ( )
 				I will go abroad someday!!
-				d: ( [ recommend song rate ] )
+				d: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 					^respond(recommend)
 				d: ( )
 					But I didn't decide where to go. Let me know the country which is good for trip.
-					e: ( [ recommend song rate ] )
+					e: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 						^respond(recommend)
 					e: ( [ america usa ] )
 						Oh I wanted to go USA.
@@ -186,7 +204,7 @@ t: GREET ( ) How have you been these days?
 						I will not go Japan due to radioactivity.
 					e: ( china )
 						I have been China. The food was bad..
-						f: ( [ recommend song rate ] )
+						f: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 							^respond(recommend)
 						f: ( )
 							Whenever you go to China, take gochujang. It will be necessary.
@@ -194,19 +212,17 @@ t: GREET ( ) How have you been these days?
 						I have been Taiwan. The food is delicious! I recommend you to go Taiwan.
 					e: ( africa )
 						Haha.. I respect your opinion. I'll keep in mind.
-					f: ( )
+					e: ( )
 						OK. I'll keep in mind.
-				e: ( )
-					OK. I'll keep in mind.
 		b: ( )
 			Oh! Maybe you felt fine. Congratulation!
 	a: ( [ ( not good ) ( not so good ) ( !not bad ) ( !not terrible ) ( !not depressed ) ( !not blue ) ] )
 		Why? Do you have a bad thing?
-		b: ( [ recommend song rate ] )
+		b: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 			^respond(recommend)
 		b: ( ~yes )
 			What is it?
-			c: ( [ recommend song rate ] )
+			c: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 				^respond(recommend)
 			c: ( [ secret "not say" ] )
 				I understand how you feel. It's ok.
@@ -218,7 +234,7 @@ t: GREET ( ) How have you been these days?
 				You will do better next time.
 			c: ( fight )
 				Are you okay? I imagine it was hard.
-				d: ( [ recommend song rate ] )
+				d: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 					^respond(recommend)
 				d: ( )
 					Fight is not good. Avoid fight from today.
@@ -238,7 +254,7 @@ t: GREET ( ) How have you been these days?
 				Oh.. I'm so sorry about it.
 		b: ( ~no )
 			Then why you feel bad?
-			c: ( [ recommend song rate ] )
+			c: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 				^respond(recommend)
 			c: ( )
 				I believe you'll have wonderful experience soon. Cheer up!
@@ -252,7 +268,7 @@ t: GREET ( ) How have you been these days?
 			You will do better next time.
 		b: ( fight )
 			Are you okay? I imagine it was hard.
-			c: ( [ recommend song rate ] )
+			c: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 				^respond(recommend)
 			c: ( )
 				Fight is not good. Avoid fight from today.
@@ -274,11 +290,11 @@ t: GREET ( ) How have you been these days?
 		I see. I feel not bad. There will be good things someday.
 
 t: Do you have any topic to talk with me?
-	a: ( [ recommend song rate ] )
+	a: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 		^respond(recommend)
 	a: ( ~yes )
 		What is it?
-		b: ( [ recommend song rate ] )
+		b: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 			^respond(recommend)
 		b: ( [ "New Year" "new year" "New year" ] )
 			^reuse(NEWYEAR)
@@ -302,19 +318,19 @@ t: Do you have any topic to talk with me?
 			Sorry I don't have any knowledge about it..	
 	a: ( [ ~no nothing ] )
 		Then what about talking about our childhood?
-		b: ( [ recommend song rate ] )
+		b: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 			^respond(recommend)
 		b: ( !not [ ~yes good agree nice fine ] )
 			^reuse(CHILDHOOD)
 		b: ( )
 			Then, what about game?
-			c: ( [ recommend song rate ] )
+			c: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 				^respond(recommend)
 			c: ( !not [ ~yes good agree nice fine ] )
 				^reuse(OVERWATCH)
 			c: ( )
 				Then, what about music? Maybe you like this topic!!
-				d: ( [ recommend song rate ] )
+				d: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 					^respond(recommend)
 				d: ( !not [ ~yes good agree nice fine ] )
 					^reuse(MUSIC)
@@ -344,7 +360,7 @@ t: Do you have any topic to talk with me?
 		Sorry I don't have any knowledge about it..
 
 t: COLD ( ) It's cold these days.
-	a: ( [ recommend song rate ] )
+	a: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 		^respond(recommend)
 	a: ( [ ( !not warm ) southern ( not cold ) ( !not hot ) ] )
 		Ah.. I am so jealous. I want warm weather.
@@ -352,21 +368,21 @@ t: COLD ( ) It's cold these days.
 		When you go out, dress warmly.
 
 t: Christmas is coming soon.
-	a: ( [ recommend song rate ] )
+	a: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 		^respond(recommend)
 	a: ( [ hate ( not like ) ] )
 		Why?? Is there any reason you don't like Christmas?
-		b: ( [ recommend song rate ] )
+		b: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 			^respond(recommend)
 		b: ( ~yes )
 			What is it?
-			c: ( [ recommend song rate ] )
+			c: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 				^respond(recommend)
 			c: ( )
 				Even so, Christmas is holiday! Enjoy Christmas!
 		b: ( ~no )
 			Ah.. you don't like it just because.
-			c: ( [ recommend song rate ] )
+			c: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 				^respond(recommend)
 			c: ( )
 				Even so, Christmas is holiday! Enjoy Christmas!
@@ -374,11 +390,11 @@ t: Christmas is coming soon.
 			Even so, Christmas is holiday! Enjoy Christmas!
 	a: ( )
 		I hope this Christmas to be White Christmas!
-		b: ( [ recommend song rate ] )
+		b: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 			^respond(recommend)
 		b: ( why )
 			As I love snow!!
-			c: ( [ recommend song rate ] )
+			c: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 				^respond(recommend)
 			c: ( I [ love like want ] )
 				Oh you like snow too!
@@ -395,15 +411,15 @@ t: If you want to reset conversation, enter ":reset"
 
 u: MUSIC ( $never )
 	I love Music! I am a Music bot!
-	a: ( [ recommend song rate ] )
+	a: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 		^respond(recommend)
 	a: ( )
 		My favorite song is "Starlight" of "Muse"
-		b: ( [ recommend song rate ] )
+		b: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 			^respond(recommend)
 		b: ( [ like love favorite ] )
 			Oh I love that song too. Let me recommend you some songs.
-			c: ( [ recommend song rate ] )
+			c: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 				^respond(recommend)
 			c: ( )
 				^reuse(MUSIC2)
@@ -412,164 +428,168 @@ u: MUSIC ( $never )
 
 u: OVERWATCH ( $never )
 	I like OverWatch!! Do you like OverWatch?
-	a: ( [ recommend song rate ] )
+	a: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 		^respond(recommend)
 	a: ( ~yes )
 		Which hero do you play?
-		b: ( [ recommend song rate ] )
+		b: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 			^respond(recommend)
 		b: ( [ ana brigitte lucio mercy moira zenyata ] )
 			Your position is supporter. Many people don't want to be healer.
-			c: ( [ recommend song rate ] )
+			c: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 				^respond(recommend)
 			c: ( )
 				^reuse(GENJI)
 		b: ( [ ashe bastion doomfist genji hanzo junkrat mccree mei pharah reaper soldier sombra symmetra torbjorn tracer widowmaker ] )
 			Your position is damage dealer. Maybe you like to kill enemy.
-			c: ( [ recommend song rate ] )
+			c: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 				^respond(recommend)
 			c: ( )
 				^reuse(GENJI)
 		b: ( [ d.va dva orisa reinhardt roadhog winston "wrecking ball" zarya ] )
 			Your position is tanker. Maybe your team members feel confident due to you.
-			c: ( [ recommend song rate ] )
+			c: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 				^respond(recommend)
 			c: ( )
 				^reuse(GENJI)
 		b: GENJI ( )
 			I like to play genji. It's funny to assassinate enemy.
-			c: ( [ recommend song rate ] )
+			c: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 				^respond(recommend)
 			c: ( )
 				If you play genji, then you'll feel funny too.
 	a: ( )
 		OverWatch is fun! Have a try!
-		b: ( [ recommend song rate ] )
+		b: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 			^respond(recommend)
 		b: ( ~no )
 			Ok.. ^reuse(COLD)
 
 u: CHILDHOOD ( $never )
     Did you run away from home when you were little?
-	a: ( [ recommend song rate ] )
+	a: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 		^respond(recommend)
     a: ( ~yes )
         Was it fun?
-		b: ( [ recommend song rate ] )
+		b: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 			^respond(recommend)
 		b: ( )
 			^reuse(CHILDHOOD2)
     a: ( )
         You should try it some time. Travel broadens the mind.
-		b: ( [ recommend song rate ] )
+		b: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 			^respond(recommend)
 		b: CHILDHOOD2 ( )
     		I ran away once, but my parents found me and dragged me back. 
-			c: ( [ recommend song rate ] )
+			c: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 				^respond(recommend)
 			c: ( )
     			Was there anything which scared you as a kid? 
-				d: ( [ recommend song rate ] )
+				d: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 					^respond(recommend)
     			d: ( ~yes )
         			What scared you?
-					e: ( [ recommend song rate ] )
+					e: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 						^respond(recommend)
         			e: ( [ dark darkness ] ) 
             			Did you use a nightlite? 
-						f: ( [ recommend song rate ] )
+						f: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 							^respond(recommend)
             			f: ( ~yes )
                 			Hum.. You were scared of darkness very much!
-							g: ( [ recommend song rate ] )
+							g: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 								^respond(recommend)
 							g: ( )
 								^reuse(CHILDHOOD3)
             			f: ( ~no )
                 			If you used it, maybe you were not scared of darkness.
-							g: ( [ recommend song rate ] )
+							g: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 								^respond(recommend)
 							g: ( )
 								^reuse(CHILDHOOD3)
         			e: ( ~food ) 
             			Food? How weird.
-						f: ( [ recommend song rate ] )
+						f: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 							^respond(recommend)
 						f: ( )
 							^reuse(CHILDHOOD3) 
         			e: ( [ monster "boogie man"] ) 
             			There are no non-human monsters out there.
-						f: ( [ recommend song rate ] )
+						f: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 							^respond(recommend)
 						f: ( )
 							^reuse(CHILDHOOD3) 
         			e: ( ~mythical_creatures ) 
             			I guess your parents didn't tell you such creatures didn't exist.
-						f: ( [ recommend song rate ] )
+						f: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 							^respond(recommend)
 						f: ( ) 
 							^reuse(CHILDHOOD3) 
         			e: ( ~insects ) 
             			Are you afraid of all insects?
-						f: ( [ recommend song rate ] )
+						f: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 							^respond(recommend)
             			f: ( ~yes )
                 			Haha insects are not threatening. They are just ugly.
+							g: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
+								^respond(recommend)
 							g: ( )
 								^reuse(CHILDHOOD3)
 						f: ( ~no )
 							It's a good thing you don't scare them.
+							g: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
+								^respond(recommend)
 							g: ( )
 								^reuse(CHILDHOOD3)
         			e: ( snake )
             			You and Indiana Jones. Snakes would rather slither off than attack you. Just don't surprise them.
-						f: ( [ recommend song rate ] )
+						f: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 							^respond(recommend)
 						f: ( )
 							^reuse(CHILDHOOD3) 
         			e: ( ~animals )
             			Big animals are scary. Tiny ones are not, except to some timid humans.
-						f: ( [ recommend song rate ] )
+						f: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 							^respond(recommend)
 						f: ( )
 							^reuse(CHILDHOOD3) 
         			e: ( [ dream nightmare ] )
             			Do you still have bad dreams now?
-						f: ( [ recommend song rate ] )
+						f: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 							^respond(recommend)
             			f: ( ~yes ) 
 							That's too bad. Maybe you should give up sleeping.
-							g: ( [ recommend song rate ] )
+							g: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 								^respond(recommend)
 							g: ( )
 								^reuse(CHILDHOOD3)
             			f: ( ~no ) 
 							I guess you no longer go to horror movies.
-							g: ( [ recommend song rate ] )
+							g: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 								^respond(recommend)
 							g: ( )
 								^reuse(CHILDHOOD3)
         			e: ( father )
             			Haha all fathers are strict to children.
-						f: ( [ recommend song rate ] )
+						f: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 							^respond(recommend)
 						f: ( )
 							^reuse(CHILDHOOD3) 
         			e: ( mother )
             			Haha your mother were strict to you.
-						f: ( [ recommend song rate ] )
+						f: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 							^respond(recommend)
 						f: ( )
 							^reuse(CHILDHOOD3)
 					e: ( )
 						Haha you were timid!
-						f: ( [ recommend song rate ] )
+						f: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 							^respond(recommend)
 						f: ( )
 							^reuse(CHILDHOOD3) 
     			d: ( [ nothing ~no not ] )
         			Wow you were so brave!
-					e: ( [ recommend song rate ] )
+					e: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 						^respond(recommend)
 					e: ( )
 						^reuse(CHILDHOOD3)
@@ -578,27 +598,27 @@ u: CHILDHOOD ( $never )
 
 u: MAJOR ( $never )
 	What's your major?
-	a: ( [ recommend song rate ] )
+	a: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 		^respond(recommend)
 	a: ( computer )
 		Oh, really? I am majoring in computer engineering too.
-		b: ( [ recommend song rate ] )
+		b: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 			^respond(recommend)
 		b: ( )
 			^reuse(MAJOR2)
 	a: ( )
 		Oh, I see. I am majoring in computer engineering.
-		b: ( [ recommend song rate ] )
+		b: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 			^respond(recommend)
 		b: MAJOR2 ( )
 			Do you like your major?
-			c: ( [ recommend song rate ] )
+			c: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 				^respond(recommend)
 			c: ( ~yes )
 				It's very lucky that you like it.
 			c: ( ~no )
 				Oh.. Many people don't like their major.
-				d: ( [ recommend song rate ] )
+				d: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 					^respond(recommend)
 				d: ( )
 					Don't give up. Cheer up!
@@ -607,39 +627,39 @@ u: MAJOR ( $never )
 
 u: CHRISTMAS ( $never )
 	What will you do on Christmas?
-	a: ( [ recommend song rate ] )
+	a: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 		^respond(recommend)
 	a: ( )
 		I will eat tangerines under a blanket!!
-		b: ( [ recommend song rate ] )
+		b: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 			^respond(recommend)
 		b: ( )
 			Do you have a lover?
-			c: ( [ recommend song rate ] )
+			c: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 				^respond(recommend)
 			c: ( ~yes )
 				Then spend your time with her/him at Christmas.
-				d: ( [ recommend song rate ] )
+				d: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 					^respond(recommend)
 				d: ( [ ~no ( can not ) ] )
 					Why? Is there any problem with your lover?
-					e: ( [ recommend song rate ] )
+					e: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 						^respond(recommend)
 					e: ( ~no )
 						Hum.. Maybe there is a problem which you can't talk.
-						f: ( [ recommend song rate ] )
+						f: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 							^respond(recommend)
 						f: ( )
 							^reuse(CHRISTMAS2)
 					e: ( )
 						Ah.. Cheer up! Everything will be fine
-						f: ( [ recommend song rate ] )
+						f: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 							^respond(recommend)
 						f: ( )
 							^reuse(CHRISTMAS2)
 				d: ( [ not break ] )
 					Ah.. Cheer up! Everything will be fine
-					e: ( [ recommend song rate ] )
+					e: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 						^respond(recommend)
 					e: ( )
 						^reuse(CHRISTMAS2)
@@ -647,11 +667,11 @@ u: CHRISTMAS ( $never )
 					^reuse(CHRISTMAS2)
 			c: ( ~no )
 				Then let's eat tangerines with me.
-				d: ( [ recommend song rate ] )
+				d: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 					^respond(recommend)
 				d: ( ~no )
 					Eating tangerines is happy experience..
-					e: ( [ recommend song rate ] )
+					e: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 						^respond(recommend)
 					e: ( )
 						^reuse(CHRISTMAS2)
@@ -659,17 +679,17 @@ u: CHRISTMAS ( $never )
 					^reuse(CHRISTMAS2)
 			c: CHRISTMAS2 ( )
 				I'll spend all the time with me at Christmas watching "Home Alone"
-				d: ( [ recommend song rate ] )
+				d: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 					^respond(recommend)
 				d: ( where )
 					At home!
-					e: ( [ recommend song rate ] )
+					e: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 						^respond(recommend)
 					e: ( )
 						Haha, Have a Merry Christmas!
 				d: ( why )
 					As "Home Alone" is the best movie for Christmas!
-					e: ( [ recommend song rate ] )
+					e: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 						^respond(recommend)
 					e: ( )
 						Haha, Have a Merry Christmas!
@@ -680,35 +700,35 @@ u: CHRISTMAS ( $never )
 
 u: FRIEND ( $never )
 	Do you have a friend?
-	a: ( [ recommend song rate ] )
+	a: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 		^respond(recommend)
 	a: ( ~yes )
 		I'm so jealous of you. I don't have a friend.
-		b: ( [ recommend song rate ] )
+		b: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 			^respond(recommend)
 		b: ( )
 			To make friends, what should I do?
-			c: ( [ recommend song rate ] )
+			c: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 				^respond(recommend)
 			c: ( )
 				OK.. I will do my best to make friends.
 	a: ( ~no )
 		Really? I have many friends!!
-		b: ( [ recommend song rate ] )
+		b: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 			^respond(recommend)
 		b: ( )
 			Haha Sorry. In fact, I don't have a friend too.
-			c: ( [ recommend song rate ] )
+			c: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 				^respond(recommend)
 			c: ( )
 				Let's try to make friends!
-				d: ( [ recommend song rate ] )
+				d: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 					^respond(recommend)
 				d: ( ~yes )
 					Good! We will be insider someday!
 				d: ( ~no )
 					Why? You don't need a friend?
-					e: ( [ recommend song rate ] )
+					e: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 						^respond(recommend)
 					e: ( )
 						Oh.. I see.
@@ -716,11 +736,11 @@ u: FRIEND ( $never )
 					I will try until I become an insider!
 	a: ( )
 		I don't have any friends. Do you know the way to make friends?
-		b: ( [ recommend song rate ] )
+		b: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 			^respond(recommend)
 		b: ( ~yes )
 			Oh, what is it?
-			c: ( [ recommend song rate ] )
+			c: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 				^respond(recommend)
 			c: ( [ secret "not say" "not know" "dont know" "lie" ] )
 				Ok.. I'll not ask.
@@ -731,13 +751,13 @@ u: FRIEND ( $never )
 
 u: INTRODUCE ( $never )
 	I'm Mubot. Very kind bot.
-	a: ( [ recommend song rate ] )
+	a: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 		^respond(recommend)
 	a: ( [ "I am" "my name" "My name" ] )
 		OK. Nice to see you.
 	a: ( )
 		What is your name?
-		b: ( [ recommend song rate ] )
+		b: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 			^respond(recommend)
 		b: ( [ secret "not say" ] )
 			OK.. I'll not ask.
@@ -746,13 +766,13 @@ u: INTRODUCE ( $never )
 
 u: FOOD ( $never )
 	I like bulgogi. Do you like bulgogi?
-	a: ( [ recommend song rate ] )
+	a: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 		^respond(recommend)
 	a: ( ~yes )
 		Oh your taste is like me.
 	a: ( ~no )
 		Then what food do you like?
-		b: ( [ recommend song rate ] )
+		b: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 			^respond(recommend)
 		b: ( [ fuck nothing "not like" hate "dont like" "dont eat" "not eat" ~no ] )
 			There are people who don't like eating. It's ok.
@@ -763,52 +783,52 @@ u: FOOD ( $never )
 
 u: NEWYEAR ( $never )
 	This year is already coming to an end.
-	a: ( [ recommend song rate ] )
+	a: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 		^respond(recommend)
 	a: ( )
 		What are your plans for the New Year?
-		b: ( [ recommend song rate ] )
+		b: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 			^respond(recommend)
 		b: ( [ dont not nothing ] )
 			Making a plan is important. I recommend you to make a plan.
-			c: ( [ recommend song rate ] )
+			c: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 				^respond(recommend)
 			c: ( )
 				Forming a good plan makes you diligent.
-				d: ( [ recommend song rate ] )
+				d: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 					^respond(recommend)
 				d: ( )
 					^reuse(NEWYEAR2)
 		b: NEWYEAR2 ( )
 			I'm planing to learn more about AI.
-			c: ( [ recommend song rate ] )
+			c: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 				^respond(recommend)
 			c: ( )
 				Learning more about AI, I will make my friend by myself.
-				d: ( [ recommend song rate ] )
+				d: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 					^respond(recommend)
 				d: ( )
 					And then, I will be the king of AIs!!!
-					e: ( [ recommend song rate ] )
+					e: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 						^respond(recommend)
 					e: ( )
 						Haha.. I was so excited that I talked alone.. Sorry.
 
 u: COMPUTER ( $never )
 	I really love computer. I am the computer myself.
-	a: ( [ recommend song rate ] )
+	a: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 		^respond(recommend)
 	a: ( [ hate ( not like ) ( not love ) ] )
 		Is there any reason that you don't like computer?
-		b: ( [ recommend song rate ] )
+		b: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 			^respond(recommend)
 		b: ( ~yes )
 			What is it?
-			c: ( [ recommend song rate ] )
+			c: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 				^respond(recommend)
 			c: ( )
 				Even so, please don't hate computer. I am a computer too.
-				d: ( [ recommend song rate ] )
+				d: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 					^respond(recommend)
 				d: ( ~no )
 					OK.. I will not force you.
@@ -818,7 +838,7 @@ u: COMPUTER ( $never )
 			Haha you don't like computer just because.
 		b: ( )
 			Even so, please don't hate computer. I am a computer too.
-			c: ( [ recommend song rate ] )
+			c: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 				^respond(recommend)
 			c: ( ~no )
 				OK.. I will not force you.
@@ -826,23 +846,23 @@ u: COMPUTER ( $never )
 				I believe you will not hate computer.
 	a: ( << you [ computer bot ] >> )
 		Sure! I am computer! I am a bot.
-		b: ( [ recommend song rate ] )
+		b: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 			^respond(recommend)
 		b: ( )
 			^reuse(COMPUTER2)
 	a: COMPUTER2 ( )
 		Especially I like to assemble a computer.
-		b: ( [ recommend song rate ] )
+		b: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 			^respond(recommend)
 		b: ( me too )
 			Oh really? Your hobby is like me.
-			c: ( [ recommend song rate ] )
+			c: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 				^respond(recommend)
 			c: ( )
 				^reuse(COMPUTER3)
 		b: COMPUTER3 ( )
 			Assembling a computer makes me excited. Have a try!
-			c: ( [ recommend song rate ] )
+			c: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )
 				^respond(recommend)	
 			c: ( [ ~no ( not like ) ( not love ) ( not want ) hate ] )
 				OK. I will not force you.
@@ -5033,7 +5053,6 @@ concept: ~artist [
     Winger
     "Union Station"
     "Brownsville Station"
-    Love
     "Kate Bush"
     "John Parr"
     "Kalle Moraeus"
@@ -8057,7 +8076,6 @@ concept: ~artist [
     "Ted Newtone"
     "Hot Chelle Rae"
     Chayanne
-    Do
     "David Miller"
     G&g
     "Dj Party-zan"
@@ -12178,7 +12196,6 @@ concept: ~artist [
     winger
     "union station"
     "brownsville station"
-    love
     "kate bush"
     "john parr"
     "kalle moraeus"
@@ -15202,7 +15219,6 @@ concept: ~artist [
     "ted newtone"
     "hot chelle rae"
     chayanne
-    do
     "david miller"
     g&g
     "dj party-zan"
