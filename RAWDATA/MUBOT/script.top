@@ -9,7 +9,7 @@ u: RECOMMEND1 ( << [ recommend song ] _~genre _~artist >> )
 		b: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ( good one ) ] )
 			^reuse(RECOMMEND1)
 	a: ( !not [ thank nice good awesome fine funny happy fantastic beautiful bravo ] )
-		Not at all! Let's go back to the previous conversation.
+		Let's go back to the previous conversation.
 		b: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ( good one ) ] )
 			^reuse(RECOMMEND1)
 
@@ -22,7 +22,7 @@ u: RECOMMEND2 ( << [ recommend song ] _~artist >> )
 		b: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ( good one ) ] )
 			^reuse(RECOMMEND2)
 	a: ( !not [ thank nice good awesome fine funny happy fantastic beautiful bravo ] )
-		Not at all! Let's go back to the previous conversation.
+		Let's go back to the previous conversation.
 		b: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ( good one ) ] )
 			^reuse(RECOMMEND2)
 
@@ -35,7 +35,7 @@ u: RECOMMEND3 ( << [ recommend song ] _~genre >> )
 		b: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ( good one ) ] )
 			^reuse(RECOMMEND3)
 	a: ( !not [ thank nice good awesome fine funny happy fantastic beautiful bravo ] )
-		Not at all! Let's go back to the previous conversation.
+		Let's go back to the previous conversation.
 		b: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ( good one ) ] )
 			^reuse(RECOMMEND3)
 
@@ -48,7 +48,7 @@ u: RECOMMEND4 ( [ recommend song ] )
 		b: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ( good one ) ] )
 			^reuse(RECOMMEND4)
 	a: ( !not [ thank nice good awesome fine funny happy fantastic beautiful bravo ] )
-		Not at all! Let's go back to the previous conversation.
+		Let's go back to the previous conversation.
 		b: ( [ ( !not terrible ) ( !not bad ) ( not good ) [ different another other ] ( not this one ) ( good one ) ] )
 			^reuse(RECOMMEND4)
 
@@ -76,7 +76,7 @@ u: ( I will rate _*1 points on _* )
 
 TOPIC: ~talk repeat keep []
 
-t: Welcome to be here!
+t: Welcome!
 
 t: GREET ( ) How have you been these days?
 	a: ( [ anti antifan hate crazy favorite fan like love recommend song rate ] )

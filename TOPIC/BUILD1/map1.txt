@@ -191,7 +191,7 @@ file: 0  /home/sungjae/cid-chatscript/RAWDATA/MUBOT/script.top
           line: 10 0  # ^reuse ( RECOMMEND1 ) 
           Complexity of rule ~recommend.0.3- b: 1
         rule: 11  ~recommend.0.4 a: 
-          line: 12 0  # Not at all! Let's go back to t
+          line: 12 0  # Let's go back to the previous 
           Complexity of rule ~recommend.0.4- a: 1
         rule: 13  ~recommend.0.5 b: 
           line: 14 0  # ^reuse ( RECOMMEND1 ) 
@@ -209,7 +209,7 @@ file: 0  /home/sungjae/cid-chatscript/RAWDATA/MUBOT/script.top
           line: 23 0  # ^reuse ( RECOMMEND2 ) 
           Complexity of rule ~recommend.1.3- b: 1
         rule: 24  ~recommend.1.4 a: 
-          line: 25 0  # Not at all! Let's go back to t
+          line: 25 0  # Let's go back to the previous 
           Complexity of rule ~recommend.1.4- a: 1
         rule: 26  ~recommend.1.5 b: 
           line: 27 0  # ^reuse ( RECOMMEND2 ) 
@@ -227,7 +227,7 @@ file: 0  /home/sungjae/cid-chatscript/RAWDATA/MUBOT/script.top
           line: 36 0  # ^reuse ( RECOMMEND3 ) 
           Complexity of rule ~recommend.2.3- b: 1
         rule: 37  ~recommend.2.4 a: 
-          line: 38 0  # Not at all! Let's go back to t
+          line: 38 0  # Let's go back to the previous 
           Complexity of rule ~recommend.2.4- a: 1
         rule: 39  ~recommend.2.5 b: 
           line: 40 0  # ^reuse ( RECOMMEND3 ) 
@@ -245,7 +245,7 @@ file: 0  /home/sungjae/cid-chatscript/RAWDATA/MUBOT/script.top
           line: 49 0  # ^reuse ( RECOMMEND4 ) 
           Complexity of rule ~recommend.3.3- b: 1
         rule: 50  ~recommend.3.4 a: 
-          line: 51 0  # Not at all! Let's go back to t
+          line: 51 0  # Let's go back to the previous 
           Complexity of rule ~recommend.3.4- a: 1
         rule: 52  ~recommend.3.5 b: 
           line: 53 0  # ^reuse ( RECOMMEND4 ) 
@@ -273,7 +273,7 @@ file: 0  /home/sungjae/cid-chatscript/RAWDATA/MUBOT/script.top
           Complexity of rule ~recommend.10.0- u: 1
     topic: 77  ~talk
         rule: 79  ~talk.0.0- t: 
-          line: 79 0  # Welcome to be here! 
+          line: 79 0  # Welcome! 
           Complexity of rule ~talk.0.0- t: 1
         rule: 81  ~talk.1.0-GREET t: 
           line: 81 0  # How have you been these days? 
